@@ -1,0 +1,37 @@
+<Alloy>
+	<Window class="container">
+		
+		
+		<View id="header_view">
+			<View id="home_view">
+				<ImageView id="home_icon"/>
+			</View>
+			<View id="title_view">
+				<Label id="title_label"/>
+			</View>
+			<View id="sound_view">
+				<ImageView id="sound_icon"/>
+			</View>
+		</View>
+		
+		
+		<View id="view_body">
+			<Button id="Button_HS" onClick="menu_HS">Habilidades Sociales</Button>
+			<Button id="Button_TF" onClick="menu_TF">Tolerancia a la Frustración</Button>
+		</View>
+		
+		
+		<View id="footer_view">
+			<View id="setting_view">
+				<ImageView id="setting_icon" onClick="menu_setting"/>
+			</View>
+		</View>
+		<AlertDialog id="dialog" title="Editar nivel" style="Ti.UI.iPhone.AlertDialogStyle.PLAIN_TEXT_INPUT" androidView="textfield"
+            message="Ingrese su contraseña" cancel=1>
+            <ButtonNames>
+                <ButtonName >Confirmar</ButtonName>
+                <ButtonName>Cancelar</ButtonName>
+            </ButtonNames>
+        </AlertDialog>
+    </Window>
+</Alloy>

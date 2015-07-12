@@ -1,0 +1,39 @@
+<Alloy>
+	<Window class="container">
+		<View id="header_view">
+			<View id="home_view">
+				<ImageView id="home_icon"/>
+			</View>
+			<View id="title_view">
+				<Label id="title_label"/>
+			</View>
+			<View id="sound_view">
+				<ImageView id="sound_icon"/>
+			</View>
+		</View>
+		
+		<View id="view_body">
+			<View id="view_label">
+				<Label id="Label_CG">Categoría</Label>
+				<Label id="Label_JG">Juego</Label>
+			</View>
+			<View id="view_picker">
+				<Picker id="Picker_CG">
+					<PickerColumn id="column_CG">
+						<PickerRow title="Habilidades Sociales"/>
+		                <PickerRow title="Tolerancia a la Frustración"/>
+	                </PickerColumn>
+				</Picker>
+				<Picker id="Picker_JG" visible="false">
+					<PickerColumn id="column_JG">
+		            </PickerColumn>
+				</Picker>
+			</View>
+			<View id="view_button">
+				<Button id="Button_CL" onClick="Button_CL">Cancelar</Button>
+				<Button id="Button_SG" onClick="Button_SG">Siguiente</Button>
+			</View>
+		</View>
+		
+    </Window>
+</Alloy>
