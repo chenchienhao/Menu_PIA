@@ -1,48 +1,46 @@
-
 var view_header = Ti.UI.createView({
     backgroundColor:'white',
+    width: Ti.UI.SIZE,
     height: "10%",
-    layout: 'vertical',
+    layout: 'horizontal',
 });
 var view_body = Ti.UI.createView({
     height: "90%",
-    width: Ti.UI.SIZE
+    width: Ti.UI.SIZE,
+    layout: 'horizontal'
 });
-var view_body_left = Ti.UI.createView({
-    layout: 'horizontal',
-    left: 0,
-    width: Alloy.CFG.leftWidth,
-    height: Ti.UI.FILL
-});
-var view_body_right = Ti.UI.createView({
-    layout: 'vertical',
-    left: Alloy.CFG.leftWidth,
-    width: "20%",
-    height: Ti.UI.FILL
-});
-
-
-Ti.Gesture.addEventListener('orientationchange', function() {
-    var width = Ti.Platform.displayCaps.platformWidth * 0.8;
-    view_body_left.width = width;
-    view_body_right.left = width;
-});
-
 
 var title=Titanium.UI.createLabel({
 	color: '#000',
     text: Alloy.Globals.aux_categoria+" - "+Alloy.Globals.aux_juego,
     top: "50%",
     font: {
-		fontSize: 24,
+		fontSize: 18,
 		color:"#000",
 		fontweight:"bold",
 		textAlign:"center"
 	},
-    width:"auto", 
-	height:"auto"
+	left: "10%"
 });
+
+var anterior=Titanium.UI.createImageView({
+	image: "/images/icon/anterior.png",
+	top: "40%",
+	left: "10%",
+	height: "60%"
+});
+anterior.addEventListener('click',function(e){
+	$.win.close();          
+});
+var audio=Titanium.UI.createImageView({
+	image: "/images/icon/sound.png",
+	top: "40%",
+	right: "0%",
+	height: "60%"
+});
+view_header.add(anterior);
 view_header.add(title);
+view_header.add(audio);
 
 // body
 var button=[];
@@ -70,38 +68,38 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
 				   backgroundColor: "#81F79F"
 				});
 			}
-			view_body_left.add(button[i]);
+			view_body.add(button[i]);
     	}
         button[0].addEventListener('click',function(e){
             if(button[0].backgroundColor=="#A4A4A4"){
-                button[0].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[0].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[1].addEventListener('click',function(e){
             if(button[1].backgroundColor=="#A4A4A4"){
-                button[1].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[1].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[2].addEventListener('click',function(e){
             if(button[2].backgroundColor=="#A4A4A4"){
-                button[2].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[2].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[3].addEventListener('click',function(e){
             if(button[3].backgroundColor=="#A4A4A4"){
-                button[3].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[3].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
 	}
@@ -128,134 +126,134 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
 				   backgroundColor: "#81F79F"
 				});
 			}
-			view_body_left.add(button[i]);
+			view_body.add(button[i]);
     	}
         button[0].addEventListener('click',function(e){
             if(button[0].backgroundColor=="#A4A4A4"){
-                button[0].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[0].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[1].addEventListener('click',function(e){
             if(button[1].backgroundColor=="#A4A4A4"){
-                button[1].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[1].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[2].addEventListener('click',function(e){
             if(button[2].backgroundColor=="#A4A4A4"){
-                button[2].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[2].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[3].addEventListener('click',function(e){
             if(button[3].backgroundColor=="#A4A4A4"){
-                button[3].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[3].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[4].addEventListener('click',function(e){
             if(button[4].backgroundColor=="#A4A4A4"){
-                button[4].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[4].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[5].addEventListener('click',function(e){
             if(button[5].backgroundColor=="#A4A4A4"){
-                button[5].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[5].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[6].addEventListener('click',function(e){
             if(button[6].backgroundColor=="#A4A4A4"){
-                button[6].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[6].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[7].addEventListener('click',function(e){
             if(button[7].backgroundColor=="#A4A4A4"){
-                button[7].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[7].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[8].addEventListener('click',function(e){
             if(button[8].backgroundColor=="#A4A4A4"){
-                button[8].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[8].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[9].addEventListener('click',function(e){
             if(button[9].backgroundColor=="#A4A4A4"){
-                button[9].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[9].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[10].addEventListener('click',function(e){
             if(button[10].backgroundColor=="#A4A4A4"){
-                button[10].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[10].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[11].addEventListener('click',function(e){
             if(button[11].backgroundColor=="#A4A4A4"){
-                button[11].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[11].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[12].addEventListener('click',function(e){
             if(button[12].backgroundColor=="#A4A4A4"){
-                button[12].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[12].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[13].addEventListener('click',function(e){
             if(button[13].backgroundColor=="#A4A4A4"){
-                button[13].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[13].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[14].addEventListener('click',function(e){
             if(button[14].backgroundColor=="#A4A4A4"){
-                button[14].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[14].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[15].addEventListener('click',function(e){
             if(button[15].backgroundColor=="#A4A4A4"){
-                button[15].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[15].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
 	}
@@ -282,150 +280,150 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
 				   backgroundColor: "#81F79F"
 				});
 			}
-			view_body_left.add(button[i]);
+			view_body.add(button[i]);
     	}
         button[0].addEventListener('click',function(e){
             if(button[0].backgroundColor=="#A4A4A4"){
-                button[0].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[0].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[1].addEventListener('click',function(e){
             if(button[1].backgroundColor=="#A4A4A4"){
-                button[1].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[1].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[2].addEventListener('click',function(e){
             if(button[2].backgroundColor=="#A4A4A4"){
-                button[2].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[2].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[3].addEventListener('click',function(e){
             if(button[3].backgroundColor=="#A4A4A4"){
-                button[3].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[3].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[4].addEventListener('click',function(e){
             if(button[4].backgroundColor=="#A4A4A4"){
-                button[4].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[4].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[5].addEventListener('click',function(e){
             if(button[5].backgroundColor=="#A4A4A4"){
-                button[5].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[5].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[6].addEventListener('click',function(e){
             if(button[6].backgroundColor=="#A4A4A4"){
-                button[6].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[6].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[7].addEventListener('click',function(e){
             if(button[7].backgroundColor=="#A4A4A4"){
-                button[7].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[7].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[8].addEventListener('click',function(e){
             if(button[8].backgroundColor=="#A4A4A4"){
-                button[8].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[8].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[9].addEventListener('click',function(e){
             if(button[9].backgroundColor=="#A4A4A4"){
-                button[9].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[9].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[10].addEventListener('click',function(e){
             if(button[10].backgroundColor=="#A4A4A4"){
-                button[10].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[10].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[11].addEventListener('click',function(e){
             if(button[11].backgroundColor=="#A4A4A4"){
-                button[11].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[11].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[12].addEventListener('click',function(e){
             if(button[12].backgroundColor=="#A4A4A4"){
-                button[12].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[12].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[13].addEventListener('click',function(e){
             if(button[13].backgroundColor=="#A4A4A4"){
-                button[13].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[13].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[14].addEventListener('click',function(e){
             if(button[14].backgroundColor=="#A4A4A4"){
-                button[14].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[14].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[15].addEventListener('click',function(e){
             if(button[15].backgroundColor=="#A4A4A4"){
-                button[15].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[15].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[16].addEventListener('click',function(e){
             if(button[16].backgroundColor=="#A4A4A4"){
-                button[16].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[16].backgroundColor="#A4A4A4";
+            	alert("Vamos!");
             }
         });
         button[17].addEventListener('click',function(e){
             if(button[17].backgroundColor=="#A4A4A4"){
-                button[17].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[17].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
 	}
@@ -452,126 +450,126 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
 				   backgroundColor: "#81F79F"
 				});
 			}
-			view_body_left.add(button[i]);
+			view_body.add(button[i]);
     	}
     	button[0].addEventListener('click',function(e){
             if(button[0].backgroundColor=="#A4A4A4"){
-                button[0].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[0].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[1].addEventListener('click',function(e){
             if(button[1].backgroundColor=="#A4A4A4"){
-                button[1].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[1].backgroundColor="#A4A4A4";
+            	alert("Vamos!");
             }
         });
         button[2].addEventListener('click',function(e){
             if(button[2].backgroundColor=="#A4A4A4"){
-                button[2].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[2].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[3].addEventListener('click',function(e){
             if(button[3].backgroundColor=="#A4A4A4"){
-                button[3].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[3].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[4].addEventListener('click',function(e){
             if(button[4].backgroundColor=="#A4A4A4"){
-                button[4].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[4].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[5].addEventListener('click',function(e){
             if(button[5].backgroundColor=="#A4A4A4"){
-                button[5].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[5].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[6].addEventListener('click',function(e){
             if(button[6].backgroundColor=="#A4A4A4"){
-                button[6].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[6].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[7].addEventListener('click',function(e){
             if(button[7].backgroundColor=="#A4A4A4"){
-                button[7].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[7].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[8].addEventListener('click',function(e){
             if(button[8].backgroundColor=="#A4A4A4"){
-                button[8].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[8].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[9].addEventListener('click',function(e){
             if(button[9].backgroundColor=="#A4A4A4"){
-                button[9].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[9].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[10].addEventListener('click',function(e){
             if(button[10].backgroundColor=="#A4A4A4"){
-                button[10].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[10].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[11].addEventListener('click',function(e){
             if(button[11].backgroundColor=="#A4A4A4"){
-                button[11].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[11].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[12].addEventListener('click',function(e){
             if(button[12].backgroundColor=="#A4A4A4"){
-                button[12].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[12].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[13].addEventListener('click',function(e){
             if(button[13].backgroundColor=="#A4A4A4"){
-                button[13].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[13].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[14].addEventListener('click',function(e){
             if(button[14].backgroundColor=="#A4A4A4"){
-                button[14].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[14].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
 	}
@@ -600,86 +598,86 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
 				   backgroundColor: "#81F79F"
 				});
 			}
-			view_body_left.add(button[i]);
+			view_body.add(button[i]);
     	}
         button[0].addEventListener('click',function(e){
             if(button[0].backgroundColor=="#A4A4A4"){
-                button[0].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[0].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[1].addEventListener('click',function(e){
             if(button[1].backgroundColor=="#A4A4A4"){
-                button[1].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[1].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[2].addEventListener('click',function(e){
             if(button[2].backgroundColor=="#A4A4A4"){
-                button[2].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[2].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[3].addEventListener('click',function(e){
             if(button[3].backgroundColor=="#A4A4A4"){
-                button[3].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[3].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[4].addEventListener('click',function(e){
             if(button[4].backgroundColor=="#A4A4A4"){
-                button[4].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[4].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[5].addEventListener('click',function(e){
             if(button[5].backgroundColor=="#A4A4A4"){
-                button[5].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[5].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[6].addEventListener('click',function(e){
             if(button[6].backgroundColor=="#A4A4A4"){
-                button[6].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[6].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[7].addEventListener('click',function(e){
             if(button[7].backgroundColor=="#A4A4A4"){
-                button[7].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[7].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[8].addEventListener('click',function(e){
             if(button[8].backgroundColor=="#A4A4A4"){
-                button[8].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[8].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[9].addEventListener('click',function(e){
             if(button[9].backgroundColor=="#A4A4A4"){
-                button[9].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[9].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
 	}
@@ -706,86 +704,86 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
 				   backgroundColor: "#81F79F"
 				});
 			}
-			view_body_left.add(button[i]);
+			view_body.add(button[i]);
     	}
         button[0].addEventListener('click',function(e){
             if(button[0].backgroundColor=="#A4A4A4"){
-                button[0].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[0].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[1].addEventListener('click',function(e){
             if(button[1].backgroundColor=="#A4A4A4"){
-                button[1].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[1].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[2].addEventListener('click',function(e){
             if(button[2].backgroundColor=="#A4A4A4"){
-                button[2].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[2].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[3].addEventListener('click',function(e){
             if(button[3].backgroundColor=="#A4A4A4"){
-                button[3].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[3].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[4].addEventListener('click',function(e){
             if(button[4].backgroundColor=="#A4A4A4"){
-                button[4].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[4].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[5].addEventListener('click',function(e){
             if(button[5].backgroundColor=="#A4A4A4"){
-                button[5].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[5].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[6].addEventListener('click',function(e){
             if(button[6].backgroundColor=="#A4A4A4"){
-                button[6].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[6].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[7].addEventListener('click',function(e){
             if(button[7].backgroundColor=="#A4A4A4"){
-                button[7].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[7].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[8].addEventListener('click',function(e){
             if(button[8].backgroundColor=="#A4A4A4"){
-                button[8].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[8].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[9].addEventListener('click',function(e){
             if(button[9].backgroundColor=="#A4A4A4"){
-                button[9].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[9].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
 	}
@@ -812,94 +810,94 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
 				   backgroundColor: "#81F79F"
 				});
 			}
-			view_body_left.add(button[i]);
+			view_body.add(button[i]);
     	}
         button[0].addEventListener('click',function(e){
             if(button[0].backgroundColor=="#A4A4A4"){
-                button[0].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[0].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[1].addEventListener('click',function(e){
             if(button[1].backgroundColor=="#A4A4A4"){
-                button[1].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[1].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[2].addEventListener('click',function(e){
             if(button[2].backgroundColor=="#A4A4A4"){
-                button[2].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[2].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[3].addEventListener('click',function(e){
             if(button[3].backgroundColor=="#A4A4A4"){
-                button[3].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[3].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[4].addEventListener('click',function(e){
             if(button[4].backgroundColor=="#A4A4A4"){
-                button[4].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[4].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[5].addEventListener('click',function(e){
             if(button[5].backgroundColor=="#A4A4A4"){
-                button[5].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[5].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[6].addEventListener('click',function(e){
             if(button[6].backgroundColor=="#A4A4A4"){
-                button[6].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[6].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[7].addEventListener('click',function(e){
             if(button[7].backgroundColor=="#A4A4A4"){
-                button[7].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[7].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[8].addEventListener('click',function(e){
             if(button[8].backgroundColor=="#A4A4A4"){
-                button[8].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[8].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
         button[9].addEventListener('click',function(e){
             if(button[9].backgroundColor=="#A4A4A4"){
-                button[9].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[9].backgroundColor="#A4A4A4";
+             alert("Vamos!");
             }
         });
         button[10].addEventListener('click',function(e){
             if(button[10].backgroundColor=="#A4A4A4"){
-                button[10].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[10].backgroundColor="#A4A4A4";
+             alert("Vamos!");
             }
         });
 	}
@@ -926,86 +924,86 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
 				   backgroundColor: "#81F79F"
 				});
 			}
-			view_body_left.add(button[i]);
+			view_body.add(button[i]);
     	}
         button[0].addEventListener('click',function(e){
             if(button[0].backgroundColor=="#A4A4A4"){
-                button[0].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[0].backgroundColor="#A4A4A4";
+             alert("Vamos!");
             }
         });
         button[1].addEventListener('click',function(e){
             if(button[1].backgroundColor=="#A4A4A4"){
-                button[1].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[1].backgroundColor="#A4A4A4";
+             alert("Vamos!");
             }
         });
         button[2].addEventListener('click',function(e){
             if(button[2].backgroundColor=="#A4A4A4"){
-                button[2].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[2].backgroundColor="#A4A4A4";
+             alert("Vamos!");
             }
         });
         button[3].addEventListener('click',function(e){
             if(button[3].backgroundColor=="#A4A4A4"){
-                button[3].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[3].backgroundColor="#A4A4A4";
+             alert("Vamos!");
             }
         });
         button[4].addEventListener('click',function(e){
             if(button[4].backgroundColor=="#A4A4A4"){
-                button[4].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[4].backgroundColor="#A4A4A4";
+             alert("Vamos!");
             }
         });
         button[5].addEventListener('click',function(e){
             if(button[5].backgroundColor=="#A4A4A4"){
-                button[5].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[5].backgroundColor="#A4A4A4";
+             alert("Vamos!");
             }
         });
         button[6].addEventListener('click',function(e){
             if(button[6].backgroundColor=="#A4A4A4"){
-                button[6].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[6].backgroundColor="#A4A4A4";
+             alert("Vamos!");
             }
         });
         button[7].addEventListener('click',function(e){
             if(button[7].backgroundColor=="#A4A4A4"){
-                button[7].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[7].backgroundColor="#A4A4A4";
+             alert("Vamos!");
             }
         });
         button[8].addEventListener('click',function(e){
             if(button[8].backgroundColor=="#A4A4A4"){
-                button[8].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[8].backgroundColor="#A4A4A4";
+             alert("Vamos!");
             }
         });
         button[9].addEventListener('click',function(e){
             if(button[9].backgroundColor=="#A4A4A4"){
-                button[9].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[9].backgroundColor="#A4A4A4";
+             alert("Vamos!");
             }
         });
 	}
@@ -1031,151 +1029,16 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
 			   backgroundColor: "#81F79F"
 			});
 		}
-		view_body_left.add(button[0]);
+		view_body.add(button[0]);
 		button[0].addEventListener('click',function(e){
             if(button[0].backgroundColor=="#A4A4A4"){
-                button[0].backgroundColor="#81F79F";
+                alert("Todavia no puede jugar este nivel");
             }
             else{
-             button[0].backgroundColor="#A4A4A4";
+             	alert("Vamos!");
             }
         });
     }
 }
-var button_GD=Titanium.UI.createButton({
-			   title: "Guardar",
-			   top: "6%",
-			   height: "50",
-			   width: "100",
-			   backgroundColor: "#9DF"
-			});
-var button_AT=Titanium.UI.createButton({
-			   title: "Atrás",
-			   top: "50%",
-			   height: "50",
-			   width: "100",
-			   backgroundColor: "#9DF"
-			});
-button_GD.addEventListener('click',function(e)
-{  
-	for (var i=0; i < button.length; i++) {
-		if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
-			if(Alloy.Globals.aux_juego=="Colorea"){
-				if(button[i].backgroundColor=="#A4A4A4"){
-					Ti.App.Properties.removeProperty("HS_colorea"+i);
-					Ti.App.Properties.setBool("HS_colorea"+i,false);
-				}
-				else{
-					Ti.App.Properties.removeProperty("HS_colorea"+i);
-					Ti.App.Properties.setBool("HS_colorea"+i,true);
-				}	
-			}
-			if(Alloy.Globals.aux_juego=="Selecciona"){
-				if(button[i].backgroundColor=="#A4A4A4"){
-					Ti.App.Properties.removeProperty("HS_selecciona"+i);
-					Ti.App.Properties.setBool("HS_selecciona"+i,false);
-				}
-				else{
-					Ti.App.Properties.removeProperty("HS_selecciona"+i);
-					Ti.App.Properties.setBool("HS_selecciona"+i,true);
-				}	
-			}
-			if(Alloy.Globals.aux_juego=="Acciones"){
-				if(button[i].backgroundColor=="#A4A4A4"){
-					Ti.App.Properties.removeProperty("HS_acciones"+i);
-					Ti.App.Properties.setBool("HS_acciones"+i,false);
-				}
-				else{
-					Ti.App.Properties.removeProperty("HS_acciones"+i);
-					Ti.App.Properties.setBool("HS_acciones"+i,true);
-				}	
-			}
-			if(Alloy.Globals.aux_juego=="Gestos"){
-				if(button[i].backgroundColor=="#A4A4A4"){
-					Ti.App.Properties.removeProperty("HS_gestos"+i);
-					Ti.App.Properties.setBool("HS_gestos"+i,false);
-				}
-				else{
-					Ti.App.Properties.removeProperty("HS_gestos"+i);
-					Ti.App.Properties.setBool("HS_gestos"+i,true);
-				}	
-			}
-			if(Alloy.Globals.aux_juego=="Gestos"){
-				if(button[i].backgroundColor=="#A4A4A4"){
-					Ti.App.Properties.removeProperty("HS_gestos"+i);
-					Ti.App.Properties.setBool("HS_gestos"+i,false);
-				}
-				else{
-					Ti.App.Properties.removeProperty("HS_gestos"+i);
-					Ti.App.Properties.setBool("HS_gestos"+i,true);
-				}	
-			}
-		}
-		if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
-			if(Alloy.Globals.aux_juego=="Siluetas"){
-				if(button[i].backgroundColor=="#A4A4A4"){
-					Ti.App.Properties.removeProperty("TF_siluetas"+i);
-					Ti.App.Properties.setBool("TF_siluetas"+i,false);
-				}
-				else{
-					Ti.App.Properties.removeProperty("TF_siluetas"+i);
-					Ti.App.Properties.setBool("TF_siluetas"+i,true);
-				}
-			}
-			if(Alloy.Globals.aux_juego=="Encúentralos"){
-				if(button[i].backgroundColor=="#A4A4A4"){
-					Ti.App.Properties.removeProperty("TF_encuentralos"+i);
-					Ti.App.Properties.setBool("TF_encuentralos"+i,false);
-				}
-				else{
-					Ti.App.Properties.removeProperty("TF_encuentralos"+i);
-					Ti.App.Properties.setBool("TF_encuentralos"+i,true);
-				}
-			}
-			if(Alloy.Globals.aux_juego=="Objetos"){
-				if(button[i].backgroundColor=="#A4A4A4"){
-					Ti.App.Properties.removeProperty("TF_objetos"+i);
-					Ti.App.Properties.setBool("TF_objetos"+i,false);
-				}
-				else{
-					Ti.App.Properties.removeProperty("TF_objetos"+i);
-					Ti.App.Properties.setBool("TF_objetos"+i,true);
-				}
-			}
-			if(Alloy.Globals.aux_juego=="Diferencias"){
-				if(button[i].backgroundColor=="#A4A4A4"){
-					Ti.App.Properties.removeProperty("TF_diferencias"+i);
-					Ti.App.Properties.setBool("TF_diferencias"+i,false);
-				}
-				else{
-					Ti.App.Properties.removeProperty("TF_diferencias"+i);
-					Ti.App.Properties.setBool("TF_diferencias"+i,true);
-				}
-			}
-			if(Alloy.Globals.aux_juego=="Memorice"){
-				if(button[i].backgroundColor=="#A4A4A4"){
-					Ti.App.Properties.removeProperty("TF_memorice"+i);
-					Ti.App.Properties.setBool("TF_memorice"+i,false);
-				}
-				else{
-					Ti.App.Properties.removeProperty("TF_memorice"+i);
-					Ti.App.Properties.setBool("TF_memorice"+i,true);
-				}
-			}
-		}
-	}
-	alert("Cambio guardado");
-   Titanium.API.info("You clicked the button_GD");
-   
-});
-button_AT.addEventListener('click',function(e)
-{
-   $.win.close();
-});			
-
-view_body_right.add(button_GD);
-view_body_right.add(button_AT);
-view_body.add(view_body_left);
-view_body.add(view_body_right);
 $.win.add(view_header);
 $.win.add(view_body);

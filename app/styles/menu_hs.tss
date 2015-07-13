@@ -7,23 +7,25 @@
 //---------------------------------
 //------------HEADER---------------
 //---------------------------------
-
 "#header_view":{
 	width:"100%",
 	height: "15%",
-	layout:"horizontal"
+	layout:"horizontal",
+	//backgroundColor:"green"
 }
 "#home_view":{
 	top: "0%",
 	left:"0%",
 	width: "20%",
 	height: "100%",
+	//backgroundColor:"red"
 }
 "#home_icon":{
 	image:"/images/icon/home.png",
 	top: "10%",
 	left: "10%",
 	height: "90%"
+	//width:Ti.UI.SIZE,
 }
 
 "#title_view":{
@@ -31,7 +33,6 @@
 }
 "#title_label":{
 	top: "50%",
-	left:"40%",
 	text:"Bienvenido",
 	font: {
 		fontSize: 24,
@@ -44,7 +45,8 @@
 	top: "0%",
 	right:"0%",
 	width: "20%",
-	height: "100%"
+	height: "100%",
+	//backgroundColor:"blue"
 }
 "#sound_icon":{
 	image:"/images/icon/sound.png",
@@ -52,73 +54,34 @@
 	right: "10%",
 	height: "90%"
 }
-
-
 //---------------------------------
 //-------------BODY----------------
 //---------------------------------
 "#view_body":{
 	layout:"vertical",
-	width:"60%",
-	hieght:"70%"
+	height: "85%"
 }
-"#view_label":{
-	layout:"horizontal",
-	height:"10%",
-	top:"10%"
+"#Button_colorea":{
+	backgroundColor: "#58ACFA"
 }
-"#Label_CG":{
-	textAlign:"center"
+"#Button_selecciona":{
+	backgroundColor: "#58ACFA"
 }
-"#Label_JG":{
-	textAlign:"center"
+"#Button_acciones":{
+	backgroundColor: "#58ACFA"
 }
-"Label":{
-	font: {
-		fontSize: 24,
-		color:"#000",
-		textAlign:"center"
-	},
-	width:"50%"
-}
-"#view_picker":{
-	layout:"horizontal",
-	height:"35%"
-}
-"#Picker_CG":{
-	font: {
-		fontSize: 24,
-		color:"#000",
-		textAlign:"center"
-	},
-	width:"50%"
-}
-"#Picker_JG":{
-	font: {
-		fontSize: 24,
-		color:"#000",
-		textAlign:"center"
-	},
-	width:"50%"
-}
-"#view_button":{
-	layout:"horizontal",
-	height:"25%"
-	
-}
-"#Button_CL":{
-	backgroundColor: "#F7819F",
-}
-"#Button_SG":{
-	backgroundColor: "#81DAF5",
+"#Button_gestos":{
+	backgroundColor: "#58ACFA"
 }
 "Button": {
-	color: "white",
+	top:"6%",
+	height:"10%",
+	width: "30%",
+	borderRadius: 30,
+	color:"white",
 	font: {
-		fontSize: 24,
+		fontSize: 18,
 		fontWeight: "bold",
 		textAlign:"center"
 	},
-	width:"50%"
 }
-
