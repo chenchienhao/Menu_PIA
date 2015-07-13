@@ -1,0 +1,32 @@
+<Alloy>
+	<Window class="container">
+		<View id="view_header">
+			<Label id="title">Encúentre la diferencia</Label>
+		</View>
+		<View id="view_body">
+			<View id="imagen">
+				<Button id="ojo_iz"></Button>
+				<Button id="ojo_dr"></Button>
+				<Button id="circulo_iz"></Button>
+				<Button id="circulo_dr"></Button>
+				<Button id="cola_iz"></Button>
+				<Button id="cola_dr"></Button>
+				<Button id="fuego_iz"></Button>
+				<Button id="fuego_dr"></Button>
+				<Button id="nube_iz"></Button>
+				<Button id="nube_dr"></Button>
+			</View>
+		</View>
+		<View id="view_footer">
+			<ImageView id="anterior"></ImageView>
+			<Label id="label_AT">Anterior</Label>
+			<ImageView id="estrella_1"></ImageView>
+			<ImageView id="estrella_2"></ImageView>
+			<ImageView id="estrella_3"></ImageView>
+			<ImageView id="estrella_4"></ImageView>
+			<ImageView id="estrella_5"></ImageView>
+			<Label id="label_SG">Siguiente</Label>
+			<ImageView id="siguiente"></ImageView>
+		</View>
+	</Window>
+</Alloy>

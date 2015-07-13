@@ -931,7 +931,9 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             alert("Vamos!");
+            	var diferencias_nivel_1=Alloy.createController('diferencias_nivel_1').getView();
+				diferencias_nivel_1.open();
+             //alert("Vamos!");
             }
         });
         button[1].addEventListener('click',function(e){
@@ -939,7 +941,9 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             alert("Vamos!");
+            	var diferencias_nivel_2=Alloy.createController('diferencias_nivel_2').getView();
+            	diferencias_nivel_2.open();
+             //alert("Vamos!");
             }
         });
         button[2].addEventListener('click',function(e){
@@ -947,7 +951,9 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             alert("Vamos!");
+            	var diferencias_nivel_3=Alloy.createController('diferencias_nivel_3').getView();
+				diferencias_nivel_3.open();
+             //alert("Vamos!");
             }
         });
         button[3].addEventListener('click',function(e){
@@ -955,7 +961,9 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             alert("Vamos!");
+            	var diferencias_nivel_4=Alloy.createController('diferencias_nivel_4').getView();
+				diferencias_nivel_4.open();
+             //alert("Vamos!");
             }
         });
         button[4].addEventListener('click',function(e){
@@ -963,7 +971,9 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             alert("Vamos!");
+            	var diferencias_nivel_5=Alloy.createController('diferencias_nivel_5').getView();
+				diferencias_nivel_5.open();
+             //alert("Vamos!");
             }
         });
         button[5].addEventListener('click',function(e){
@@ -971,7 +981,9 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             alert("Vamos!");
+            	var diferencias_nivel_6=Alloy.createController('diferencias_nivel_6').getView();
+				diferencias_nivel_6.open();
+             //alert("Vamos!");
             }
         });
         button[6].addEventListener('click',function(e){
@@ -979,7 +991,9 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             alert("Vamos!");
+            	var diferencias_nivel_7=Alloy.createController('diferencias_nivel_7').getView();
+				diferencias_nivel_7.open();
+             //alert("Vamos!");
             }
         });
         button[7].addEventListener('click',function(e){
@@ -987,7 +1001,9 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             alert("Vamos!");
+            	var diferencias_nivel_8=Alloy.createController('diferencias_nivel_8').getView();
+				diferencias_nivel_8.open();
+             //alert("Vamos!");
             }
         });
         button[8].addEventListener('click',function(e){
@@ -995,7 +1011,9 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             alert("Vamos!");
+            	var diferencias_nivel_9=Alloy.createController('diferencias_nivel_9').getView();
+				diferencias_nivel_9.open();
+             //alert("Vamos!");
             }
         });
         button[9].addEventListener('click',function(e){
@@ -1003,7 +1021,9 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             alert("Vamos!");
+            	var diferencias_nivel_10=Alloy.createController('diferencias_nivel_10').getView();
+				diferencias_nivel_10.open();
+             //alert("Vamos!");
             }
         });
 	}

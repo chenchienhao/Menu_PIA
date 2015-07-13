@@ -1,0 +1,35 @@
+<Alloy>
+	<Window class="container" id="win">
+		<View id="view_header">
+			<Label id="title">Encúentre</Label><Label id="diferencia">Diferencia</Label>
+		</View>
+		<View id="view_body">
+			<View id="imagen">
+				<Button id="cata_bigote_iz"></Button>
+				<Button id="cata_cola_iz"></Button>
+				<Button id="pez_iz"></Button>
+				<Button id="perro_ojo_iz"></Button>
+				<Button id="perro_cola_iz"></Button>
+				<Button id="pelota_iz"></Button>
+				<Button id="cata_bigote_dr"></Button>
+				<Button id="cata_cola_dr"></Button>
+				<Button id="pez_dr"></Button>
+				<Button id="perro_ojo_dr"></Button>
+				<Button id="perro_cola_dr"></Button>
+				<Button id="pelota_dr"></Button>
+			</View>
+		</View>
+		<View id="view_footer">
+			<ImageView id="anterior"></ImageView>
+			<Label id="label_AT">Anterior</Label>
+			<ImageView id="estrella_1"></ImageView>
+			<ImageView id="estrella_2"></ImageView>
+			<ImageView id="estrella_3"></ImageView>
+			<ImageView id="estrella_4"></ImageView>
+			<ImageView id="estrella_5"></ImageView>
+			<ImageView id="estrella_6"></ImageView>
+			<Label id="label_SG">Siguiente</Label>
+			<ImageView id="siguiente"></ImageView>
+		</View>
+	</Window>
+</Alloy>
