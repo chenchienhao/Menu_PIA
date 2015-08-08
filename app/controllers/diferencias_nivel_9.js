@@ -14,46 +14,46 @@ var punto=0;
 
 function estrella (punto) {
 	if(punto==0){
-		$.estrella_1.backgroundImage="/images/Tolerancia a la frustración/Diferencias/Estrella_vacio.png";
-		$.estrella_2.backgroundImage="/images/Tolerancia a la frustración/Diferencias/Estrella_vacio.png";
-		$.estrella_3.backgroundImage="/images/Tolerancia a la frustración/Diferencias/Estrella_vacio.png";
-		$.estrella_4.backgroundImage="/images/Tolerancia a la frustración/Diferencias/Estrella_vacio.png";
-		$.estrella_5.backgroundImage="/images/Tolerancia a la frustración/Diferencias/Estrella_vacio.png";
+		$.estrella_1.backgroundImage="/images/Diferencias/Estrella_vacio.png";
+		$.estrella_2.backgroundImage="/images/Diferencias/Estrella_vacio.png";
+		$.estrella_3.backgroundImage="/images/Diferencias/Estrella_vacio.png";
+		$.estrella_4.backgroundImage="/images/Diferencias/Estrella_vacio.png";
+		$.estrella_5.backgroundImage="/images/Diferencias/Estrella_vacio.png";
 	}
 	if(punto==1){
-		$.estrella_1.backgroundImage="/images/Tolerancia a la frustración/Diferencias/Estrella_amarilla.png";
-		$.estrella_2.backgroundImage="/images/Tolerancia a la frustración/Diferencias/Estrella_vacio.png";
-		$.estrella_3.backgroundImage="/images/Tolerancia a la frustración/Diferencias/Estrella_vacio.png";
-		$.estrella_4.backgroundImage="/images/Tolerancia a la frustración/Diferencias/Estrella_vacio.png";
-		$.estrella_5.backgroundImage="/images/Tolerancia a la frustración/Diferencias/Estrella_vacio.png";
+		$.estrella_1.backgroundImage="/images/Diferencias/Estrella_amarilla.png";
+		$.estrella_2.backgroundImage="/images/Diferencias/Estrella_vacio.png";
+		$.estrella_3.backgroundImage="/images/Diferencias/Estrella_vacio.png";
+		$.estrella_4.backgroundImage="/images/Diferencias/Estrella_vacio.png";
+		$.estrella_5.backgroundImage="/images/Diferencias/Estrella_vacio.png";
 	}
 	if(punto==2){
-		$.estrella_1.backgroundImage="/images/Tolerancia a la frustración/Diferencias/Estrella_amarilla.png";
-		$.estrella_2.backgroundImage="/images/Tolerancia a la frustración/Diferencias/Estrella_amarilla.png";
-		$.estrella_3.backgroundImage="/images/Tolerancia a la frustración/Diferencias/Estrella_vacio.png";
-		$.estrella_4.backgroundImage="/images/Tolerancia a la frustración/Diferencias/Estrella_vacio.png";
-		$.estrella_5.backgroundImage="/images/Tolerancia a la frustración/Diferencias/Estrella_vacio.png";
+		$.estrella_1.backgroundImage="/images/Diferencias/Estrella_amarilla.png";
+		$.estrella_2.backgroundImage="/images/Diferencias/Estrella_amarilla.png";
+		$.estrella_3.backgroundImage="/images/Diferencias/Estrella_vacio.png";
+		$.estrella_4.backgroundImage="/images/Diferencias/Estrella_vacio.png";
+		$.estrella_5.backgroundImage="/images/Diferencias/Estrella_vacio.png";
 	}
 	if(punto==3){
-		$.estrella_1.backgroundImage="/images/Tolerancia a la frustración/Diferencias/Estrella_amarilla.png";
-		$.estrella_2.backgroundImage="/images/Tolerancia a la frustración/Diferencias/Estrella_amarilla.png";
-		$.estrella_3.backgroundImage="/images/Tolerancia a la frustración/Diferencias/Estrella_amarilla.png";
-		$.estrella_4.backgroundImage="/images/Tolerancia a la frustración/Diferencias/Estrella_vacio.png";
-		$.estrella_5.backgroundImage="/images/Tolerancia a la frustración/Diferencias/Estrella_vacio.png";
+		$.estrella_1.backgroundImage="/images/Diferencias/Estrella_amarilla.png";
+		$.estrella_2.backgroundImage="/images/Diferencias/Estrella_amarilla.png";
+		$.estrella_3.backgroundImage="/images/Diferencias/Estrella_amarilla.png";
+		$.estrella_4.backgroundImage="/images/Diferencias/Estrella_vacio.png";
+		$.estrella_5.backgroundImage="/images/Diferencias/Estrella_vacio.png";
 	}
 	if(punto==4){
-		$.estrella_1.backgroundImage="/images/Tolerancia a la frustración/Diferencias/Estrella_amarilla.png";
-		$.estrella_2.backgroundImage="/images/Tolerancia a la frustración/Diferencias/Estrella_amarilla.png";
-		$.estrella_3.backgroundImage="/images/Tolerancia a la frustración/Diferencias/Estrella_amarilla.png";
-		$.estrella_4.backgroundImage="/images/Tolerancia a la frustración/Diferencias/Estrella_amarilla.png";
-		$.estrella_5.backgroundImage="/images/Tolerancia a la frustración/Diferencias/Estrella_vacio.png";
+		$.estrella_1.backgroundImage="/images/Diferencias/Estrella_amarilla.png";
+		$.estrella_2.backgroundImage="/images/Diferencias/Estrella_amarilla.png";
+		$.estrella_3.backgroundImage="/images/Diferencias/Estrella_amarilla.png";
+		$.estrella_4.backgroundImage="/images/Diferencias/Estrella_amarilla.png";
+		$.estrella_5.backgroundImage="/images/Diferencias/Estrella_vacio.png";
 	}
 	if(punto==5){
-		$.estrella_1.backgroundImage="/images/Tolerancia a la frustración/Diferencias/Estrella_amarilla.png";
-		$.estrella_2.backgroundImage="/images/Tolerancia a la frustración/Diferencias/Estrella_amarilla.png";
-		$.estrella_3.backgroundImage="/images/Tolerancia a la frustración/Diferencias/Estrella_amarilla.png";
-		$.estrella_4.backgroundImage="/images/Tolerancia a la frustración/Diferencias/Estrella_amarilla.png";
-		$.estrella_5.backgroundImage="/images/Tolerancia a la frustración/Diferencias/Estrella_amarilla.png";
+		$.estrella_1.backgroundImage="/images/Diferencias/Estrella_amarilla.png";
+		$.estrella_2.backgroundImage="/images/Diferencias/Estrella_amarilla.png";
+		$.estrella_3.backgroundImage="/images/Diferencias/Estrella_amarilla.png";
+		$.estrella_4.backgroundImage="/images/Diferencias/Estrella_amarilla.png";
+		$.estrella_5.backgroundImage="/images/Diferencias/Estrella_amarilla.png";
 		var dialog = Ti.UI.createAlertDialog({
 			title: 'Felicitaciones',
 			message: '¡Bien! ¡Vamos a siguiente nivel!',
@@ -85,7 +85,7 @@ function estrella (punto) {
 		},5000);
 	}
 }
-$.pelo_iz.add.addEventListener('click',function(e){
+$.pelo_iz.addEventListener('click',function(e){
 	if(aux_pelo_iz==false){
 		aux_pelo_iz=true;
 		aux_pelo_dr=true;
@@ -95,7 +95,7 @@ $.pelo_iz.add.addEventListener('click',function(e){
 		estrella (punto);
 	}
 });
-$.pelo_dr.add.addEventListener('click',function(e){
+$.pelo_dr.addEventListener('click',function(e){
 	if(aux_pelo_dr==false){
 		aux_pelo_iz=true;
 		aux_pelo_dr=true;
@@ -105,7 +105,7 @@ $.pelo_dr.add.addEventListener('click',function(e){
 		estrella (punto);
 	}
 });
-$.ojo_iz.add.addEventListener('click',function(e){
+$.ojo_iz.addEventListener('click',function(e){
 	if(aux_ojo_iz==false){
 		aux_ojo_iz=true;
 		aux_ojo_dr=true;
@@ -115,7 +115,7 @@ $.ojo_iz.add.addEventListener('click',function(e){
 		estrella (punto);
 	}
 });
-$.ojo_dr.add.addEventListener('click',function(e){
+$.ojo_dr.addEventListener('click',function(e){
 	if(aux_ojo_dr==false){
 		aux_ojo_iz=true;
 		aux_ojo_dr=true;
@@ -125,7 +125,7 @@ $.ojo_dr.add.addEventListener('click',function(e){
 		estrella (punto);
 	}
 });
-$.nariz_iz.add.addEventListener('click',function(e){
+$.nariz_iz.addEventListener('click',function(e){
 	if(aux_nariz_iz==false){
 		aux_nariz_iz=true;
 		aux_nariz_dr=true;
@@ -135,7 +135,7 @@ $.nariz_iz.add.addEventListener('click',function(e){
 		estrella (punto);
 	}
 });
-$.nariz_dr.add.addEventListener('click',function(e){
+$.nariz_dr.addEventListener('click',function(e){
 	if(aux_nariz_dr==false){
 		aux_nariz_iz=true;
 		aux_nariz_dr=true;
@@ -145,7 +145,7 @@ $.nariz_dr.add.addEventListener('click',function(e){
 		estrella (punto);
 	}
 });
-$.sombra_iz.add.addEventListener('click',function(e){
+$.sombra_iz.addEventListener('click',function(e){
 	if(aux_sombra_iz==false){
 		aux_sombra_iz=true;
 		aux_sombra_dr=true;
@@ -155,7 +155,7 @@ $.sombra_iz.add.addEventListener('click',function(e){
 		estrella (punto);
 	}
 });
-$.sombra_dr.add.addEventListener('click',function(e){
+$.sombra_dr.addEventListener('click',function(e){
 	if(aux_sombra_dr==false){
 		aux_sombra_iz=true;
 		aux_sombra_dr=true;
@@ -167,7 +167,7 @@ $.sombra_dr.add.addEventListener('click',function(e){
 });
 
 //
-$.guata_iz.add.addEventListener('click',function(e){
+$.guata_iz.addEventListener('click',function(e){
 	if(aux_guata_iz==false){
 		aux_guata_iz=true;
 		aux_guata_dr=true;
@@ -177,7 +177,7 @@ $.guata_iz.add.addEventListener('click',function(e){
 		estrella (punto);
 	}
 });
-$.guata_dr.add.addEventListener('click',function(e){
+$.guata_dr.addEventListener('click',function(e){
 	if(aux_guata_dr==false){
 		aux_guata_iz=true;
 		aux_guata_dr=true;
@@ -189,13 +189,13 @@ $.guata_dr.add.addEventListener('click',function(e){
 });
 //
 
-$.label_AT.add.addEventListener('click',function(e){
+$.label_AT.addEventListener('click',function(e){
 	$.win.close();
 });
-$.anterior.add.addEventListener('click',function(e){
+$.anterior.addEventListener('click',function(e){
 	$.win.close();
 });
-$.label_SG.add.addEventListener('click',function(e){
+$.label_SG.addEventListener('click',function(e){
 	if(punto==5||Ti.App.Properties.getBool("TF_diferencias9")==true){
 		var diferencias_nivel_10=Alloy.createController('diferencias_nivel_10').getView();
 		diferencias_nivel_10.open();
@@ -204,7 +204,7 @@ $.label_SG.add.addEventListener('click',function(e){
 		alert("¡Todavía no terminas el juego!");
 	}
 });
-$.siguiente.add.addEventListener('click',function(e){
+$.siguiente.addEventListener('click',function(e){
 	if(punto==5||Ti.App.Properties.getBool("TF_diferencias9")==true){
 		var diferencias_nivel_10=Alloy.createController('diferencias_nivel_10').getView();
 		diferencias_nivel_10.open();

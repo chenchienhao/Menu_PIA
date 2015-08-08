@@ -75,7 +75,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	animacionRabia = Alloy.createController('animacionRabia');
+             	//alert("Vamos!");
             }
         });
         button[1].addEventListener('click',function(e){
@@ -83,7 +84,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	animacionRabia = Alloy.createController('animacionPena');
+             	//alert("Vamos!");
             }
         });
         button[2].addEventListener('click',function(e){
@@ -91,7 +93,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	animacionRabia = Alloy.createController('animacionMiedo');
+             	//alert("Vamos!");
             }
         });
         button[3].addEventListener('click',function(e){
@@ -99,13 +102,14 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	animacionRabia = Alloy.createController('animacionAlegria');
+             	//alert("Vamos!");
             }
         });
 	}
 	//
 	if(Alloy.Globals.aux_juego=="Selecciona"){
-		for (var i=0; i < 16; i++){
+		for (var i=0; i < 11; i++){
 			if(Ti.App.Properties.getBool("HS_selecciona"+i)==false){
 				button[i] = Titanium.UI.createButton({
 				   title: "Nivel "+(i+1),
@@ -133,7 +137,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	selecciona_nivel_1=Alloy.createController('selecciona_nivel_1');
+             	//alert("Vamos!");
             }
         });
         button[1].addEventListener('click',function(e){
@@ -141,7 +146,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	selecciona_nivel_2=Alloy.createController('selecciona_nivel_2');
+             	//alert("Vamos!");
             }
         });
         button[2].addEventListener('click',function(e){
@@ -149,7 +155,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	selecciona_nivel_3=Alloy.createController('selecciona_nivel_3');
+             	//alert("Vamos!");
             }
         });
         button[3].addEventListener('click',function(e){
@@ -157,7 +164,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	selecciona_nivel_4=Alloy.createController('selecciona_nivel_4');
+             	//alert("Vamos!");
             }
         });
         button[4].addEventListener('click',function(e){
@@ -165,7 +173,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	selecciona_nivel_5=Alloy.createController('selecciona_nivel_5');
+             	//alert("Vamos!");
             }
         });
         button[5].addEventListener('click',function(e){
@@ -173,7 +182,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	selecciona_nivel_6=Alloy.createController('selecciona_nivel_6');
+             	//alert("Vamos!");
             }
         });
         button[6].addEventListener('click',function(e){
@@ -181,7 +191,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	selecciona_nivel_7=Alloy.createController('selecciona_nivel_7');
+             	//alert("Vamos!");
             }
         });
         button[7].addEventListener('click',function(e){
@@ -189,7 +200,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	selecciona_nivel_8=Alloy.createController('selecciona_nivel_8');
+             	//alert("Vamos!");
             }
         });
         button[8].addEventListener('click',function(e){
@@ -197,7 +209,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	selecciona_nivel_9=Alloy.createController('selecciona_nivel_9');
+             	//alert("Vamos!");
             }
         });
         button[9].addEventListener('click',function(e){
@@ -205,7 +218,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	selecciona_nivel_10=Alloy.createController('selecciona_nivel_10');
+             	//alert("Vamos!");
             }
         });
         button[10].addEventListener('click',function(e){
@@ -213,53 +227,14 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
-            }
-        });
-        button[11].addEventListener('click',function(e){
-            if(button[11].backgroundColor=="#A4A4A4"){
-                alert("Todavia no puede jugar este nivel");
-            }
-            else{
-             	alert("Vamos!");
-            }
-        });
-        button[12].addEventListener('click',function(e){
-            if(button[12].backgroundColor=="#A4A4A4"){
-                alert("Todavia no puede jugar este nivel");
-            }
-            else{
-             	alert("Vamos!");
-            }
-        });
-        button[13].addEventListener('click',function(e){
-            if(button[13].backgroundColor=="#A4A4A4"){
-                alert("Todavia no puede jugar este nivel");
-            }
-            else{
-             	alert("Vamos!");
-            }
-        });
-        button[14].addEventListener('click',function(e){
-            if(button[14].backgroundColor=="#A4A4A4"){
-                alert("Todavia no puede jugar este nivel");
-            }
-            else{
-             	alert("Vamos!");
-            }
-        });
-        button[15].addEventListener('click',function(e){
-            if(button[15].backgroundColor=="#A4A4A4"){
-                alert("Todavia no puede jugar este nivel");
-            }
-            else{
-             	alert("Vamos!");
+            	selecciona_nivel_11=Alloy.createController('selecciona_nivel_11');
+             	//alert("Vamos!");
             }
         });
 	}
 	//
 	if(Alloy.Globals.aux_juego=="Acciones"){
-		for (var i=0; i < 18; i++){
+		for (var i=0; i < 10; i++){
 			if(Ti.App.Properties.getBool("HS_acciones"+i)==false){
 				button[i] = Titanium.UI.createButton({
 				   title: "Nivel "+(i+1),
@@ -287,7 +262,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	acciones_nivel_1=Alloy.createController('acciones_nivel_1');
+             	//alert("Vamos!");
             }
         });
         button[1].addEventListener('click',function(e){
@@ -295,7 +271,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	acciones_nivel_2=Alloy.createController('acciones_nivel_2');
+             	//alert("Vamos!");
             }
         });
         button[2].addEventListener('click',function(e){
@@ -303,7 +280,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	acciones_nivel_3=Alloy.createController('acciones_nivel_3');
+             	//alert("Vamos!");
             }
         });
         button[3].addEventListener('click',function(e){
@@ -311,7 +289,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	acciones_nivel_4=Alloy.createController('acciones_nivel_4');
+             	//alert("Vamos!");
             }
         });
         button[4].addEventListener('click',function(e){
@@ -319,7 +298,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	acciones_nivel_5=Alloy.createController('acciones_nivel_5');
+             	//alert("Vamos!");
             }
         });
         button[5].addEventListener('click',function(e){
@@ -327,7 +307,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	acciones_nivel_6=Alloy.createController('acciones_nivel_6');
+             	//alert("Vamos!");
             }
         });
         button[6].addEventListener('click',function(e){
@@ -335,7 +316,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	acciones_nivel_7=Alloy.createController('acciones_nivel_7');
+             	//alert("Vamos!");
             }
         });
         button[7].addEventListener('click',function(e){
@@ -343,7 +325,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	acciones_nivel_8=Alloy.createController('acciones_nivel_8');
+             	//alert("Vamos!");
             }
         });
         button[8].addEventListener('click',function(e){
@@ -351,7 +334,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	acciones_nivel_9=Alloy.createController('acciones_nivel_9');
+             	//alert("Vamos!");
             }
         });
         button[9].addEventListener('click',function(e){
@@ -359,71 +343,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
-            }
-        });
-        button[10].addEventListener('click',function(e){
-            if(button[10].backgroundColor=="#A4A4A4"){
-                alert("Todavia no puede jugar este nivel");
-            }
-            else{
-             	alert("Vamos!");
-            }
-        });
-        button[11].addEventListener('click',function(e){
-            if(button[11].backgroundColor=="#A4A4A4"){
-                alert("Todavia no puede jugar este nivel");
-            }
-            else{
-             	alert("Vamos!");
-            }
-        });
-        button[12].addEventListener('click',function(e){
-            if(button[12].backgroundColor=="#A4A4A4"){
-                alert("Todavia no puede jugar este nivel");
-            }
-            else{
-             	alert("Vamos!");
-            }
-        });
-        button[13].addEventListener('click',function(e){
-            if(button[13].backgroundColor=="#A4A4A4"){
-                alert("Todavia no puede jugar este nivel");
-            }
-            else{
-             	alert("Vamos!");
-            }
-        });
-        button[14].addEventListener('click',function(e){
-            if(button[14].backgroundColor=="#A4A4A4"){
-                alert("Todavia no puede jugar este nivel");
-            }
-            else{
-             	alert("Vamos!");
-            }
-        });
-        button[15].addEventListener('click',function(e){
-            if(button[15].backgroundColor=="#A4A4A4"){
-                alert("Todavia no puede jugar este nivel");
-            }
-            else{
-             	alert("Vamos!");
-            }
-        });
-        button[16].addEventListener('click',function(e){
-            if(button[16].backgroundColor=="#A4A4A4"){
-                alert("Todavia no puede jugar este nivel");
-            }
-            else{
-            	alert("Vamos!");
-            }
-        });
-        button[17].addEventListener('click',function(e){
-            if(button[17].backgroundColor=="#A4A4A4"){
-                alert("Todavia no puede jugar este nivel");
-            }
-            else{
-             	alert("Vamos!");
+            	acciones_nivel_10=Alloy.createController('acciones_nivel_10');
+             	//alert("Vamos!");
             }
         });
 	}
@@ -457,7 +378,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	gestos_nivel_1=Alloy.createController('gestos_nivel_1');
+             	//alert("Vamos!");
             }
         });
         button[1].addEventListener('click',function(e){
@@ -465,7 +387,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-            	alert("Vamos!");
+            	gestos_nivel_2=Alloy.createController('gestos_nivel_2');
+            	//alert("Vamos!");
             }
         });
         button[2].addEventListener('click',function(e){
@@ -473,7 +396,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	gestos_nivel_3=Alloy.createController('gestos_nivel_3');
+             	//alert("Vamos!");
             }
         });
         button[3].addEventListener('click',function(e){
@@ -481,7 +405,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	gestos_nivel_4=Alloy.createController('gestos_nivel_4');
+             	//alert("Vamos!");
             }
         });
         button[4].addEventListener('click',function(e){
@@ -489,7 +414,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	gestos_nivel_5=Alloy.createController('gestos_nivel_5');
+             	//alert("Vamos!");
             }
         });
         button[5].addEventListener('click',function(e){
@@ -497,7 +423,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	gestos_nivel_6=Alloy.createController('gestos_nivel_6');
+             	//alert("Vamos!");
             }
         });
         button[6].addEventListener('click',function(e){
@@ -505,7 +432,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	gestos_nivel_7=Alloy.createController('gestos_nivel_7');
+             	//alert("Vamos!");
             }
         });
         button[7].addEventListener('click',function(e){
@@ -513,7 +441,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	gestos_nivel_8=Alloy.createController('gestos_nivel_8');
+             	//alert("Vamos!");
             }
         });
         button[8].addEventListener('click',function(e){
@@ -521,7 +450,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	gestos_nivel_9=Alloy.createController('gestos_nivel_9');
+             	//alert("Vamos!");
             }
         });
         button[9].addEventListener('click',function(e){
@@ -529,7 +459,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	gestos_nivel_10=Alloy.createController('gestos_nivel_10');
+             	//alert("Vamos!");
             }
         });
         button[10].addEventListener('click',function(e){
@@ -537,7 +468,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	gestos_nivel_11=Alloy.createController('gestos_nivel_11');
+             	//alert("Vamos!");
             }
         });
         button[11].addEventListener('click',function(e){
@@ -545,7 +477,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	gestos_nivel_12=Alloy.createController('gestos_nivel_12');
+             	//alert("Vamos!");
             }
         });
         button[12].addEventListener('click',function(e){
@@ -553,7 +486,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	gestos_nivel_13=Alloy.createController('gestos_nivel_13');
+             	//alert("Vamos!");
             }
         });
         button[13].addEventListener('click',function(e){
@@ -561,7 +495,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	gestos_nivel_14=Alloy.createController('gestos_nivel_14');
+             	//alert("Vamos!");
             }
         });
         button[14].addEventListener('click',function(e){
@@ -569,7 +504,8 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	gestos_nivel_15=Alloy.createController('gestos_nivel_15');
+             	//alert("Vamos!");
             }
         });
 	}
@@ -605,7 +541,8 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	siluetas_nivel_1 = Alloy.createController('siluetas_nivel_1');
+             	//alert("Vamos!");
             }
         });
         button[1].addEventListener('click',function(e){
@@ -613,7 +550,8 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	siluetas_nivel_2 = Alloy.createController('siluetas_nivel_2');
+             	//alert("Vamos!");
             }
         });
         button[2].addEventListener('click',function(e){
@@ -621,7 +559,8 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	siluetas_nivel_3 = Alloy.createController('siluetas_nivel_3');
+             	//alert("Vamos!");
             }
         });
         button[3].addEventListener('click',function(e){
@@ -629,7 +568,8 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	siluetas_nivel_4 = Alloy.createController('siluetas_nivel_4');
+             	//alert("Vamos!");
             }
         });
         button[4].addEventListener('click',function(e){
@@ -637,7 +577,8 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	siluetas_nivel_5 = Alloy.createController('siluetas_nivel_5');
+             	//alert("Vamos!");
             }
         });
         button[5].addEventListener('click',function(e){
@@ -645,7 +586,8 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	siluetas_nivel_6 = Alloy.createController('siluetas_nivel_6');
+             	//alert("Vamos!");
             }
         });
         button[6].addEventListener('click',function(e){
@@ -653,7 +595,8 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	siluetas_nivel_7 = Alloy.createController('siluetas_nivel_7');
+             	//alert("Vamos!");
             }
         });
         button[7].addEventListener('click',function(e){
@@ -661,7 +604,8 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	siluetas_nivel_8 = Alloy.createController('siluetas_nivel_8');
+             	//alert("Vamos!");
             }
         });
         button[8].addEventListener('click',function(e){
@@ -669,7 +613,8 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	siluetas_nivel_9 = Alloy.createController('siluetas_nivel_9');
+             	//alert("Vamos!");
             }
         });
         button[9].addEventListener('click',function(e){
@@ -677,7 +622,8 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	siluetas_nivel_10 = Alloy.createController('siluetas_nivel_10');
+             	//alert("Vamos!");
             }
         });
 	}
@@ -711,7 +657,8 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	encuentralos_nivel_1 = Alloy.createController('encuentralos_nivel_1');
+             	//alert("Vamos!");
             }
         });
         button[1].addEventListener('click',function(e){
@@ -719,7 +666,8 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	encuentralos_nivel_2 = Alloy.createController('encuentralos_nivel_2');
+             	//alert("Vamos!");
             }
         });
         button[2].addEventListener('click',function(e){
@@ -727,7 +675,8 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	encuentralos_nivel_3 = Alloy.createController('encuentralos_nivel_3');
+             	//alert("Vamos!");
             }
         });
         button[3].addEventListener('click',function(e){
@@ -735,7 +684,8 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	encuentralos_nivel_4 = Alloy.createController('encuentralos_nivel_4');
+             	//alert("Vamos!");
             }
         });
         button[4].addEventListener('click',function(e){
@@ -743,7 +693,8 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	encuentralos_nivel_5 = Alloy.createController('encuentralos_nivel_5');
+             	//alert("Vamos!");
             }
         });
         button[5].addEventListener('click',function(e){
@@ -751,7 +702,8 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	encuentralos_nivel_6 = Alloy.createController('encuentralos_nivel_6');
+             	//alert("Vamos!");
             }
         });
         button[6].addEventListener('click',function(e){
@@ -759,7 +711,8 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	encuentralos_nivel_7 = Alloy.createController('encuentralos_nivel_7');
+             	//alert("Vamos!");
             }
         });
         button[7].addEventListener('click',function(e){
@@ -767,7 +720,8 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	encuentralos_nivel_8 = Alloy.createController('encuentralos_nivel_8');
+             	//alert("Vamos!");
             }
         });
         button[8].addEventListener('click',function(e){
@@ -775,7 +729,8 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	encuentralos_nivel_9 = Alloy.createController('encuentralos_nivel_9');
+             	//alert("Vamos!");
             }
         });
         button[9].addEventListener('click',function(e){
@@ -783,7 +738,8 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	encuentralos_nivel_10 = Alloy.createController('encuentralos_nivel_10');
+             	//alert("Vamos!");
             }
         });
 	}
@@ -1055,7 +1011,8 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
                 alert("Todavia no puede jugar este nivel");
             }
             else{
-             	alert("Vamos!");
+            	memorice = Alloy.createController('memorice');
+             	//alert("Vamos!");
             }
         });
     }

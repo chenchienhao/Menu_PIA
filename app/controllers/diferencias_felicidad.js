@@ -1,4 +1,4 @@
-var htmlstrng='<html><body><img src="images/fuegos.gif"/></body></html>';
+var htmlstrng='<html><body><img src="images/animacion/fuegos.gif"/></body></html>';
 var gifView = Titanium.UI.createWebView({
 	 backgroundColor: "transparent",
 	 width: Ti.UI.SIZE,

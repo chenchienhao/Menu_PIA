@@ -7,16 +7,15 @@
 	    Ti.API.info(props[i] + ' = ' + value+" removed");
 	    Ti.App.Properties.removeProperty(props[i]);
 	}
-}
-*/
+}*/
 if (!Ti.App.Properties.hasProperty("HS_colorea0")){
     for (var i=1; i < 4; i++){
     	Ti.App.Properties.setBool("HS_colorea"+i,false);
     }
-    for (var i=1; i < 16; i++){
+    for (var i=1; i < 11; i++){
     	Ti.App.Properties.setBool("HS_selecciona"+i,false);
     }
-    for (var i=1; i < 18; i++){
+    for (var i=1; i < 10; i++){
     	Ti.App.Properties.setBool("HS_acciones"+i,false);
     }
     for (var i=1; i < 15; i++){
@@ -53,12 +52,7 @@ function menu_TF(e) {
 	menu_tf.open();
 }
 function menu_setting(e) {
-    $.dialog.show();
+	var claves=Alloy.createController('Claves').getView();
+	claves.open();
 }
-$.dialog.addEventListener('click', function(e) {
-	if(e.text=="123"&&e.index != e.source.cancel){
-		var menu_desbloquear=Alloy.createController('menu_desbloquear').getView();
-		menu_desbloquear.open();
-	}
-});
 $.index.open();

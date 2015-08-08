@@ -107,7 +107,7 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
 	}
 	//
 	if(Alloy.Globals.aux_juego=="Selecciona"){
-		for (var i=0; i < 16; i++){
+		for (var i=0; i < 11; i++){
 			if(Ti.App.Properties.getBool("HS_selecciona"+i)==false){
 				button[i] = Titanium.UI.createButton({
 				   title: "Nivel "+(i+1),
@@ -218,50 +218,10 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
              button[10].backgroundColor="#A4A4A4";
             }
         });
-        button[11].addEventListener('click',function(e){
-            if(button[11].backgroundColor=="#A4A4A4"){
-                button[11].backgroundColor="#81F79F";
-            }
-            else{
-             button[11].backgroundColor="#A4A4A4";
-            }
-        });
-        button[12].addEventListener('click',function(e){
-            if(button[12].backgroundColor=="#A4A4A4"){
-                button[12].backgroundColor="#81F79F";
-            }
-            else{
-             button[12].backgroundColor="#A4A4A4";
-            }
-        });
-        button[13].addEventListener('click',function(e){
-            if(button[13].backgroundColor=="#A4A4A4"){
-                button[13].backgroundColor="#81F79F";
-            }
-            else{
-             button[13].backgroundColor="#A4A4A4";
-            }
-        });
-        button[14].addEventListener('click',function(e){
-            if(button[14].backgroundColor=="#A4A4A4"){
-                button[14].backgroundColor="#81F79F";
-            }
-            else{
-             button[14].backgroundColor="#A4A4A4";
-            }
-        });
-        button[15].addEventListener('click',function(e){
-            if(button[15].backgroundColor=="#A4A4A4"){
-                button[15].backgroundColor="#81F79F";
-            }
-            else{
-             button[15].backgroundColor="#A4A4A4";
-            }
-        });
 	}
 	//
 	if(Alloy.Globals.aux_juego=="Acciones"){
-		for (var i=0; i < 18; i++){
+		for (var i=0; i < 10; i++){
 			if(Ti.App.Properties.getBool("HS_acciones"+i)==false){
 				button[i] = Titanium.UI.createButton({
 				   title: "Nivel "+(i+1),
@@ -362,70 +322,6 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
             }
             else{
              button[9].backgroundColor="#A4A4A4";
-            }
-        });
-        button[10].addEventListener('click',function(e){
-            if(button[10].backgroundColor=="#A4A4A4"){
-                button[10].backgroundColor="#81F79F";
-            }
-            else{
-             button[10].backgroundColor="#A4A4A4";
-            }
-        });
-        button[11].addEventListener('click',function(e){
-            if(button[11].backgroundColor=="#A4A4A4"){
-                button[11].backgroundColor="#81F79F";
-            }
-            else{
-             button[11].backgroundColor="#A4A4A4";
-            }
-        });
-        button[12].addEventListener('click',function(e){
-            if(button[12].backgroundColor=="#A4A4A4"){
-                button[12].backgroundColor="#81F79F";
-            }
-            else{
-             button[12].backgroundColor="#A4A4A4";
-            }
-        });
-        button[13].addEventListener('click',function(e){
-            if(button[13].backgroundColor=="#A4A4A4"){
-                button[13].backgroundColor="#81F79F";
-            }
-            else{
-             button[13].backgroundColor="#A4A4A4";
-            }
-        });
-        button[14].addEventListener('click',function(e){
-            if(button[14].backgroundColor=="#A4A4A4"){
-                button[14].backgroundColor="#81F79F";
-            }
-            else{
-             button[14].backgroundColor="#A4A4A4";
-            }
-        });
-        button[15].addEventListener('click',function(e){
-            if(button[15].backgroundColor=="#A4A4A4"){
-                button[15].backgroundColor="#81F79F";
-            }
-            else{
-             button[15].backgroundColor="#A4A4A4";
-            }
-        });
-        button[16].addEventListener('click',function(e){
-            if(button[16].backgroundColor=="#A4A4A4"){
-                button[16].backgroundColor="#81F79F";
-            }
-            else{
-             button[16].backgroundColor="#A4A4A4";
-            }
-        });
-        button[17].addEventListener('click',function(e){
-            if(button[17].backgroundColor=="#A4A4A4"){
-                button[17].backgroundColor="#81F79F";
-            }
-            else{
-             button[17].backgroundColor="#A4A4A4";
             }
         });
 	}
