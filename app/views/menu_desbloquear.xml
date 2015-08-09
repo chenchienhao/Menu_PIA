@@ -13,6 +13,8 @@
 		</View>
 		
 		<View id="view_body">
+			<View id="view_picker"></View>
+			<!--
 			<View id="view_label">
 				<Label id="Label_CG">Categoría</Label>
 				<Label id="Label_JG">Juego</Label>
@@ -29,6 +31,7 @@
 		            </PickerColumn>
 				</Picker>
 			</View>
+			-->
 			<View id="view_button">
 				<Button id="Button_CL" onClick="Button_CL">Cancelar</Button>
 				<Button id="Button_SG" onClick="Button_SG">Siguiente</Button>

@@ -9,7 +9,7 @@ var win = Titanium.UI.createWindow({
  
 var htmlstrng='<html>
 				<body>
-					<img src="images/animacion/globos.gif"  style="width: 95%; height: auto;"/>
+					<img src="images/animacion/globos.gif"  style="width: 70%; height: auto;"/>
 				</body>
 			</html>';
 

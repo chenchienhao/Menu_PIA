@@ -4,5 +4,5 @@
 }
 "#win":{
 	backgroundColor:"transparent",
-	layout: "horizontal"
+	layout: "vertical"
 }

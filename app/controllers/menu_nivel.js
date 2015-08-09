@@ -1,11 +1,11 @@
 var view_header = Ti.UI.createView({
     backgroundColor:'white',
     width: Ti.UI.SIZE,
-    height: "10%",
+    height: "20%",
     layout: 'horizontal',
 });
 var view_body = Ti.UI.createView({
-    height: "90%",
+    height: Ti.UI.FILL,
     width: Ti.UI.SIZE,
     layout: 'horizontal'
 });
@@ -49,22 +49,22 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
 		for (var i=0; i < 4; i++){
 			if(Ti.App.Properties.getBool("HS_colorea"+i)==false){
 				button[i] = Titanium.UI.createButton({
-				   title: "Nivel "+(i+1),
-				   height: "90",
+				   title: (i+1),
+				   height: "10%",
 				   top: "6%",
 				   left: "6%",
-				   width: "90",
+				   width: "10%",
 				   backgroundColor: "#A4A4A4"
 				});
 				Ti.API.info(i);	
 			}
 			else{
 				button[i] = Titanium.UI.createButton({
-				   title: "Nivel "+(i+1),
-				   height: "90",
+				   title: (i+1),
+				   height: "10%",
 				   top: "6%",
 				   left: "6%",
-				   width: "90",
+				   width: "10%",
 				   backgroundColor: "#81F79F"
 				});
 			}
@@ -112,21 +112,21 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
 		for (var i=0; i < 11; i++){
 			if(Ti.App.Properties.getBool("HS_selecciona"+i)==false){
 				button[i] = Titanium.UI.createButton({
-				   title: "Nivel "+(i+1),
-				   height: "90",
+				   title: (i+1),
+				   height: "10%",
 				   top: "6%",
 				   left: "6%",
-				   width: "90",
+				   width: "10%",
 				   backgroundColor: "#A4A4A4"
 				});	
 			}
 			else{
 				button[i] = Titanium.UI.createButton({
-				   title: "Nivel "+(i+1),
-				   height: "90",
+				   title: (i+1),
+				   height: "10%",
 				   top: "6%",
 				   left: "6%",
-				   width: "90",
+				   width: "10%",
 				   backgroundColor: "#81F79F"
 				});
 			}
@@ -237,21 +237,21 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
 		for (var i=0; i < 10; i++){
 			if(Ti.App.Properties.getBool("HS_acciones"+i)==false){
 				button[i] = Titanium.UI.createButton({
-				   title: "Nivel "+(i+1),
-				   height: "90",
+				   title: (i+1),
+				   height: "10%",
 				   top: "6%",
 				   left: "6%",
-				   width: "90",
+				   width: "10%",
 				   backgroundColor: "#A4A4A4"
 				});	
 			}
 			else{
 				button[i] = Titanium.UI.createButton({
-				   title: "Nivel "+(i+1),
-				   height: "90",
+				   title: (i+1),
+				   height: "10%",
 				   top: "6%",
 				   left: "6%",
-				   width: "90",
+				   width: "10%",
 				   backgroundColor: "#81F79F"
 				});
 			}
@@ -353,21 +353,21 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
 		for (var i=0; i < 15; i++){
 			if(Ti.App.Properties.getBool("HS_gestos"+i)==false){
 				button[i] = Titanium.UI.createButton({
-				   title: "Nivel "+(i+1),
-				   height: "90",
+				   title: (i+1),
+				   height: "10%",
 				   top: "6%",
 				   left: "6%",
-				   width: "90",
+				   width: "10%",
 				   backgroundColor: "#A4A4A4"
 				});	
 			}
 			else{
 				button[i] = Titanium.UI.createButton({
-				   title: "Nivel "+(i+1),
-				   height: "90",
+				   title: (i+1),
+				   height: "10%",
 				   top: "6%",
 				   left: "6%",
-				   width: "90",
+				   width: "10%",
 				   backgroundColor: "#81F79F"
 				});
 			}
@@ -516,21 +516,21 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
 		for (var i=0; i < 10; i++){
 			if(Ti.App.Properties.getBool("TF_siluetas"+i)==false){
 				button[i] = Titanium.UI.createButton({
-				   title: "Nivel "+(i+1),
-				   height: "90",
+				   title: (i+1),
+				   height: "10%",
 				   top: "6%",
 				   left: "6%",
-				   width: "90",
+				   width: "10%",
 				   backgroundColor: "#A4A4A4"
 				});	
 			}
 			else{
 				button[i] = Titanium.UI.createButton({
-				   title: "Nivel "+(i+1),
-				   height: "90",
+				   title: (i+1),
+				   height: "10%",
 				   top: "6%",
 				   left: "6%",
-				   width: "90",
+				   width: "10%",
 				   backgroundColor: "#81F79F"
 				});
 			}
@@ -632,21 +632,21 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
 		for (var i=0; i < 10; i++){
 			if(Ti.App.Properties.getBool("TF_encuentralos"+i)==false){
 				button[i] = Titanium.UI.createButton({
-				   title: "Nivel "+(i+1),
-				   height: "90",
+				   title: (i+1),
+				   height: "10%",
 				   top: "6%",
 				   left: "6%",
-				   width: "90",
+				   width: "10%",
 				   backgroundColor: "#A4A4A4"
 				});	
 			}
 			else{
 				button[i] = Titanium.UI.createButton({
-				   title: "Nivel "+(i+1),
-				   height: "90",
+				   title: (i+1),
+				   height: "10%",
 				   top: "6%",
 				   left: "6%",
-				   width: "90",
+				   width: "10%",
 				   backgroundColor: "#81F79F"
 				});
 			}
@@ -748,21 +748,21 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
 		for (var i=0; i < 11; i++){
 			if(Ti.App.Properties.getBool("TF_objetos"+i)==false){
 				button[i] = Titanium.UI.createButton({
-				   title: "Nivel "+(i+1),
-				   height: "90",
+				   title: (i+1),
+				   height: "10%",
 				   top: "6%",
 				   left: "6%",
-				   width: "90",
+				   width: "10%",
 				   backgroundColor: "#A4A4A4"
 				});	
 			}
 			else{
 				button[i] = Titanium.UI.createButton({
-				   title: "Nivel "+(i+1),
-				   height: "90",
+				   title: (i+1),
+				   height: "10%",
 				   top: "6%",
 				   left: "6%",
-				   width: "90",
+				   width: "10%",
 				   backgroundColor: "#81F79F"
 				});
 			}
@@ -862,21 +862,21 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
 		for (var i=0; i < 10; i++){
 			if(Ti.App.Properties.getBool("TF_diferencias"+i)==false){
 				button[i] = Titanium.UI.createButton({
-				   title: "Nivel "+(i+1),
-				   height: "90",
+				   title: (i+1),
+				   height: "10%",
 				   top: "6%",
 				   left: "6%",
-				   width: "90",
+				   width: "10%",
 				   backgroundColor: "#A4A4A4"
 				});	
 			}
 			else{
 				button[i] = Titanium.UI.createButton({
-				   title: "Nivel "+(i+1),
-				   height: "90",
+				   title: (i+1),
+				   height: "10%",
 				   top: "6%",
 				   left: "6%",
-				   width: "90",
+				   width: "10%",
 				   backgroundColor: "#81F79F"
 				});
 			}

@@ -1,0 +1,9 @@
+
+".container" : {
+  
+}
+"#win":{
+	top: "30%",
+	backgroundColor:"transparent",
+	layout: "vertical"
+}

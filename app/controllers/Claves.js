@@ -1,7 +1,7 @@
 var  View = Titanium.UI.createView({
 	 backgroundColor: 'white',
-	 width: "70%",
-	 height: "40%",
+	 width: Ti.UI.SIZE,
+	 height: "30%",
 	 borderRadius:10,
 	 opacity:0.9,
 	 layout: "vertical",
@@ -11,6 +11,7 @@ var  View = Titanium.UI.createView({
 
 var title=Titanium.UI.createLabel({
 	 top: "15%",
+	 color:'black',
 	 font:{
 	 	fontSize: 20,
 	 	fontWeight: "bold"
@@ -19,34 +20,26 @@ var title=Titanium.UI.createLabel({
 });
 var text=Titanium.UI.createLabel({
 	 top: "5%",
+	 color:'black',
 	 height: "10%", 
-     text: "Ingrese la clave para desbloquear los niveles de juegos.",
+     text: "Desbloquear los niveles de juegos.",
 });
 var clave=Titanium.UI.createTextField({
 	top: "5%",
 	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
 	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
-	color: '#336699',
+	color: 'black',
 	width: "50%",
 	height: "10%",
 	passwordMask: true
 });
-var buttonCL=Titanium.UI.createButton({
-	top: "5%",
-	title: 'Cancelar',
-	width: "80%",
-   	height: "10%"
-});
 var buttonOK=Titanium.UI.createButton({
 	top: "5%",
 	title: 'OK',
+	color: '#2E9AFE',
+	backgroundColor: 'white',
 	width: "80%",
    	height: "10%"
-});
-
-buttonCL.addEventListener('click',function(e)
-{
-   $.win.close();
 });
 buttonOK.addEventListener('click',function(e)
 {
@@ -64,5 +57,4 @@ View.add(title);
 View.add(text);
 View.add(clave);
 View.add(buttonOK);
-View.add(buttonCL);
 $.win.add(View);

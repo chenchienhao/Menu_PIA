@@ -1,5 +1,5 @@
 ".container": {
-	backgroundColor:"white",
+	backgroundColor:"#F5ECCE",
 	layout: "vertical"
 }
 
@@ -35,7 +35,6 @@
 	text:"Bienvenido",
 	font: {
 		fontSize: 24,
-		color:"#000",
 		textAlign:"center"
 	}
 }
@@ -62,15 +61,21 @@
 	width:"60%",
 	hieght:"70%"
 }
+/*
 "#view_label":{
+	backgroundColor:"#FA8258",
 	layout:"horizontal",
 	height:"10%",
 	top:"10%"
 }
 "#Label_CG":{
+	top:"25%",
+	color:"white",
 	textAlign:"center"
 }
 "#Label_JG":{
+	top:"25%",
+	color:"white",
 	textAlign:"center"
 }
 "Label":{
@@ -88,7 +93,6 @@
 "#Picker_CG":{
 	font: {
 		fontSize: 24,
-		color:"#000",
 		textAlign:"center"
 	},
 	width:"50%"
@@ -96,15 +100,18 @@
 "#Picker_JG":{
 	font: {
 		fontSize: 24,
-		color:"#000",
 		textAlign:"center"
 	},
 	width:"50%"
+}*/
+"#view_picker":{
+	top:"10%",
+	layout:"vertical",
+	height:"30%"
 }
 "#view_button":{
 	layout:"horizontal",
 	height:"25%"
-	
 }
 "#Button_CL":{
 	backgroundColor: "#F7819F",
