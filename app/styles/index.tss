@@ -21,7 +21,7 @@
 	//backgroundColor:"red"
 }
 "#home_icon":{
-	image:"images/icon/home.png",
+	image:"//images/icon/home.png",
 	top: "10%",
 	left: "10%",
 	height: "90%"
@@ -49,7 +49,7 @@
 	//backgroundColor:"blue"
 }
 "#sound_icon":{
-	image:"images/icon/sound.png",
+	image:"//images/icon/sound.png",
 	top: "10%",
 	right: "10%",
 	height: "90%"
@@ -98,7 +98,7 @@
 	height: "100%"
 }
 "#setting_icon":{
-	image:"images/icon/gear.png",
+	image:"/images/icon/gear.png",
 	bottom: "10%",
 	right: "10%",
 	height:"100%"

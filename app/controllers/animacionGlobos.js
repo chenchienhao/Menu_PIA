@@ -1,5 +1,5 @@
 var win = Titanium.UI.createWindow({
-    backgroundColor:'transparent',
+    backgroundColor:'white',
 	height: '100%',
 	width: '100%',
 	fullscreen: true,
