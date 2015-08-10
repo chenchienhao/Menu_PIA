@@ -1,0 +1,25 @@
+<Alloy>
+	<Window class="container">
+		<View id="view_header">
+			<Label id="title">Encúentre Objetos</Label>
+		</View>
+		<View id="view_body">
+			<View id="imagen">
+				<Button id="turipan"></Button>
+				<Button id="flor"></Button>
+				<Button id="unihue"></Button>
+			</View>
+			<View id="view_body_right">
+				<ImageView id="image_turipan"></ImageView>
+				<ImageView id="image_flor"></ImageView>
+				<ImageView id="image_unihue"></ImageView>
+			</View>
+		</View>
+		<View id="view_footer">
+			<ImageView id="anterior"></ImageView>
+			<Label id="label_AT">Anterior</Label>
+			<Label id="label_SG">Siguiente</Label>
+			<ImageView id="siguiente"></ImageView>
+		</View>
+	</Window>
+</Alloy>

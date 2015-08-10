@@ -687,7 +687,7 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
 	}
 	//
 	if(Alloy.Globals.aux_juego=="Objetos"){
-		for (var i=0; i < 11; i++){
+		for (var i=0; i < 5; i++){
 			if(Ti.App.Properties.getBool("TF_objetos"+i)==false){
 				button[i] = Titanium.UI.createButton({
 				   title: "Nivel "+(i+1),
@@ -756,46 +756,6 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
             }
             else{
              button[5].backgroundColor="#A4A4A4";
-            }
-        });
-        button[6].addEventListener('click',function(e){
-            if(button[6].backgroundColor=="#A4A4A4"){
-                button[6].backgroundColor="#81F79F";
-            }
-            else{
-             button[6].backgroundColor="#A4A4A4";
-            }
-        });
-        button[7].addEventListener('click',function(e){
-            if(button[7].backgroundColor=="#A4A4A4"){
-                button[7].backgroundColor="#81F79F";
-            }
-            else{
-             button[7].backgroundColor="#A4A4A4";
-            }
-        });
-        button[8].addEventListener('click',function(e){
-            if(button[8].backgroundColor=="#A4A4A4"){
-                button[8].backgroundColor="#81F79F";
-            }
-            else{
-             button[8].backgroundColor="#A4A4A4";
-            }
-        });
-        button[9].addEventListener('click',function(e){
-            if(button[9].backgroundColor=="#A4A4A4"){
-                button[9].backgroundColor="#81F79F";
-            }
-            else{
-             button[9].backgroundColor="#A4A4A4";
-            }
-        });
-        button[10].addEventListener('click',function(e){
-            if(button[10].backgroundColor=="#A4A4A4"){
-                button[10].backgroundColor="#81F79F";
-            }
-            else{
-             button[10].backgroundColor="#A4A4A4";
             }
         });
 	}

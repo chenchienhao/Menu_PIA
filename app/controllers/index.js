@@ -27,7 +27,7 @@ if (!Ti.App.Properties.hasProperty("HS_colorea0")){
     for (var i=1; i < 10; i++){
     	Ti.App.Properties.setBool("TF_encuentralos"+i,false);
     }
-    for (var i=1; i < 11; i++){
+    for (var i=1; i < 5; i++){
     	Ti.App.Properties.setBool("TF_objetos"+i,false);
     }
     for (var i=1; i < 10; i++){

@@ -1,0 +1,31 @@
+<Alloy>
+	<Window class="container">
+		<View id="view_header">
+			<Label id="title">Encúentre Objetos</Label>
+		</View>
+		<View id="view_body">
+			<View id="imagen">
+				<Button id="ropa"></Button>
+				<Button id="bigote"></Button>
+				<Button id="sol"></Button>
+				<Button id="corro"></Button>
+				<Button id="zapato"></Button>
+				<Button id="nariz"></Button>
+			</View>
+			<View id="view_body_right">
+				<ImageView id="image_ropa"></ImageView>
+				<ImageView id="image_bigote"></ImageView>
+				<ImageView id="image_sol"></ImageView>
+				<ImageView id="image_corro"></ImageView>
+				<ImageView id="image_zapato"></ImageView>
+				<ImageView id="image_nariz"></ImageView>
+			</View>
+		</View>
+		<View id="view_footer">
+			<ImageView id="anterior"></ImageView>
+			<Label id="label_AT">Anterior</Label>
+			<Label id="label_SG">Siguiente</Label>
+			<ImageView id="siguiente"></ImageView>
+		</View>
+	</Window>
+</Alloy>

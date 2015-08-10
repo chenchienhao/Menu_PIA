@@ -1,0 +1,115 @@
+".container": {
+	backgroundColor:"white",
+	layout:"vertical"
+}
+
+"#view_header":{
+	width:Ti.UI.SIZE,
+	height: "15%",
+	layout:"horizontal"
+}
+
+"#title": {
+	top: "50%",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000",
+	font: {
+		fontSize: 24
+	}
+}
+
+"#view_body":{
+	height: "70%",
+	width: "90%",
+	layout: "horizontal"
+}
+"#view_footer":{
+	height: "15%",
+	width: Ti.UI.SIZE,
+	layout:"horizontal"
+}
+
+"#imagen":{
+	backgroundImage:"/images/Objetos/nivel2/imagen.png",
+	width: "70%",
+	height: Ti.UI.FILL,
+}
+"#view_body_right":{
+	left:"10%",
+	width: "20%",
+	height: Ti.UI.FILL,
+	layout: "vertical"
+}
+"#cangilon":{
+	width:"11%",
+	height:"15%",
+	top:"45%",
+	left:"13%",
+	backgroundColor:"transparent",
+	borderRadius: "10"
+}
+"#paleta":{
+	width:"26%",
+	height:"11%",
+	top:"55%",
+	left:"26%",
+	backgroundColor:"transparent",
+	borderRadius: "10"
+}
+"#corro":{
+	width:"20%",
+	height:"11%",
+	top:"84%",
+	left:"73%",
+	backgroundColor:"transparent",
+	borderRadius: "10"
+}
+"#pala":{
+	width:"9%",
+	height:"18%",
+	top:"37%",
+	left:"85%",
+	backgroundColor:"transparent",
+	borderRadius: "10"
+}
+"#image_cangilon":{
+	top:"10%",
+	backgroundImage:"/images/Objetos/nivel2/objeto_1.png",
+	height: "15%",
+	width: "70%",
+}
+"#image_paleta":{
+	top:"10%",
+	backgroundImage:"/images/Objetos/nivel2/objeto_2.png",
+	height: "15%",
+	width: "70%",
+}
+"#image_corro":{
+	top:"10%",
+	backgroundImage:"/images/Objetos/nivel2/objeto_3.png",
+	height: "15%",
+	width: "70%",
+}
+"#image_pala":{
+	top:"10%",
+	backgroundImage:"/images/Objetos/nivel2/objeto_4.png",
+	height: "15%",
+	width: "70%",
+}
+"#anterior":{
+	backgroundImage:"/images/Diferencias/anterior.png",
+	width: "5%",
+	height: "20%"
+}
+"#siguiente":{
+	backgroundImage:"/images/Diferencias/siguiente.png",
+	width: "5%",
+	height: "20%"
+}
+"#label_AT":{
+	
+}
+"#label_SG":{
+	left: "10%"
+}
