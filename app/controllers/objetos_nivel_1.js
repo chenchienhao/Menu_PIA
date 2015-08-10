@@ -40,7 +40,7 @@ $.libros.addEventListener('click',function(e){
 	if(aux_libros==false){
 		aux_libros=true;
 		punto=punto+1;
-		$.libros.backgroundColor="rgba(255,0,0,0.5)";
+		$.libros.backgroundColor="#80FF0000";
 		$.image_libros.visible=false;
 	}
 	estrella(punto);
@@ -49,7 +49,7 @@ $.lapiz.addEventListener('click',function(e){
 	if(aux_lapiz==false){
 		aux_lapiz=true;
 		punto=punto+1;
-		$.lapiz.backgroundColor="rgba(255,0,0,0.5)";
+		$.lapiz.backgroundColor="#80FF0000";
 		$.image_lapiz.visible=false;
 	}
 	estrella(punto);
@@ -58,7 +58,7 @@ $.pez.addEventListener('click',function(e){
 	if(aux_pez==false){
 		aux_pez=true;
 		punto=punto+1;
-		$.pez.backgroundColor="rgba(255,0,0,0.5)";
+		$.pez.backgroundColor="#80FF0000";
 		$.image_pez.visible=false;
 	}
 	estrella(punto);

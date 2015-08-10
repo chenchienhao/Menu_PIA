@@ -41,7 +41,7 @@ $.cangilon.addEventListener('click',function(e){
 	if(aux_cangilon==false){
 		aux_cangilon=true;
 		punto=punto+1;
-		$.cangilon.backgroundColor="rgba(255,0,0,0.5)";
+		$.cangilon.backgroundColor="#80FF0000";
 		$.image_cangilon.visible=false;
 	}
 	estrella(punto);
@@ -50,7 +50,7 @@ $.paleta.addEventListener('click',function(e){
 	if(aux_paleta==false){
 		aux_paleta=true;
 		punto=punto+1;
-		$.paleta.backgroundColor="rgba(255,0,0,0.5)";
+		$.paleta.backgroundColor="#80FF0000";
 		$.image_paleta.visible=false;
 	}
 	estrella(punto);
@@ -59,7 +59,7 @@ $.corro.addEventListener('click',function(e){
 	if(aux_corro==false){
 		aux_corro=true;
 		punto=punto+1;
-		$.corro.backgroundColor="rgba(255,0,0,0.5)";
+		$.corro.backgroundColor="#80FF0000";
 		$.image_corro.visible=false;
 	}
 	estrella(punto);
@@ -68,7 +68,7 @@ $.pala.addEventListener('click',function(e){
 	if(aux_pala==false){
 		aux_pala=true;
 		punto=punto+1;
-		$.pala.backgroundColor="rgba(255,0,0,0.5)";
+		$.pala.backgroundColor="#80FF0000";
 		$.image_pala.visible=false;
 	}
 	estrella(punto);

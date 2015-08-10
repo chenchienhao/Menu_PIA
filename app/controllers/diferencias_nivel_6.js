@@ -96,10 +96,10 @@ $.ojo1_iz.addEventListener('click',function(e){
 		aux_ojo2_iz=true;
 		aux_ojo2_dr=true;
 		punto=punto+1;
-		$.ojo1_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.ojo1_dr.backgroundColor="rgba(255,0,0,0.5)";
-		$.ojo2_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.ojo2_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.ojo1_iz.backgroundColor="#80FF0000";
+		$.ojo1_dr.backgroundColor="#80FF0000";
+		$.ojo2_iz.backgroundColor="#80FF0000";
+		$.ojo2_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -110,10 +110,10 @@ $.ojo1_dr.addEventListener('click',function(e){
 		aux_ojo2_iz=true;
 		aux_ojo2_dr=true;
 		punto=punto+1;
-		$.ojo1_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.ojo1_dr.backgroundColor="rgba(255,0,0,0.5)";
-		$.ojo2_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.ojo2_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.ojo1_iz.backgroundColor="#80FF0000";
+		$.ojo1_dr.backgroundColor="#80FF0000";
+		$.ojo2_iz.backgroundColor="#80FF0000";
+		$.ojo2_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -124,10 +124,10 @@ $.ojo2_iz.addEventListener('click',function(e){
 		aux_ojo2_iz=true;
 		aux_ojo2_dr=true;
 		punto=punto+1;
-		$.ojo1_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.ojo1_dr.backgroundColor="rgba(255,0,0,0.5)";
-		$.ojo2_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.ojo2_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.ojo1_iz.backgroundColor="#80FF0000";
+		$.ojo1_dr.backgroundColor="#80FF0000";
+		$.ojo2_iz.backgroundColor="#80FF0000";
+		$.ojo2_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -138,10 +138,10 @@ $.ojo2_dr.addEventListener('click',function(e){
 		aux_ojo2_iz=true;
 		aux_ojo2_dr=true;
 		punto=punto+1;
-		$.ojo1_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.ojo1_dr.backgroundColor="rgba(255,0,0,0.5)";
-		$.ojo2_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.ojo2_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.ojo1_iz.backgroundColor="#80FF0000";
+		$.ojo1_dr.backgroundColor="#80FF0000";
+		$.ojo2_iz.backgroundColor="#80FF0000";
+		$.ojo2_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -152,10 +152,10 @@ $.bigote1_iz.addEventListener('click',function(e){
 		aux_bigote2_iz=true;
 		aux_bigote2_dr=true;
 		punto=punto+1;
-		$.bigote1_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.bigote1_dr.backgroundColor="rgba(255,0,0,0.5)";
-		$.bigote2_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.bigote2_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.bigote1_iz.backgroundColor="#80FF0000";
+		$.bigote1_dr.backgroundColor="#80FF0000";
+		$.bigote2_iz.backgroundColor="#80FF0000";
+		$.bigote2_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -166,10 +166,10 @@ $.bigote1_dr.addEventListener('click',function(e){
 		aux_bigote2_iz=true;
 		aux_bigote2_dr=true;
 		punto=punto+1;
-		$.bigote1_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.bigote1_dr.backgroundColor="rgba(255,0,0,0.5)";
-		$.bigote2_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.bigote2_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.bigote1_iz.backgroundColor="#80FF0000";
+		$.bigote1_dr.backgroundColor="#80FF0000";
+		$.bigote2_iz.backgroundColor="#80FF0000";
+		$.bigote2_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -180,10 +180,10 @@ $.bigote2_iz.addEventListener('click',function(e){
 		aux_bigote2_iz=true;
 		aux_bigote2_dr=true;
 		punto=punto+1;
-		$.bigote1_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.bigote1_dr.backgroundColor="rgba(255,0,0,0.5)";
-		$.bigote2_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.bigote2_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.bigote1_iz.backgroundColor="#80FF0000";
+		$.bigote1_dr.backgroundColor="#80FF0000";
+		$.bigote2_iz.backgroundColor="#80FF0000";
+		$.bigote2_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -194,10 +194,10 @@ $.bigote2_dr.addEventListener('click',function(e){
 		aux_bigote2_iz=true;
 		aux_bigote2_dr=true;
 		punto=punto+1;
-		$.bigote1_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.bigote1_dr.backgroundColor="rgba(255,0,0,0.5)";
-		$.bigote2_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.bigote2_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.bigote1_iz.backgroundColor="#80FF0000";
+		$.bigote1_dr.backgroundColor="#80FF0000";
+		$.bigote2_iz.backgroundColor="#80FF0000";
+		$.bigote2_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -206,8 +206,8 @@ $.collar_iz.addEventListener('click',function(e){
 		aux_collar_iz=true;
 		aux_collar_dr=true;
 		punto=punto+1;
-		$.collar_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.collar_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.collar_iz.backgroundColor="#80FF0000";
+		$.collar_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -216,8 +216,8 @@ $.collar_dr.addEventListener('click',function(e){
 		aux_collar_iz=true;
 		aux_collar_dr=true;
 		punto=punto+1;
-		$.collar_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.collar_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.collar_iz.backgroundColor="#80FF0000";
+		$.collar_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -226,8 +226,8 @@ $.sombra_iz.addEventListener('click',function(e){
 		aux_sombra_iz=true;
 		aux_sombra_dr=true;
 		punto=punto+1;
-		$.sombra_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.sombra_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.sombra_iz.backgroundColor="#80FF0000";
+		$.sombra_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -236,8 +236,8 @@ $.sombra_dr.addEventListener('click',function(e){
 		aux_sombra_iz=true;
 		aux_sombra_dr=true;
 		punto=punto+1;
-		$.sombra_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.sombra_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.sombra_iz.backgroundColor="#80FF0000";
+		$.sombra_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -248,8 +248,8 @@ $.cola_iz.addEventListener('click',function(e){
 		aux_cola_iz=true;
 		aux_cola_dr=true;
 		punto=punto+1;
-		$.cola_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.cola_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.cola_iz.backgroundColor="#80FF0000";
+		$.cola_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -258,8 +258,8 @@ $.cola_dr.addEventListener('click',function(e){
 		aux_cola_iz=true;
 		aux_cola_dr=true;
 		punto=punto+1;
-		$.cola_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.cola_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.cola_iz.backgroundColor="#80FF0000";
+		$.cola_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });

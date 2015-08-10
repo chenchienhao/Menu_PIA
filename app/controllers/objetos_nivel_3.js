@@ -40,7 +40,7 @@ $.turipan.addEventListener('click',function(e){
 	if(aux_turipan==false){
 		aux_turipan=true;
 		punto=punto+1;
-		$.turipan.backgroundColor="rgba(255,0,0,0.5)";
+		$.turipan.backgroundColor="#80FF0000";
 		$.image_turipan.visible=false;
 	}
 	estrella(punto);
@@ -49,7 +49,7 @@ $.flor.addEventListener('click',function(e){
 	if(aux_flor==false){
 		aux_flor=true;
 		punto=punto+1;
-		$.flor.backgroundColor="rgba(255,0,0,0.5)";
+		$.flor.backgroundColor="#80FF0000";
 		$.image_flor.visible=false;
 	}
 	estrella(punto);
@@ -58,7 +58,7 @@ $.unihue.addEventListener('click',function(e){
 	if(aux_unihue==false){
 		aux_unihue=true;
 		punto=punto+1;
-		$.unihue.backgroundColor="rgba(255,0,0,0.5)";
+		$.unihue.backgroundColor="#80FF0000";
 		$.image_unihue.visible=false;
 	}
 	estrella(punto);

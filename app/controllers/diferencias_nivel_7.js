@@ -90,8 +90,8 @@ $.rueda_iz.addEventListener('click',function(e){
 		aux_rueda_iz=true;
 		aux_rueda_dr=true;
 		punto=punto+1;
-		$.rueda_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.rueda_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.rueda_iz.backgroundColor="#80FF0000";
+		$.rueda_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -100,8 +100,8 @@ $.rueda_dr.addEventListener('click',function(e){
 		aux_rueda_iz=true;
 		aux_rueda_dr=true;
 		punto=punto+1;
-		$.rueda_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.rueda_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.rueda_iz.backgroundColor="#80FF0000";
+		$.rueda_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -110,8 +110,8 @@ $.puerta_iz.addEventListener('click',function(e){
 		aux_puerta_iz=true;
 		aux_puerta_dr=true;
 		punto=punto+1;
-		$.puerta_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.puerta_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.puerta_iz.backgroundColor="#80FF0000";
+		$.puerta_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -120,8 +120,8 @@ $.puerta_dr.addEventListener('click',function(e){
 		aux_puerta_iz=true;
 		aux_puerta_dr=true;
 		punto=punto+1;
-		$.puerta_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.puerta_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.puerta_iz.backgroundColor="#80FF0000";
+		$.puerta_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -130,8 +130,8 @@ $.carro_iz.addEventListener('click',function(e){
 		aux_carro_iz=true;
 		aux_carro_dr=true;
 		punto=punto+1;
-		$.carro_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.carro_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.carro_iz.backgroundColor="#80FF0000";
+		$.carro_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -140,8 +140,8 @@ $.carro_dr.addEventListener('click',function(e){
 		aux_carro_iz=true;
 		aux_carro_dr=true;
 		punto=punto+1;
-		$.carro_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.carro_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.carro_iz.backgroundColor="#80FF0000";
+		$.carro_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -150,8 +150,8 @@ $.aveja_iz.addEventListener('click',function(e){
 		aux_aveja_iz=true;
 		aux_aveja_dr=true;
 		punto=punto+1;
-		$.aveja_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.aveja_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.aveja_iz.backgroundColor="#80FF0000";
+		$.aveja_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -160,8 +160,8 @@ $.aveja_dr.addEventListener('click',function(e){
 		aux_aveja_iz=true;
 		aux_aveja_dr=true;
 		punto=punto+1;
-		$.aveja_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.aveja_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.aveja_iz.backgroundColor="#80FF0000";
+		$.aveja_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -172,8 +172,8 @@ $.flor_iz.addEventListener('click',function(e){
 		aux_flor_iz=true;
 		aux_flor_dr=true;
 		punto=punto+1;
-		$.flor_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.flor_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.flor_iz.backgroundColor="#80FF0000";
+		$.flor_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -182,8 +182,8 @@ $.flor_dr.addEventListener('click',function(e){
 		aux_flor_iz=true;
 		aux_flor_dr=true;
 		punto=punto+1;
-		$.flor_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.flor_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.flor_iz.backgroundColor="#80FF0000";
+		$.flor_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });

@@ -90,8 +90,8 @@ $.cara_iz.addEventListener('click',function(e){
 		aux_cara_iz=true;
 		aux_cara_dr=true;
 		punto=punto+1;
-		$.cara_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.cara_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.cara_iz.backgroundColor="#80FF0000";
+		$.cara_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -100,8 +100,8 @@ $.cara_dr.addEventListener('click',function(e){
 		aux_cara_iz=true;
 		aux_cara_dr=true;
 		punto=punto+1;
-		$.cara_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.cara_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.cara_iz.backgroundColor="#80FF0000";
+		$.cara_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -110,8 +110,8 @@ $.nariz_iz.addEventListener('click',function(e){
 		aux_nariz_iz=true;
 		aux_nariz_dr=true;
 		punto=punto+1;
-		$.nariz_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.nariz_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.nariz_iz.backgroundColor="#80FF0000";
+		$.nariz_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -120,8 +120,8 @@ $.nariz_dr.addEventListener('click',function(e){
 		aux_nariz_iz=true;
 		aux_nariz_dr=true;
 		punto=punto+1;
-		$.nariz_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.nariz_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.nariz_iz.backgroundColor="#80FF0000";
+		$.nariz_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -130,8 +130,8 @@ $.diario_iz_1.addEventListener('click',function(e){
 		aux_diario_iz_1=true;
 		aux_diario_dr_1=true;
 		punto=punto+1;
-		$.diario_iz_1.backgroundColor="rgba(255,0,0,0.5)";
-		$.diario_dr_1.backgroundColor="rgba(255,0,0,0.5)";
+		$.diario_iz_1.backgroundColor="#80FF0000";
+		$.diario_dr_1.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -140,8 +140,8 @@ $.diario_dr_1.addEventListener('click',function(e){
 		aux_diario_iz_1=true;
 		aux_diario_dr_1=true;
 		punto=punto+1;
-		$.diario_iz_1.backgroundColor="rgba(255,0,0,0.5)";
-		$.diario_dr_1.backgroundColor="rgba(255,0,0,0.5)";
+		$.diario_iz_1.backgroundColor="#80FF0000";
+		$.diario_dr_1.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -150,8 +150,8 @@ $.diario_iz_2.addEventListener('click',function(e){
 		aux_diario_iz_2=true;
 		aux_diario_dr_2=true;
 		punto=punto+1;
-		$.diario_iz_2.backgroundColor="rgba(255,0,0,0.5)";
-		$.diario_dr_2.backgroundColor="rgba(255,0,0,0.5)";
+		$.diario_iz_2.backgroundColor="#80FF0000";
+		$.diario_dr_2.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -160,8 +160,8 @@ $.diario_dr_2.addEventListener('click',function(e){
 		aux_diario_iz_2=true;
 		aux_diario_dr_2=true;
 		punto=punto+1;
-		$.diario_iz_2.backgroundColor="rgba(255,0,0,0.5)";
-		$.diario_dr_2.backgroundColor="rgba(255,0,0,0.5)";
+		$.diario_iz_2.backgroundColor="#80FF0000";
+		$.diario_dr_2.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -170,8 +170,8 @@ $.brazo_iz.addEventListener('click',function(e){
 		aux_brazo_iz=true;
 		aux_brazo_dr=true;
 		punto=punto+1;
-		$.brazo_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.brazo_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.brazo_iz.backgroundColor="#80FF0000";
+		$.brazo_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -180,8 +180,8 @@ $.brazo_dr.addEventListener('click',function(e){
 		aux_brazo_iz=true;
 		aux_brazo_dr=true;
 		punto=punto+1;
-		$.brazo_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.brazo_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.brazo_iz.backgroundColor="#80FF0000";
+		$.brazo_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });

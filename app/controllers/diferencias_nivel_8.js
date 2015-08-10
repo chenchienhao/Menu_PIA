@@ -106,8 +106,8 @@ $.maliposa_iz.addEventListener('click',function(e){
 		aux_maliposa_iz=true;
 		aux_maliposa_dr=true;
 		punto=punto+1;
-		$.maliposa_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.maliposa_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.maliposa_iz.backgroundColor="#80FF0000";
+		$.maliposa_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -116,8 +116,8 @@ $.maliposa_dr.addEventListener('click',function(e){
 		aux_maliposa_iz=true;
 		aux_maliposa_dr=true;
 		punto=punto+1;
-		$.maliposa_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.maliposa_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.maliposa_iz.backgroundColor="#80FF0000";
+		$.maliposa_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -126,8 +126,8 @@ $.chinita_iz.addEventListener('click',function(e){
 		aux_chinita_iz=true;
 		aux_chinita_dr=true;
 		punto=punto+1;
-		$.chinita_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.chinita_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.chinita_iz.backgroundColor="#80FF0000";
+		$.chinita_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -136,8 +136,8 @@ $.chinita_dr.addEventListener('click',function(e){
 		aux_chinita_iz=true;
 		aux_chinita_dr=true;
 		punto=punto+1;
-		$.chinita_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.chinita_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.chinita_iz.backgroundColor="#80FF0000";
+		$.chinita_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -146,8 +146,8 @@ $.pelo_iz.addEventListener('click',function(e){
 		aux_pelo_iz=true;
 		aux_pelo_dr=true;
 		punto=punto+1;
-		$.pelo_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.pelo_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.pelo_iz.backgroundColor="#80FF0000";
+		$.pelo_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -156,8 +156,8 @@ $.pelo_dr.addEventListener('click',function(e){
 		aux_pelo_iz=true;
 		aux_pelo_dr=true;
 		punto=punto+1;
-		$.pelo_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.pelo_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.pelo_iz.backgroundColor="#80FF0000";
+		$.pelo_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -166,8 +166,8 @@ $.hojas_iz.addEventListener('click',function(e){
 		aux_hojas_iz=true;
 		aux_hojas_dr=true;
 		punto=punto+1;
-		$.hojas_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.hojas_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.hojas_iz.backgroundColor="#80FF0000";
+		$.hojas_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -176,8 +176,8 @@ $.hojas_dr.addEventListener('click',function(e){
 		aux_hojas_iz=true;
 		aux_hojas_dr=true;
 		punto=punto+1;
-		$.hojas_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.hojas_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.hojas_iz.backgroundColor="#80FF0000";
+		$.hojas_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -188,8 +188,8 @@ $.tierra_iz.addEventListener('click',function(e){
 		aux_tierra_iz=true;
 		aux_tierra_dr=true;
 		punto=punto+1;
-		$.tierra_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.tierra_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.tierra_iz.backgroundColor="#80FF0000";
+		$.tierra_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -198,8 +198,8 @@ $.tierra_dr.addEventListener('click',function(e){
 		aux_tierra_iz=true;
 		aux_tierra_dr=true;
 		punto=punto+1;
-		$.tierra_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.tierra_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.tierra_iz.backgroundColor="#80FF0000";
+		$.tierra_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -209,8 +209,8 @@ $.caracol_iz.addEventListener('click',function(e){
 		aux_caracol_iz=true;
 		aux_caracol_dr=true;
 		punto=punto+1;
-		$.caracol_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.caracol_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.caracol_iz.backgroundColor="#80FF0000";
+		$.caracol_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -219,8 +219,8 @@ $.caracol_dr.addEventListener('click',function(e){
 		aux_caracol_iz=true;
 		aux_caracol_dr=true;
 		punto=punto+1;
-		$.caracol_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.caracol_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.caracol_iz.backgroundColor="#80FF0000";
+		$.caracol_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });

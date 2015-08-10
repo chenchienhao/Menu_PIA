@@ -90,8 +90,8 @@ $.boca_iz.addEventListener('click',function(e){
 		aux_boca_iz=true;
 		aux_boca_dr=true;
 		punto=punto+1;
-		$.boca_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.boca_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.boca_iz.backgroundColor="#80FF0000";
+		$.boca_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -100,8 +100,8 @@ $.boca_dr.addEventListener('click',function(e){
 		aux_boca_iz=true;
 		aux_boca_dr=true;
 		punto=punto+1;
-		$.boca_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.boca_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.boca_iz.backgroundColor="#80FF0000";
+		$.boca_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -110,8 +110,8 @@ $.nariz_iz.addEventListener('click',function(e){
 		aux_nariz_iz=true;
 		aux_nariz_dr=true;
 		punto=punto+1;
-		$.nariz_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.nariz_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.nariz_iz.backgroundColor="#80FF0000";
+		$.nariz_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -120,8 +120,8 @@ $.nariz_dr.addEventListener('click',function(e){
 		aux_nariz_iz=true;
 		aux_nariz_dr=true;
 		punto=punto+1;
-		$.nariz_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.nariz_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.nariz_iz.backgroundColor="#80FF0000";
+		$.nariz_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -130,8 +130,8 @@ $.caneta_iz.addEventListener('click',function(e){
 		aux_caneta_iz=true;
 		aux_caneta_dr=true;
 		punto=punto+1;
-		$.caneta_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.caneta_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.caneta_iz.backgroundColor="#80FF0000";
+		$.caneta_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -140,8 +140,8 @@ $.caneta_dr.addEventListener('click',function(e){
 		aux_caneta_iz=true;
 		aux_caneta_dr=true;
 		punto=punto+1;
-		$.caneta_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.caneta_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.caneta_iz.backgroundColor="#80FF0000";
+		$.caneta_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -150,8 +150,8 @@ $.rueda_iz.addEventListener('click',function(e){
 		aux_rueda_iz=true;
 		aux_rueda_dr=true;
 		punto=punto+1;
-		$.rueda_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.rueda_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.rueda_iz.backgroundColor="#80FF0000";
+		$.rueda_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -160,8 +160,8 @@ $.rueda_dr.addEventListener('click',function(e){
 		aux_rueda_iz=true;
 		aux_rueda_dr=true;
 		punto=punto+1;
-		$.rueda_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.rueda_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.rueda_iz.backgroundColor="#80FF0000";
+		$.rueda_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -172,8 +172,8 @@ $.cola_iz.addEventListener('click',function(e){
 		aux_cola_iz=true;
 		aux_cola_dr=true;
 		punto=punto+1;
-		$.cola_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.cola_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.cola_iz.backgroundColor="#80FF0000";
+		$.cola_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -182,8 +182,8 @@ $.cola_dr.addEventListener('click',function(e){
 		aux_cola_iz=true;
 		aux_cola_dr=true;
 		punto=punto+1;
-		$.cola_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.cola_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.cola_iz.backgroundColor="#80FF0000";
+		$.cola_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });

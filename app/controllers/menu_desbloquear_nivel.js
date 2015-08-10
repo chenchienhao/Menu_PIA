@@ -52,10 +52,10 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
 			if(Ti.App.Properties.getBool("HS_colorea"+i)==false){
 				button[i] = Titanium.UI.createButton({
 				   title: "Nivel "+(i+1),
-				   height: "90",
+				   height: "10%",
 				   top: "6%",
 				   left: "6%",
-				   width: "90",
+				   width: "10%",
 				   backgroundColor: "#A4A4A4"
 				});
 				Ti.API.info(i);	
@@ -63,10 +63,10 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
 			else{
 				button[i] = Titanium.UI.createButton({
 				   title: "Nivel "+(i+1),
-				   height: "90",
+				   height: "10%",
 				   top: "6%",
 				   left: "6%",
-				   width: "90",
+				   width: "10%",
 				   backgroundColor: "#81F79F"
 				});
 			}
@@ -111,20 +111,20 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
 			if(Ti.App.Properties.getBool("HS_selecciona"+i)==false){
 				button[i] = Titanium.UI.createButton({
 				   title: "Nivel "+(i+1),
-				   height: "90",
+				   height: "10%",
 				   top: "6%",
 				   left: "6%",
-				   width: "90",
+				   width: "10%",
 				   backgroundColor: "#A4A4A4"
 				});	
 			}
 			else{
 				button[i] = Titanium.UI.createButton({
 				   title: "Nivel "+(i+1),
-				   height: "90",
+				   height: "10%",
 				   top: "6%",
 				   left: "6%",
-				   width: "90",
+				   width: "10%",
 				   backgroundColor: "#81F79F"
 				});
 			}
@@ -225,20 +225,20 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
 			if(Ti.App.Properties.getBool("HS_acciones"+i)==false){
 				button[i] = Titanium.UI.createButton({
 				   title: "Nivel "+(i+1),
-				   height: "90",
+				   height: "10%",
 				   top: "6%",
 				   left: "6%",
-				   width: "90",
+				   width: "10%",
 				   backgroundColor: "#A4A4A4"
 				});	
 			}
 			else{
 				button[i] = Titanium.UI.createButton({
 				   title: "Nivel "+(i+1),
-				   height: "90",
+				   height: "10%",
 				   top: "6%",
 				   left: "6%",
-				   width: "90",
+				   width: "10%",
 				   backgroundColor: "#81F79F"
 				});
 			}
@@ -331,20 +331,20 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
 			if(Ti.App.Properties.getBool("HS_gestos"+i)==false){
 				button[i] = Titanium.UI.createButton({
 				   title: "Nivel "+(i+1),
-				   height: "90",
+				   height: "10%",
 				   top: "6%",
 				   left: "6%",
-				   width: "90",
+				   width: "10%",
 				   backgroundColor: "#A4A4A4"
 				});	
 			}
 			else{
 				button[i] = Titanium.UI.createButton({
 				   title: "Nivel "+(i+1),
-				   height: "90",
+				   height: "10%",
 				   top: "6%",
 				   left: "6%",
-				   width: "90",
+				   width: "10%",
 				   backgroundColor: "#81F79F"
 				});
 			}
@@ -479,20 +479,20 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
 			if(Ti.App.Properties.getBool("TF_siluetas"+i)==false){
 				button[i] = Titanium.UI.createButton({
 				   title: "Nivel "+(i+1),
-				   height: "90",
+				   height: "10%",
 				   top: "6%",
 				   left: "6%",
-				   width: "90",
+				   width: "10%",
 				   backgroundColor: "#A4A4A4"
 				});	
 			}
 			else{
 				button[i] = Titanium.UI.createButton({
 				   title: "Nivel "+(i+1),
-				   height: "90",
+				   height: "10%",
 				   top: "6%",
 				   left: "6%",
-				   width: "90",
+				   width: "10%",
 				   backgroundColor: "#81F79F"
 				});
 			}
@@ -585,20 +585,20 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
 			if(Ti.App.Properties.getBool("TF_encuentralos"+i)==false){
 				button[i] = Titanium.UI.createButton({
 				   title: "Nivel "+(i+1),
-				   height: "90",
+				   height: "10%",
 				   top: "6%",
 				   left: "6%",
-				   width: "90",
+				   width: "10%",
 				   backgroundColor: "#A4A4A4"
 				});	
 			}
 			else{
 				button[i] = Titanium.UI.createButton({
 				   title: "Nivel "+(i+1),
-				   height: "90",
+				   height: "10%",
 				   top: "6%",
 				   left: "6%",
-				   width: "90",
+				   width: "10%",
 				   backgroundColor: "#81F79F"
 				});
 			}
@@ -691,20 +691,20 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
 			if(Ti.App.Properties.getBool("TF_objetos"+i)==false){
 				button[i] = Titanium.UI.createButton({
 				   title: "Nivel "+(i+1),
-				   height: "90",
+				   height: "10%",
 				   top: "6%",
 				   left: "6%",
-				   width: "90",
+				   width: "10%",
 				   backgroundColor: "#A4A4A4"
 				});	
 			}
 			else{
 				button[i] = Titanium.UI.createButton({
 				   title: "Nivel "+(i+1),
-				   height: "90",
+				   height: "10%",
 				   top: "6%",
 				   left: "6%",
-				   width: "90",
+				   width: "10%",
 				   backgroundColor: "#81F79F"
 				});
 			}
@@ -765,20 +765,20 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
 			if(Ti.App.Properties.getBool("TF_diferencias"+i)==false){
 				button[i] = Titanium.UI.createButton({
 				   title: "Nivel "+(i+1),
-				   height: "90",
+				   height: "10%",
 				   top: "6%",
 				   left: "6%",
-				   width: "90",
+				   width: "10%",
 				   backgroundColor: "#A4A4A4"
 				});	
 			}
 			else{
 				button[i] = Titanium.UI.createButton({
 				   title: "Nivel "+(i+1),
-				   height: "90",
+				   height: "10%",
 				   top: "6%",
 				   left: "6%",
-				   width: "90",
+				   width: "10%",
 				   backgroundColor: "#81F79F"
 				});
 			}
@@ -870,20 +870,20 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
 		if(Ti.App.Properties.getBool("TF_memorice"+0)==false){
 			button[0] = Titanium.UI.createButton({
 			   title: "Nivel 1",
-			   height: "90",
+			   height: "10%",
 			   top: "6%",
 			   left: "6%",
-			   width: "90",
+			   width: "10%",
 			   backgroundColor: "#A4A4A4"
 			});	
 		}
 		else{
 			button[0] = Titanium.UI.createButton({
 			   title: "Nivel 1",
-			   height: "90",
+			   height: "10%",
 			   top: "6%",
 			   left: "6%",
-			   width: "90",
+			   width: "10%",
 			   backgroundColor: "#81F79F"
 			});
 		}

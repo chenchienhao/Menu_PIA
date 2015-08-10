@@ -107,8 +107,8 @@ $.pelo_iz.addEventListener('click',function(e){
 		aux_pelo_iz=true;
 		aux_pelo_dr=true;
 		punto=punto+1;
-		$.pelo_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.pelo_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.pelo_iz.backgroundColor="#80FF0000";
+		$.pelo_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -117,8 +117,8 @@ $.pelo_dr.addEventListener('click',function(e){
 		aux_pelo_iz=true;
 		aux_pelo_dr=true;
 		punto=punto+1;
-		$.pelo_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.pelo_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.pelo_iz.backgroundColor="#80FF0000";
+		$.pelo_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -127,8 +127,8 @@ $.nariz_iz.addEventListener('click',function(e){
 		aux_nariz_iz=true;
 		aux_nariz_dr=true;
 		punto=punto+1;
-		$.nariz_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.nariz_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.nariz_iz.backgroundColor="#80FF0000";
+		$.nariz_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -137,8 +137,8 @@ $.nariz_dr.addEventListener('click',function(e){
 		aux_nariz_iz=true;
 		aux_nariz_dr=true;
 		punto=punto+1;
-		$.nariz_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.nariz_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.nariz_iz.backgroundColor="#80FF0000";
+		$.nariz_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -147,8 +147,8 @@ $.ropaarriba_iz.addEventListener('click',function(e){
 		aux_ropaarriba_iz=true;
 		aux_ropaarriba_dr=true;
 		punto=punto+1;
-		$.ropaarriba_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.ropaarriba_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.ropaarriba_iz.backgroundColor="#80FF0000";
+		$.ropaarriba_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -157,8 +157,8 @@ $.ropaarriba_dr.addEventListener('click',function(e){
 		aux_ropaarriba_iz=true;
 		aux_ropaarriba_dr=true;
 		punto=punto+1;
-		$.ropaarriba_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.ropaarriba_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.ropaarriba_iz.backgroundColor="#80FF0000";
+		$.ropaarriba_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -167,8 +167,8 @@ $.ropaabajo_iz.addEventListener('click',function(e){
 		aux_ropaabajo_iz=true;
 		aux_ropaabajo_dr=true;
 		punto=punto+1;
-		$.ropaabajo_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.ropaabajo_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.ropaabajo_iz.backgroundColor="#80FF0000";
+		$.ropaabajo_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -177,8 +177,8 @@ $.ropaabajo_dr.addEventListener('click',function(e){
 		aux_ropaabajo_iz=true;
 		aux_ropaabajo_dr=true;
 		punto=punto+1;
-		$.ropaabajo_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.ropaabajo_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.ropaabajo_iz.backgroundColor="#80FF0000";
+		$.ropaabajo_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -189,8 +189,8 @@ $.dedo_iz.addEventListener('click',function(e){
 		aux_dedo_iz=true;
 		aux_dedo_dr=true;
 		punto=punto+1;
-		$.dedo_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.dedo_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.dedo_iz.backgroundColor="#80FF0000";
+		$.dedo_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -199,8 +199,8 @@ $.dedo_dr.addEventListener('click',function(e){
 		aux_dedo_iz=true;
 		aux_dedo_dr=true;
 		punto=punto+1;
-		$.dedo_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.dedo_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.dedo_iz.backgroundColor="#80FF0000";
+		$.dedo_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -210,8 +210,8 @@ $.cinta_iz.addEventListener('click',function(e){
 		aux_cinta_iz=true;
 		aux_cinta_dr=true;
 		punto=punto+1;
-		$.cinta_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.cinta_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.cinta_iz.backgroundColor="#80FF0000";
+		$.cinta_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -220,8 +220,8 @@ $.cinta_dr.addEventListener('click',function(e){
 		aux_cinta_iz=true;
 		aux_cinta_dr=true;
 		punto=punto+1;
-		$.cinta_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.cinta_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.cinta_iz.backgroundColor="#80FF0000";
+		$.cinta_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });

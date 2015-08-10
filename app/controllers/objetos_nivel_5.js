@@ -41,7 +41,7 @@ $.ropa.addEventListener('click',function(e){
 	if(aux_ropa==false){
 		aux_ropa=true;
 		punto=punto+1;
-		$.ropa.backgroundColor="rgba(255,0,0,0.5)";
+		$.ropa.backgroundColor="#80FF0000";
 		$.image_ropa.visible=false;
 	}
 	estrella(punto);
@@ -50,7 +50,7 @@ $.bigote.addEventListener('click',function(e){
 	if(aux_bigote==false){
 		aux_bigote=true;
 		punto=punto+1;
-		$.bigote.backgroundColor="rgba(255,0,0,0.5)";
+		$.bigote.backgroundColor="#80FF0000";
 		$.image_bigote.visible=false;
 	}
 	estrella(punto);
@@ -59,7 +59,7 @@ $.sol.addEventListener('click',function(e){
 	if(aux_sol==false){
 		aux_sol=true;
 		punto=punto+1;
-		$.sol.backgroundColor="rgba(255,0,0,0.5)";
+		$.sol.backgroundColor="#80FF0000";
 		$.image_sol.visible=false;
 	}
 	estrella(punto);
@@ -68,7 +68,7 @@ $.corro.addEventListener('click',function(e){
 	if(aux_corro==false){
 		aux_corro=true;
 		punto=punto+1;
-		$.corro.backgroundColor="rgba(255,0,0,0.5)";
+		$.corro.backgroundColor="#80FF0000";
 		$.image_corro.visible=false;
 	}
 	estrella(punto);
@@ -77,7 +77,7 @@ $.zapato.addEventListener('click',function(e){
 	if(aux_zapato==false){
 		aux_zapato=true;
 		punto=punto+1;
-		$.zapato.backgroundColor="rgba(255,0,0,0.5)";
+		$.zapato.backgroundColor="#80FF0000";
 		$.image_zapato.visible=false;
 	}
 	estrella(punto);
@@ -86,7 +86,7 @@ $.nariz.addEventListener('click',function(e){
 	if(aux_nariz==false){
 		aux_nariz=true;
 		punto=punto+1;
-		$.nariz.backgroundColor="rgba(255,0,0,0.5)";
+		$.nariz.backgroundColor="#80FF0000";
 		$.image_nariz.visible=false;
 	}
 	estrella(punto);

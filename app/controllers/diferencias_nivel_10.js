@@ -104,8 +104,8 @@ $.cata_bigote_iz.addEventListener('click',function(e){
 		aux_cata_bigote_iz=true;
 		aux_cata_bigote_dr=true;
 		punto=punto+1;
-		$.cata_bigote_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.cata_bigote_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.cata_bigote_iz.backgroundColor="#80FF0000";
+		$.cata_bigote_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -114,8 +114,8 @@ $.cata_bigote_dr.addEventListener('click',function(e){
 		aux_cata_bigote_iz=true;
 		aux_cata_bigote_dr=true;
 		punto=punto+1;
-		$.cata_bigote_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.cata_bigote_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.cata_bigote_iz.backgroundColor="#80FF0000";
+		$.cata_bigote_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -124,8 +124,8 @@ $.cata_cola_iz.addEventListener('click',function(e){
 		aux_cata_cola_iz=true;
 		aux_cata_cola_dr=true;
 		punto=punto+1;
-		$.cata_cola_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.cata_cola_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.cata_cola_iz.backgroundColor="#80FF0000";
+		$.cata_cola_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -134,8 +134,8 @@ $.cata_cola_dr.addEventListener('click',function(e){
 		aux_cata_cola_iz=true;
 		aux_cata_cola_dr=true;
 		punto=punto+1;
-		$.cata_cola_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.cata_cola_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.cata_cola_iz.backgroundColor="#80FF0000";
+		$.cata_cola_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -144,8 +144,8 @@ $.pez_iz.addEventListener('click',function(e){
 		aux_pez_iz=true;
 		aux_pez_dr=true;
 		punto=punto+1;
-		$.pez_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.pez_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.pez_iz.backgroundColor="#80FF0000";
+		$.pez_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -154,8 +154,8 @@ $.pez_dr.addEventListener('click',function(e){
 		aux_pez_iz=true;
 		aux_pez_dr=true;
 		punto=punto+1;
-		$.pez_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.pez_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.pez_iz.backgroundColor="#80FF0000";
+		$.pez_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -164,8 +164,8 @@ $.perro_ojo_iz.addEventListener('click',function(e){
 		aux_perro_ojo_iz=true;
 		aux_perro_ojo_dr=true;
 		punto=punto+1;
-		$.perro_ojo_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.perro_ojo_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.perro_ojo_iz.backgroundColor="#80FF0000";
+		$.perro_ojo_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -174,8 +174,8 @@ $.perro_ojo_dr.addEventListener('click',function(e){
 		aux_perro_ojo_iz=true;
 		aux_perro_ojo_dr=true;
 		punto=punto+1;
-		$.perro_ojo_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.perro_ojo_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.perro_ojo_iz.backgroundColor="#80FF0000";
+		$.perro_ojo_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -186,8 +186,8 @@ $.perro_cola_iz.addEventListener('click',function(e){
 		aux_perro_cola_iz=true;
 		aux_perro_cola_dr=true;
 		punto=punto+1;
-		$.perro_cola_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.perro_cola_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.perro_cola_iz.backgroundColor="#80FF0000";
+		$.perro_cola_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -196,8 +196,8 @@ $.perro_cola_dr.addEventListener('click',function(e){
 		aux_perro_cola_iz=true;
 		aux_perro_cola_dr=true;
 		punto=punto+1;
-		$.perro_cola_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.perro_cola_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.perro_cola_iz.backgroundColor="#80FF0000";
+		$.perro_cola_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -207,8 +207,8 @@ $.pelota_iz.addEventListener('click',function(e){
 		aux_pelota_iz=true;
 		aux_pelota_dr=true;
 		punto=punto+1;
-		$.pelota_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.pelota_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.pelota_iz.backgroundColor="#80FF0000";
+		$.pelota_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });
@@ -217,8 +217,8 @@ $.pelota_dr.addEventListener('click',function(e){
 		aux_pelota_iz=true;
 		aux_pelota_dr=true;
 		punto=punto+1;
-		$.pelota_iz.backgroundColor="rgba(255,0,0,0.5)";
-		$.pelota_dr.backgroundColor="rgba(255,0,0,0.5)";
+		$.pelota_iz.backgroundColor="#80FF0000";
+		$.pelota_dr.backgroundColor="#80FF0000";
 		estrella (punto);
 	}
 });

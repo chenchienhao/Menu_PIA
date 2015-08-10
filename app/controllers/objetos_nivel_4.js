@@ -41,7 +41,7 @@ $.muleta.addEventListener('click',function(e){
 	if(aux_muleta==false){
 		aux_muleta=true;
 		punto=punto+1;
-		$.muleta.backgroundColor="rgba(255,0,0,0.5)";
+		$.muleta.backgroundColor="#80FF0000";
 		$.image_muleta.visible=false;
 	}
 	estrella(punto);
@@ -50,7 +50,7 @@ $.pelota.addEventListener('click',function(e){
 	if(aux_pelota==false){
 		aux_pelota=true;
 		punto=punto+1;
-		$.pelota.backgroundColor="rgba(255,0,0,0.5)";
+		$.pelota.backgroundColor="#80FF0000";
 		$.image_pelota.visible=false;
 	}
 	estrella(punto);
@@ -59,7 +59,7 @@ $.munique.addEventListener('click',function(e){
 	if(aux_munique==false){
 		aux_munique=true;
 		punto=punto+1;
-		$.munique.backgroundColor="rgba(255,0,0,0.5)";
+		$.munique.backgroundColor="#80FF0000";
 		$.image_munique.visible=false;
 	}
 	estrella(punto);
@@ -68,7 +68,7 @@ $.llorar.addEventListener('click',function(e){
 	if(aux_llorar==false){
 		aux_llorar=true;
 		punto=punto+1;
-		$.llorar.backgroundColor="rgba(255,0,0,0.5)";
+		$.llorar.backgroundColor="#80FF0000";
 		$.image_llorar.visible=false;
 	}
 	estrella(punto);
