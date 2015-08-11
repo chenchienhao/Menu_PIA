@@ -27,7 +27,8 @@ if (!Ti.App.Properties.hasProperty("HS_colorea1")){
 
 if(Ti.Platform.osname=="android"){
 		var textfield = Ti.UI.createTextField();
- 
+ 		textfield.passwordMask=true;
+ 		textfield.verticalAlign=Ti.UI.TEXT_VERTICAL_ALIGNMENT_CENTER;
 		var dialog = Ti.UI.createAlertDialog({
 		    title: 'Ingrese clave',
 		    androidView: textfield,
@@ -37,7 +38,7 @@ if(Ti.Platform.osname=="android"){
 else{
 		var dialog = Ti.UI.createAlertDialog({
 	    	title: 'Ingrese clave',
-		    style: Ti.UI.iPhone.AlertDialogStyle.PLAIN_TEXT_INPUT,
+		    style: Ti.UI.iPhone.AlertDialogStyle.SECURE_TEXT_INPUT,
 		    buttonNames: ['OK', 'cancel']
 		});
 }
@@ -62,7 +63,7 @@ dialog.addEventListener('click',function(e){
 	else{
 		var pass=e.text;
 	}
-    if(pass=="1234"){
+    if(pass=="chm2015"){
     	Alloy.Globals.setting_on=true;
     	$.done_view.visible="true";
     	

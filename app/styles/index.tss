@@ -81,7 +81,7 @@
 	color: "white",
 	borderRadius: 40,
 	font: {
-		fontSize: 40,
+		fontSize: 24,
 		fontWeight: "bold",
 		textAlign:"center"
 	},
@@ -118,7 +118,10 @@
 	bottom: "10%",
 	left: "10%",
 	height:"80%",
-	backgroundColor:"#81F7BE"
+	font:{
+		fontSize: 24
+	},
+	backgroundColor:"#00FFBF"
 }
 "#pass_input":{
 	font: {

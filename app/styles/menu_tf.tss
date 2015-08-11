@@ -79,7 +79,7 @@
 	borderRadius: 30,
 	color: 'white',
 	font: {
-		fontSize: 40,
+		fontSize: 24,
 		fontWeight: "bold",
 		textAlign:"center"
 	},
