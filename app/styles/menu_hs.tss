@@ -50,6 +50,7 @@
 }
 "#sound_icon":{
 	image:"/images/icon/sound.png",
+	visible: false,
 	top: "10%",
 	right: "10%",
 	height: "80%"

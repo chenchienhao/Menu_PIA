@@ -119,7 +119,7 @@ image1.addEventListener('click',function(e){
     	setTimeout(function(){
 			if(Ti.App.Properties.getBool("TF_siluetas9")==true){
 	var siluetas_nivel_10=Alloy.createController('siluetas_nivel_10').getView();
-		siluetas_nivel_10.open();
+		
 }
 else{
  	var menu_nivel = Alloy.createController('menu_nivel').getView();
@@ -144,7 +144,7 @@ image2.addEventListener('click',function(e){
     	setTimeout(function(){
 			if(Ti.App.Properties.getBool("TF_siluetas9")==true){
 	var siluetas_nivel_10=Alloy.createController('siluetas_nivel_10').getView();
-		siluetas_nivel_10.open();
+		
 }
 else{
  	var menu_nivel = Alloy.createController('menu_nivel').getView();
@@ -169,7 +169,7 @@ image3.addEventListener('click',function(e){
     	setTimeout(function(){
 			if(Ti.App.Properties.getBool("TF_siluetas9")==true){
 	var siluetas_nivel_10=Alloy.createController('siluetas_nivel_10').getView();
-		siluetas_nivel_10.open();
+		
 }
 else{
  	var menu_nivel = Alloy.createController('menu_nivel').getView();
@@ -194,7 +194,7 @@ image4.addEventListener('click',function(e){
     	setTimeout(function(){
 			if(Ti.App.Properties.getBool("TF_siluetas9")==true){
 	var siluetas_nivel_10=Alloy.createController('siluetas_nivel_10').getView();
-		siluetas_nivel_10.open();
+		
 }
 else{
  	var menu_nivel = Alloy.createController('menu_nivel').getView();
@@ -218,7 +218,7 @@ image5.addEventListener('click',function(e){
     	setTimeout(function(){
 			if(Ti.App.Properties.getBool("TF_siluetas9")==true){
 	var siluetas_nivel_10=Alloy.createController('siluetas_nivel_10').getView();
-		siluetas_nivel_10.open();
+		
 }
 else{
  	var menu_nivel = Alloy.createController('menu_nivel').getView();
@@ -243,7 +243,7 @@ image6.addEventListener('click',function(e){
     	setTimeout(function(){
 			if(Ti.App.Properties.getBool("TF_siluetas9")==true){
 	var siluetas_nivel_10=Alloy.createController('siluetas_nivel_10').getView();
-		siluetas_nivel_10.open();
+		
 }
 else{
  	var menu_nivel = Alloy.createController('menu_nivel').getView();
@@ -268,7 +268,7 @@ image7.addEventListener('click',function(e){
     	setTimeout(function(){
 			if(Ti.App.Properties.getBool("TF_siluetas9")==true){
 	var siluetas_nivel_10=Alloy.createController('siluetas_nivel_10').getView();
-		siluetas_nivel_10.open();
+		
 }
 else{
  	var menu_nivel = Alloy.createController('menu_nivel').getView();
@@ -293,7 +293,7 @@ image8.addEventListener('click',function(e){
     	setTimeout(function(){
 			if(Ti.App.Properties.getBool("TF_siluetas9")==true){
 	var siluetas_nivel_10=Alloy.createController('siluetas_nivel_10').getView();
-		siluetas_nivel_10.open();
+		
 }
 else{
  	var menu_nivel = Alloy.createController('menu_nivel').getView();
@@ -318,7 +318,7 @@ image9.addEventListener('click',function(e){
     	setTimeout(function(){
 			if(Ti.App.Properties.getBool("TF_siluetas9")==true){
 	var siluetas_nivel_10=Alloy.createController('siluetas_nivel_10').getView();
-		siluetas_nivel_10.open();
+		
 }
 else{
  	var menu_nivel = Alloy.createController('menu_nivel').getView();
@@ -342,7 +342,7 @@ image10.addEventListener('click',function(e){
     	setTimeout(function(){
 			if(Ti.App.Properties.getBool("TF_siluetas9")==true){
 	var siluetas_nivel_10=Alloy.createController('siluetas_nivel_10').getView();
-		siluetas_nivel_10.open();
+		
 }
 else{
  	var menu_nivel = Alloy.createController('menu_nivel').getView();

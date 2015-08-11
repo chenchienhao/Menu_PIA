@@ -51,6 +51,7 @@
 }
 "#sound_icon":{
 	image:"/images/icon/sound.png",
+	visible: false,
 	top: "10%",
 	right: "10%",
 	height: "80%"
@@ -61,7 +62,16 @@
 //-------------BODY----------------
 //---------------------------------
 "#main_body":{
-	layout:"vertical",
-	height: "85%"
+	/*layout:"vertical",
+	height: "85%",
+	width: "100%",
+	backgroundColor: "red"*/
+	width: "100%",
+	layout: "vertical",
+	showVerticalScrollIndicator:"true"
+}
+"#scrollView":{
+	width: "100%",
+	layout: "horizontal"
 }
 

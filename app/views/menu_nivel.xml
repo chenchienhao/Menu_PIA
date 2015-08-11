@@ -11,9 +11,11 @@
 				<ImageView id="sound_icon" onClick="go_sound"/>
 			</View>
 		</View>
-		<View id="main_body">
-			
-		</View>
+		<ScrollView id="main_body">
+			<View id="scrollView">
+				
+			</View>
+		</ScrollView>
 		
 		
 		

@@ -30,20 +30,6 @@ if(Alloy.Globals.setting_on){//si administrando
 var gris="#A4A4A4";
 var verde="#81F79F";
 
-
-var view_body= Ti.UI.createScrollView({
-    contentHeight: Ti.UI.FILL, // these lets the internal space fill up greater
-    contentWidth: Ti.UI.FILL,  // than the external space if required
-    height: Ti.UI.FILL, // this is the actual height
-    layout: 'horizontal',
-    showHorizontalScrollIndicator: false,
-    showVerticalScrollIndicator: true,
-    width: "80%" // this is the actual width
-});
-
-
-
-
 if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
 	
     /*##################################################################################################################
@@ -67,7 +53,7 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
             });
             if(Ti.App.Properties.getBool("HS_colorea"+i)==false) button[i].backgroundColor=gris;
             else                                                 button[i].backgroundColor=verde;
-            view_body.add(button[i]);
+            $.scrollView.add(button[i]);
         }
 		button[0].addEventListener('click',function(e){
             if(Alloy.Globals.setting_on){//si administrando
@@ -165,7 +151,7 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
             });
             if(Ti.App.Properties.getBool("HS_selecciona"+i)==false) button[i].backgroundColor=gris;
             else                                                 button[i].backgroundColor=verde;
-            view_body.add(button[i]);
+            $.scrollView.add(button[i]);
         }
         button[0].addEventListener('click',function(e){
             if(Alloy.Globals.setting_on){//si administrando
@@ -389,7 +375,7 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
             });
             if(Ti.App.Properties.getBool("HS_acciones"+i)==false) button[i].backgroundColor=gris;
             else                                                 button[i].backgroundColor=verde;
-            view_body.add(button[i]);
+            $.scrollView.add(button[i]);
         }
         button[0].addEventListener('click',function(e){
             if(Alloy.Globals.setting_on){//si administrando
@@ -595,7 +581,7 @@ if(Alloy.Globals.aux_categoria=="Habilidades Sociales"){
             });
             if(Ti.App.Properties.getBool("HS_gestos"+i)==false) button[i].backgroundColor=gris;
             else                                                 button[i].backgroundColor=verde;
-            view_body.add(button[i]);
+            $.scrollView.add(button[i]);
         }
         button[0].addEventListener('click',function(e){
             if(Alloy.Globals.setting_on){//si administrando
@@ -892,7 +878,7 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
             });
             if(Ti.App.Properties.getBool("TF_siluetas"+i)==false) button[i].backgroundColor=gris;
             else                                                 button[i].backgroundColor=verde;
-            view_body.add(button[i]);
+            $.scrollView.add(button[i]);
         }
         
         button[0].addEventListener('click',function(e){
@@ -1098,7 +1084,7 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
             });
             if(Ti.App.Properties.getBool("TF_encuentralos"+i)==false) button[i].backgroundColor=gris;
             else                                                 button[i].backgroundColor=verde;
-            view_body.add(button[i]);
+            $.scrollView.add(button[i]);
         }
         
         button[0].addEventListener('click',function(e){
@@ -1303,7 +1289,7 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
             });
             if(Ti.App.Properties.getBool("TF_objetos"+i)==false) button[i].backgroundColor=gris;
             else                                                 button[i].backgroundColor=verde;
-            view_body.add(button[i]);
+            $.scrollView.add(button[i]);
         }
         
         button[0].addEventListener('click',function(e){
@@ -1417,7 +1403,7 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
             });
             if(Ti.App.Properties.getBool("TF_diferencias"+i)==false) button[i].backgroundColor=gris;
             else                                                 button[i].backgroundColor=verde;
-            view_body.add(button[i]);
+            $.scrollView.add(button[i]);
         }
         
         button[0].addEventListener('click',function(e){
@@ -1631,7 +1617,7 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
             });
             if(Ti.App.Properties.getBool("TF_memorice"+i)==false) button[i].backgroundColor=gris;
             else                                                 button[i].backgroundColor=verde;
-            view_body.add(button[i]);
+            $.scrollView.add(button[i]);
         }
         
         button[0].addEventListener('click',function(e){
@@ -1654,5 +1640,9 @@ if(Alloy.Globals.aux_categoria=="Tolerancia a la Frustración"){
         });
     }
 }
-$.main_body.add(view_body);
 
+/*$.scrollView.layout='horizontal';
+$.scrollView.showVerticalScrollIndicator="true";
+$.scrollView.width= "100%";
+$.scrollView.height= "100%";
+*/
