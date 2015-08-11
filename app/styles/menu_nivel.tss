@@ -5,3 +5,63 @@
 "#win":{
 	layout:"vertical"
 }
+//---------------------------------
+//------------HEADER---------------
+//---------------------------------
+"#header_view":{
+	width:"100%",
+	height: "15%",
+	layout:"horizontal",
+	//backgroundColor:"green"
+}
+"#back_view":{
+	top: "0%",
+	left:"0%",
+	width: "20%",
+	height: "100%",
+	//backgroundColor:"red"
+}
+"#back_icon":{
+	image:"/images/icon/back.png",
+	top: "10%",
+	left: "10%",
+	height: "80%"
+	//width:Ti.UI.SIZE,
+}
+
+"#title_view":{
+	width:"60%"
+}
+"#title_label":{
+	top: "50%",
+	text:"Bienvenido",
+	font: {
+		fontSize: 24,
+		color:"#000",
+		textAlign:"center"
+	}
+}
+
+"#sound_view":{
+	top: "0%",
+	right:"0%",
+	width: "20%",
+	height: "100%",
+	//backgroundColor:"blue"
+}
+"#sound_icon":{
+	image:"/images/icon/sound.png",
+	top: "10%",
+	right: "10%",
+	height: "80%"
+}
+
+
+//---------------------------------
+//-------------BODY----------------
+//---------------------------------
+"#main_body":{
+	layout:"vertical",
+	height: "85%"
+}
+

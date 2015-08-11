@@ -9,27 +9,7 @@
 	layout:"horizontal"
 }
 
-"#title": {
-	top: "50%",
-	width: Ti.UI.SIZE,
-	height: Ti.UI.SIZE,
-	color: "#000",
-	font: {
-		fontSize: 24
-	}
-}
 
-"#diferencia": {
-	top: "50%",
-	left: "4%",
-	width: Ti.UI.SIZE,
-	height: Ti.UI.SIZE,
-	color: "#4B088A",
-	font: {
-		fontSize: 24,
-		fontWeight:"bold"
-	}
-}
 "#view_body":{
 	height: "70%",
 	width: "90%"

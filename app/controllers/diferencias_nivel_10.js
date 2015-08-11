@@ -1,4 +1,23 @@
+var sonido = Ti.Media.createSound({url:"/images/encabezados/diferencias_dibujos.m4a"});
 
+var encabezado = Ti.UI.createImageView({
+ 	image: '/images/encabezados/diferencias_dibujos.png',
+ 	top: '5%', 
+ 	left: '15%',
+	width: '70%',
+	height: '50%'
+});
+
+$.view_header.add(encabezado);
+
+var mensaje = 0;
+encabezado.addEventListener('click',function(e) 
+{
+	if(mensaje<2){
+		sonido.play();
+		mensaje=mensaje+1;
+	}
+});
 var aux_cata_bigote_iz=false;
 var aux_cata_bigote_dr=false;
 var aux_cata_cola_iz=false;

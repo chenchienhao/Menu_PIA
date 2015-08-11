@@ -5,50 +5,26 @@ var win = Ti.UI.createWindow({
 	fullscreen: true,
 	exitOnClose: true
 });
+var sonido = Ti.Media.createSound({url:"/images/encabezados/Siluetas.m4a"});
 
-var sonido_siluetas = Ti.Media.createSound({url:"/images/alertas/Siluetas.m4a"});
+var encabezado = Ti.UI.createImageView({
+ 	image: '/images/encabezados/Siluetas.png',
+ 	top: '2%', 
+ 	left: '15%',
+	width: '70%',
+	height: '10%'
+});
 
-titulo_1= Ti.UI.createLabel({  //crea el titulo de la pantalla(indicaciones)
-		  color: 'red',
-		  font: { fontSize:25 },
-		  shadowColor: '#000099',
-		  text: 'ENCUENTRA',
-		  left:'24%',
-		  top: 10,
-		  width: Ti.UI.SIZE, height: Ti.UI.SIZE
-		});
-		
-titulo_2= Ti.UI.createLabel({  //crea el titulo de la pantalla(indicaciones)
-		  color: 'Black',
-		  font: { fontSize:25 },
-		  shadowColor: '#000099',
-		  text: 'la silueta correcta',
-		  left:'50%',
-		  //textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
-		  top: 10,
-		  width: Ti.UI.SIZE, height: Ti.UI.SIZE
-		});
-		
-win.add(titulo_1);
-win.add(titulo_2);
+win.add(encabezado);
 
 var mensaje = 0;
-titulo_1.addEventListener('click',function(e) 
+encabezado.addEventListener('click',function(e) 
 {
 	if(mensaje<2){
-		sonido_siluetas.play();
+		sonido.play();
 		mensaje=mensaje+1;
 	}
 });
-
-titulo_2.addEventListener('click',function(e) 
-{
-	if(mensaje<2){
-		sonido_siluetas.play();
-		mensaje=mensaje+1;
-	}
-});
-
 
 function shuffle(array) {
   var currentsiluetas = array.length, temporaryValue, randomsiluetas ;
@@ -137,11 +113,16 @@ image1.addEventListener('click',function(e){
    if(indice[0] == 6){
    		dialog.show();
    		//Despues de 3 segundo se abre otro nivel de juego automáticamente
-   		//Desbloquear siguiente nivel.
-		Ti.App.Properties.removeProperty("TF_siluetas6");
-		Ti.App.Properties.setBool("TF_siluetas6",true);
+   		
     	setTimeout(function(){
-			siluetas_nivel_6 = Alloy.createController('siluetas_nivel_7');
+			if(Ti.App.Properties.getBool("TF_siluetas6")==true){
+	var siluetas_nivel_7=Alloy.createController('siluetas_nivel_7').getView();
+		siluetas_nivel_7.open();
+}
+else{
+ 	var menu_nivel = Alloy.createController('menu_nivel').getView();
+	menu_nivel.open();
+}
 			clearInterval(change_view);
 		},5000);
 	}else{
@@ -159,7 +140,14 @@ image2.addEventListener('click',function(e){
    		win.add(gifView);
    		//Despues de 3 segundo se abre otro nivel de juego automáticamente
     	setTimeout(function(){
-			siluetas_nivel_6 = Alloy.createController('siluetas_nivel_7');
+			if(Ti.App.Properties.getBool("TF_siluetas6")==true){
+	var siluetas_nivel_7=Alloy.createController('siluetas_nivel_7').getView();
+		siluetas_nivel_7.open();
+}
+else{
+ 	var menu_nivel = Alloy.createController('menu_nivel').getView();
+	menu_nivel.open();
+}
 		},3000);
 	}else{
 		contador = contador + 1;
@@ -176,7 +164,14 @@ image3.addEventListener('click',function(e){
    		win.add(gifView);
    		//Despues de 3 segundo se abre otro nivel de juego automáticamente
     	setTimeout(function(){
-			siluetas_nivel_6 = Alloy.createController('siluetas_nivel_7');
+			if(Ti.App.Properties.getBool("TF_siluetas6")==true){
+	var siluetas_nivel_7=Alloy.createController('siluetas_nivel_7').getView();
+		siluetas_nivel_7.open();
+}
+else{
+ 	var menu_nivel = Alloy.createController('menu_nivel').getView();
+	menu_nivel.open();
+}
 		},3000);
 	}else{
 		contador = contador + 1;
@@ -193,7 +188,14 @@ image4.addEventListener('click',function(e){
    		win.add(gifView);
    		//Despues de 3 segundo se abre otro nivel de juego automáticamente
     	setTimeout(function(){
-			siluetas_nivel_6 = Alloy.createController('siluetas_nivel_7');
+			if(Ti.App.Properties.getBool("TF_siluetas6")==true){
+	var siluetas_nivel_7=Alloy.createController('siluetas_nivel_7').getView();
+		siluetas_nivel_7.open();
+}
+else{
+ 	var menu_nivel = Alloy.createController('menu_nivel').getView();
+	menu_nivel.open();
+}
 		},3000);
 	}else{
 		contador = contador + 1;
@@ -209,7 +211,14 @@ image5.addEventListener('click',function(e){
    		win.add(gifView);
    		//Despues de 3 segundo se abre otro nivel de juego automáticamente
     	setTimeout(function(){
-			siluetas_nivel_6 = Alloy.createController('siluetas_nivel_7');
+			if(Ti.App.Properties.getBool("TF_siluetas6")==true){
+	var siluetas_nivel_7=Alloy.createController('siluetas_nivel_7').getView();
+		siluetas_nivel_7.open();
+}
+else{
+ 	var menu_nivel = Alloy.createController('menu_nivel').getView();
+	menu_nivel.open();
+}
 		},3000);
 	}else{
 		contador = contador + 1;
@@ -226,7 +235,14 @@ image6.addEventListener('click',function(e){
    		win.add(gifView);
    		//Despues de 3 segundo se abre otro nivel de juego automáticamente
     	setTimeout(function(){
-			siluetas_nivel_6 = Alloy.createController('siluetas_nivel_7');
+			if(Ti.App.Properties.getBool("TF_siluetas6")==true){
+	var siluetas_nivel_7=Alloy.createController('siluetas_nivel_7').getView();
+		siluetas_nivel_7.open();
+}
+else{
+ 	var menu_nivel = Alloy.createController('menu_nivel').getView();
+	menu_nivel.open();
+}
 		},3000);
 	}else{
 		contador = contador + 1;
@@ -243,7 +259,14 @@ image7.addEventListener('click',function(e){
 		win.add(gifView);
    		//Despues de 3 segundo se abre otro nivel de juego automáticamente
     	setTimeout(function(){
-			siluetas_nivel_6 = Alloy.createController('siluetas_nivel_7');
+			if(Ti.App.Properties.getBool("TF_siluetas6")==true){
+	var siluetas_nivel_7=Alloy.createController('siluetas_nivel_7').getView();
+		siluetas_nivel_7.open();
+}
+else{
+ 	var menu_nivel = Alloy.createController('menu_nivel').getView();
+	menu_nivel.open();
+}
 		},3000);
 	}else{
 		contador = contador + 1;
@@ -260,7 +283,14 @@ image8.addEventListener('click',function(e){
    		win.add(gifView);
    		//Despues de 3 segundo se abre otro nivel de juego automáticamente
     	setTimeout(function(){
-			siluetas_nivel_6 = Alloy.createController('siluetas_nivel_7');
+			if(Ti.App.Properties.getBool("TF_siluetas6")==true){
+	var siluetas_nivel_7=Alloy.createController('siluetas_nivel_7').getView();
+		siluetas_nivel_7.open();
+}
+else{
+ 	var menu_nivel = Alloy.createController('menu_nivel').getView();
+	menu_nivel.open();
+}
 		},3000);
 	}else{
 		contador = contador + 1;
@@ -277,7 +307,14 @@ image9.addEventListener('click',function(e){
    		win.add(gifView);
    		//Despues de 3 segundo se abre otro nivel de juego automáticamente
     	setTimeout(function(){
-			siluetas_nivel_6 = Alloy.createController('siluetas_nivel_7');
+			if(Ti.App.Properties.getBool("TF_siluetas6")==true){
+	var siluetas_nivel_7=Alloy.createController('siluetas_nivel_7').getView();
+		siluetas_nivel_7.open();
+}
+else{
+ 	var menu_nivel = Alloy.createController('menu_nivel').getView();
+	menu_nivel.open();
+}
 		},3000);
 	}else{
 		contador = contador + 1;
@@ -293,7 +330,14 @@ image10.addEventListener('click',function(e){
 		win.add(gifView);
    		//Despues de 3 segundo se abre otro nivel de juego automáticamente
     	setTimeout(function(){
-			siluetas_nivel_6 = Alloy.createController('siluetas_nivel_7');
+			if(Ti.App.Properties.getBool("TF_siluetas6")==true){
+	var siluetas_nivel_7=Alloy.createController('siluetas_nivel_7').getView();
+		siluetas_nivel_7.open();
+}
+else{
+ 	var menu_nivel = Alloy.createController('menu_nivel').getView();
+	menu_nivel.open();
+}
 		},3000);
 	}else{
 		contador = contador + 1;

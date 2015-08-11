@@ -1,7 +1,7 @@
 <Alloy>
 	<Window class="container" id="win">
 		<View id="view_header">
-			<Label id="title">Encúentre</Label><Label id="diferencia">Diferencia</Label>
+			
 		</View>
 		<View id="view_body">
 			<View id="imagen">

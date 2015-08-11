@@ -1,4 +1,23 @@
+var sonido = Ti.Media.createSound({url:"/images/encabezados/objetos_ocultos.m4a"});
 
+var encabezado = Ti.UI.createImageView({
+ 	image: '/images/encabezados/objetos_ocultos.png',
+ 	top: '2%', 
+ 	left: '15%',
+	width: '70%',
+	height: '50%'
+});
+
+$.view_header.add(encabezado);
+
+var mensaje = 0;
+encabezado.addEventListener('click',function(e) 
+{
+	if(mensaje<2){
+		sonido.play();
+		mensaje=mensaje+1;
+	}
+});
 var aux_cangilon=false;
 var aux_paleta=false;
 var aux_corro=false;
@@ -6,34 +25,15 @@ var aux_pala=false;
 var punto=0;
 function estrella (punto) {
 	if(punto==4){
-		//Desbloquear siguiente nivel.
-		Ti.App.Properties.removeProperty("TF_objetos2");
-		Ti.App.Properties.setBool("TF_objetos2",true);
-		var dialog = Ti.UI.createAlertDialog({
-			title: 'Felicitaciones',
-			message: '¡Bien! ¡Vamos a siguiente nivel!',
-			cancel: 1,
-    		buttonNames: ['Vamos', 'Cacelar']
-		});
-		dialog.show();
-		dialog.addEventListener('click', function(e){
-			var aux_click=e.text;
-			Ti.API.info(aux_click);
-			if (e.index === e.source.cancel){
-				clearInterval(change_view);
-		      	Ti.API.info('The cancel button was clicked');
-		    }
-			else{
-				var objetos_nivel_3=Alloy.createController('objetos_nivel_3').getView();
-				objetos_nivel_3.open();
-			}	
-		});
-		var change_view=setInterval(function(){
-			dialog.hide();
+		if(Ti.App.Properties.getBool("TF_objetos2")==true){
 			var objetos_nivel_3=Alloy.createController('objetos_nivel_3').getView();
-			objetos_nivel_3.open();
-			clearInterval(change_view);
-		},5000);
+				objetos_nivel_3.open();
+		}
+		else{
+		 	var menu_nivel = Alloy.createController('menu_nivel').getView();
+			menu_nivel.open();
+		}
+		animacionGlobos = Alloy.createController('animacionGlobos');
 	}
 }
 

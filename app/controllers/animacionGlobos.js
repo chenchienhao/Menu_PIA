@@ -15,7 +15,7 @@ var htmlstrng='<html>
 
 
 var gifView = Titanium.UI.createWebView({
-	 backgroundColor: 'transparent',
+	 backgroundColor: 'white',
 	 top:'20%', 
 	 left:'0%', 
 	 html:htmlstrng 

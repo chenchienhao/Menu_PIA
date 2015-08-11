@@ -9,16 +9,26 @@ var win = Ti.UI.createWindow({
 	exitOnClose: true
 });
 
-titulo = Ti.UI.createLabel({
-		  color: 'black',
-		  font: { fontSize:20 },
-		  shadowColor: '#000099',
-		  text: 'Colorea los dibujos de rabia y enojo con rojo',
-		  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
-		  top: 0,
-		  width: Ti.UI.SIZE, height: Ti.UI.SIZE
-		});
-win.add(titulo);
+var sonido = Ti.Media.createSound({url:"/images/encabezados/colorea_rabia.m4a"});
+
+var encabezado = Ti.UI.createImageView({
+ 	image: '/images/encabezados/colorea_rabia.png',
+ 	top: '2%', 
+ 	left: '15%',
+	width: '70%',
+	height: '10%'
+});
+
+win.add(encabezado);
+
+var mensaje = 0;
+encabezado.addEventListener('click',function(e) 
+{
+	if(mensaje<2){
+		sonido.play();
+		mensaje=mensaje+1;
+	}
+});
 
 var rel = 0;
 var newLeft = 0;

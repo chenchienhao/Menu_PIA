@@ -23,41 +23,20 @@ var imagen_globo = Ti.UI.createImageView({  //carga imagen a descifrar
 
 win1.add(imagen_globo);
 /*********************************************************************/
-titulo_1= Ti.UI.createLabel({  //crea el titulo de la pantalla(indicaciones)
-		  color: 'black',
-		  font: { fontSize:25 },
-		  shadowColor: '#000099',
-		  text: 'Selecciona la frase        ',
-		  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
-		  top: 10,
-		  width: Ti.UI.SIZE, height: Ti.UI.SIZE
-		});
-		
-titulo_2= Ti.UI.createLabel({  //crea el titulo de la pantalla(indicaciones)
-		  color: 'Blue',
-		  font: { fontSize:25 },
-		  shadowColor: '#000099',
-		  text: 'CORRECTA',
-		  left:'60%',
-		  //textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
-		  top: 10,
-		  width: Ti.UI.SIZE, height: Ti.UI.SIZE
-		});
-		
-win1.add(titulo_1);
-win1.add(titulo_2);
-
-titulo_1.addEventListener('click',function(e) 
-{
-	if(mensaje<=2){
-		sonido.play();
-		mensaje=mensaje+1;
-	}
+var encabezado = Ti.UI.createImageView({
+ 	image: '/images/encabezados/gestos.png',
+ 	top: '2%', 
+ 	left: '15%',
+	width: '70%',
+	height: '10%'
 });
 
-titulo_2.addEventListener('click',function(e) 
+win0.add(encabezado);
+
+var mensaje = 0;
+encabezado.addEventListener('click',function(e) 
 {
-	if(mensaje<=2){
+	if(mensaje<2){
 		sonido.play();
 		mensaje=mensaje+1;
 	}

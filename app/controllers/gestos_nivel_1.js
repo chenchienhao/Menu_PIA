@@ -23,41 +23,20 @@ var imagen_globo = Ti.UI.createImageView({  //carga imagen a descifrar
 
 win0.add(imagen_globo);
 /*********************************************************************/
-titulo_1= Ti.UI.createLabel({  //crea el titulo de la pantalla(indicaciones)
-		  color: 'black',
-		  font: { fontSize:25 },
-		  shadowColor: '#000099',
-		  text: 'Selecciona la frase        ',
-		  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
-		  top: 10,
-		  width: Ti.UI.SIZE, height: Ti.UI.SIZE
-		});
-		
-titulo_2= Ti.UI.createLabel({  //crea el titulo de la pantalla(indicaciones)
-		  color: 'Blue',
-		  font: { fontSize:25 },
-		  shadowColor: '#000099',
-		  text: 'CORRECTA',
-		  left:'60%',
-		  //textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
-		  top: 10,
-		  width: Ti.UI.SIZE, height: Ti.UI.SIZE
-		});
-		
-win0.add(titulo_1);
-win0.add(titulo_2);
-
-titulo_1.addEventListener('click',function(e) 
-{
-	if(mensaje<=2){
-		sonido.play();
-		mensaje=mensaje+1;
-	}
+var encabezado = Ti.UI.createImageView({
+ 	image: '/images/encabezados/gestos.png',
+ 	top: '2%', 
+ 	left: '15%',
+	width: '70%',
+	height: '10%'
 });
 
-titulo_2.addEventListener('click',function(e) 
+win0.add(encabezado);
+
+var mensaje = 0;
+encabezado.addEventListener('click',function(e) 
 {
-	if(mensaje<=2){
+	if(mensaje<2){
 		sonido.play();
 		mensaje=mensaje+1;
 	}
@@ -155,13 +134,12 @@ button1.addEventListener('click',function(e)
 		Ti.App.info(Ti.App.Properties.getBool("HS_gestos2", true));*/
 		
 		win0.add(gifView);
-		//Desbloquear siguiente nivel.
-		Ti.App.Properties.removeProperty("HS_gestos1");
-		Ti.App.Properties.setBool("HS_gestos1",true);
+		
 		setTimeout(function(){
 		/*desbloquear sgte. nivel
 		if(Ti.App.Properties.getBool("HS_gestos2") == 'true'){*/
-			juego1=Alloy.createController('gestos_nivel_2');
+			var menu_nivel = Alloy.createController('menu_nivel').getView();
+			menu_nivel.open();
 		/*}else{
 			index = Alloy.createController('index');
 		win0.close();*/
@@ -199,13 +177,12 @@ button2.addEventListener('click',function(e)
 		Ti.App.info(Ti.App.Properties.getBool("HS_gestos2", true));*/
 		
 		win0.add(gifView);
-		//Desbloquear siguiente nivel.
-		Ti.App.Properties.removeProperty("HS_gestos1");
-		Ti.App.Properties.setBool("HS_gestos1",true);
+		
 		setTimeout(function(){
 		/*desbloquear sgte. nivel
 		if(Ti.App.Properties.getBool("HS_gestos2") == 'true'){*/
-			juego1=Alloy.createController('gestos_nivel_2');
+			var menu_nivel = Alloy.createController('menu_nivel').getView();
+			menu_nivel.open();
 		/*}else{
 			index = Alloy.createController('index');
 		win0.close();*/
@@ -244,13 +221,12 @@ button3.addEventListener('click',function(e)
 		Ti.App.info(Ti.App.Properties.getBool("HS_gestos2", true));*/
 		
 		win0.add(gifView);
-		//Desbloquear siguiente nivel.
-		Ti.App.Properties.removeProperty("HS_gestos1");
-		Ti.App.Properties.setBool("HS_gestos1",true);
+		
 		setTimeout(function(){
 		/*desbloquear sgte. nivel
 		if(Ti.App.Properties.getBool("HS_gestos2") == 'true'){*/
-			juego1=Alloy.createController('gestos_nivel_2');
+			var menu_nivel = Alloy.createController('menu_nivel').getView();
+			menu_nivel.open();
 		/*}else{
 			index = Alloy.createController('index');
 		win0.close();*/
@@ -288,14 +264,13 @@ button4.addEventListener('click',function(e)
 		Ti.App.info(Ti.App.Properties.getBool("HS_gestos2", true));*/
 		
 		win0.add(gifView);
-		//Desbloquear siguiente nivel.
-		Ti.App.Properties.removeProperty("HS_gestos1");
-		Ti.App.Properties.setBool("HS_gestos1",true);	
+			
 		
 		setTimeout(function(){
 		/*desbloquear sgte. nivel
 		if(Ti.App.Properties.getBool("HS_gestos2") == 'true'){*/
-			juego1=Alloy.createController('gestos_nivel_2');
+			var menu_nivel = Alloy.createController('menu_nivel').getView();
+			menu_nivel.open();
 		/*}else{
 			index = Alloy.createController('index');
 		win0.close();*/

@@ -1,7 +1,7 @@
 <Alloy>
 	<Window class="container">
 		<View id="view_header">
-			<Label id="title">Encúentre Objetos</Label>
+			
 		</View>
 		<View id="view_body">
 			<View id="imagen">

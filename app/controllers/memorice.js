@@ -6,45 +6,23 @@ var win = Ti.UI.createWindow({
 	exitOnClose: true
 });
 
-var sonido_memorice = Ti.Media.createSound({url:"/images/alertas/memorice.m4a"});
+var sonido = Ti.Media.createSound({url:"/images/encabezados/memorice.m4a"});
 
-titulo_1= Ti.UI.createLabel({  //crea el titulo de la pantalla(indicaciones)
-		  color: 'red',
-		  font: { fontSize:25 },
-		  shadowColor: '#000099',
-		  text: 'MEMORICE',
-		  left:'30%',
-		  top: 10,
-		  width: Ti.UI.SIZE, height: Ti.UI.SIZE
-		});
-		
-titulo_2= Ti.UI.createLabel({  //crea el titulo de la pantalla(indicaciones)
-		  color: 'Black',
-		  font: { fontSize:25 },
-		  shadowColor: '#000099',
-		  text: 'los objetos',
-		  left:'55%',
-		  //textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
-		  top: 10,
-		  width: Ti.UI.SIZE, height: Ti.UI.SIZE
-		});
-		
-win.add(titulo_1);
-win.add(titulo_2);
-
-var mensaje = 0;
-titulo_1.addEventListener('click',function(e) 
-{
-	if(mensaje<2){
-		sonido_memorice.play();
-		mensaje=mensaje+1;
-	}
+var encabezado = Ti.UI.createImageView({
+ 	image: '/images/encabezados/memorice.png',
+ 	top: '2%', 
+ 	left: '15%',
+	width: '70%',
+	height: '10%'
 });
 
-titulo_2.addEventListener('click',function(e) 
+win.add(encabezado);
+
+var mensaje = 0;
+encabezado.addEventListener('click',function(e) 
 {
 	if(mensaje<2){
-		sonido_memorice.play();
+		sonido.play();
 		mensaje=mensaje+1;
 	}
 });

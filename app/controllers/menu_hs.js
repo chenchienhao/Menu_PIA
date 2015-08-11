@@ -1,3 +1,11 @@
+//Colores de administración
+if(Alloy.Globals.setting_on){//si administrando
+	$.view_body.backgroundImage="/images/icon/warning.png";
+    $.view_body.backgroundRepeat="true";
+}else{
+	$.view_body.backgroundColor="#FFF";
+}
+
 Alloy.Globals.aux_categoria="Habilidades Sociales";
 function menu_colorea(e) {
 	Alloy.Globals.aux_juego="Colorea";
@@ -19,7 +27,7 @@ function menu_gestos(e) {
 	var menu_nivel=Alloy.createController('menu_nivel').getView();
 	menu_nivel.open();
 }
-$.home_icon.addEventListener('click', function(e) {
+$.back_icon.addEventListener('click', function(e) {
 	$.menu_hs.close();
 });
 $.menu_hs.open();

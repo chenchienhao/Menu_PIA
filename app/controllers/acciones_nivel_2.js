@@ -4,33 +4,25 @@ var win1 = Titanium.UI.createWindow({
     height: '100%'
 });
 
-var titulo = Ti.UI.createLabel({
-  color:'blue',
-  font: { fontSize: '20%' },
-  text: 'Identifica y selecciona la',
-  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
-  left: '0%', top: '1%', 
-  width: '40%',
-  height: '10%'
-});
-var titulo2 = Ti.UI.createLabel({
-  color:'RED',
-  font: { fontSize: '22%' },
-  text: 'ACCIÓN',
-  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
-  left: '29%', top: '0%', 
-  width: '30%',
-  height: '12%'
+var sonido = Ti.Media.createSound({url:"/images/encabezados/acciones.m4a"});
+
+var encabezado = Ti.UI.createImageView({
+ 	image: '/images/encabezados/acciones.png',
+ 	top: '2%', 
+ 	left: '15%',
+	width: '70%',
+	height: '10%'
 });
 
-var titulo3 = Ti.UI.createLabel({
-  color:'blue',
-  font: { fontSize: '20%' },
-  text: 'correspondiente.',
-  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
-  left: '47%', top: '1%', 
-  width: '30%',
-  height: '10%'
+win1.add(encabezado);
+
+var mensaje = 0;
+encabezado.addEventListener('click',function(e) 
+{
+	if(mensaje<2){
+		sonido.play();
+		mensaje=mensaje+1;
+	}
 });
 
 
@@ -80,9 +72,6 @@ var loaderImage = Ti.UI.createImageView({
 	height: '90%'
 });
 
-win1.add(titulo);
-win1.add(titulo2);
-win1.add(titulo3);
 win1.add(loaderImage); 
 win1.add(bueno); 
 win1.add(button1);
@@ -92,30 +81,16 @@ win1.add(button2);
 button1.addEventListener('click',function(e) 
 {
 
-var htmlstrng='<html>
-				<body>
-					<img src="images/animacion/globos.gif"  style="width: 95%; height: auto;"/>
-				</body>
-			</html>';
-
-
-var gifView = Titanium.UI.createWebView({
-	 top:'1%', 
-	 left:'10%', 
-	 backgroundColor: 'transparent',
-	 html:htmlstrng 
-}); 
-
-win1.add(gifView);
+animacionGlobos = Alloy.createController('animacionGlobos');
 
 setTimeout(function(){
-    //Desbloquear siguiente nivel.
-	Ti.App.Properties.removeProperty("HS_acciones2");
-	Ti.App.Properties.setBool("HS_acciones2",true);		
-
-	acciones_nivel_3=Alloy.createController('acciones_nivel_3');
-	win1.close();
-    	}, 4000);
+    if(Ti.App.Properties.getBool("HS_acciones2") == true){
+		acciones_nivel_3=Alloy.createController('acciones_nivel_3');
+		win1.close();
+	}else{
+		win1.close();
+	}
+}, 4000);
 }); 
 
 button2.addEventListener('click',function(e) 

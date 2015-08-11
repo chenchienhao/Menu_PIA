@@ -25,37 +25,24 @@ var imagen_fondo= Ti.UI.createImageView({  //carga imagen base
 
 win0.add(imagen_fondo);
 /********************************************************************/
-titulo_1= Ti.UI.createLabel({  //crea el titulo de la pantalla(indicaciones)
-		  color: 'blue',
-		  font: { fontSize:25 },
-		  shadowColor: '#000099',
-		  text: 'ENCUENTRA y SELECCIONA el ',
-		 // left:'10%',
-		  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
-		  top: 10,
-		  width: Ti.UI.SIZE, height: Ti.UI.SIZE
-		});
-		
-win0.add(titulo_1);
+var encabezado = Ti.UI.createImageView({
+ 	image: '/images/encabezados/encuentra_pajarito.png',
+ 	top: '2%', 
+ 	left: '15%',
+	width: '70%',
+	height: '10%'
+});
 
-titulo_1.addEventListener('click',function(e) 
+win0.add(encabezado);
+
+var mensaje = 0;
+encabezado.addEventListener('click',function(e) 
 {
-	if(mensaje<=2){
+	if(mensaje<2){
 		sonido.play();
 		mensaje=mensaje+1;
 	}
 });
-/********************************************************************/
-var imagen_pajarito = Ti.UI.createImageView({  //carga imagen del titulo
-    image: '/images/pajaritos/twitter.png',
-    backgroundColor:'transparent',
-    top:"1%",
-	left:"80%",
-	height:'9%',
-	width: "10%"
-});
-
-win0.add(imagen_pajarito);
 /************************************************************************/
 var estrella1 = Ti.UI.createImageView({  //carga imagen de las vidas
     image: '/images/pajaritos/estrella.png',
@@ -353,13 +340,12 @@ function nuevo_nivel(vidas){
 		Ti.App.info(Ti.App.Properties.getBool("TF_encuentralos6", true));*/
 		
 		win0.add(gifView);
-		//Desbloquear siguiente nivel.
-		Ti.App.Properties.removeProperty("TF_encuentralos5");
-		Ti.App.Properties.setBool("TF_encuentralos5",true);	
+		
 		setTimeout(function(){
 		/*desbloquear sgte. nivel
 		if(Ti.App.Properties.getBool("TF_encuentralos6") == 'true'){*/
-			juego1=Alloy.createController('encuentralos_nivel_6');
+			var menu_nivel = Alloy.createController('menu_nivel').getView();
+	menu_nivel.open();
 		/*}else{
 			index = Alloy.createController('index');
 		win0.close();*/

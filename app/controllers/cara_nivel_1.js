@@ -9,17 +9,26 @@ var win = Ti.UI.createWindow({
 	exitOnClose: true
 });
 
-titulo = Ti.UI.createLabel({
-		  color: 'black',
-		  font: { fontSize:20 },
-		  shadowColor: '#000099',
-		  text: 'Forma una cara de Alegria',
-		  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
-		  top: 0,
-		  width: Ti.UI.SIZE, height: Ti.UI.SIZE
-		});
-win.add(titulo);
+var sonido = Ti.Media.createSound({url:"/images/encabezados/cara_alegre.m4a"});
 
+var encabezado = Ti.UI.createImageView({
+ 	image: '/images/encabezados/cara_alegre.png',
+ 	top: '2%', 
+ 	left: '15%',
+	width: '70%',
+	height: '10%'
+});
+
+win.add(encabezado);
+
+var mensaje = 0;
+encabezado.addEventListener('click',function(e) 
+{
+	if(mensaje<2){
+		sonido.play();
+		mensaje=mensaje+1;
+	}
+});
 var rel = 0;
 var newLeft = 0;
 var newTop = 0;
@@ -207,6 +216,7 @@ win.add(image8);
 								animacionFuegos = Alloy.createController('animacionFuegos');
 							animacionGlobos = Alloy.createController('animacionGlobos');
 							}
+							
 					}
 					else{
 						intentos++;
@@ -256,6 +266,7 @@ win.add(image8);
 							animacionFuegos = Alloy.createController('animacionFuegos');
 					animacionGlobos = Alloy.createController('animacionGlobos');
 						}
+						
 					}
 					else{
 						intentos++;
@@ -293,6 +304,7 @@ win.add(image8);
 								animacionFuegos = Alloy.createController('animacionFuegos');
 							animacionGlobos = Alloy.createController('animacionGlobos');
 							}
+							
 						}
 						else{
 							intentos++;
@@ -343,6 +355,7 @@ win.add(image8);
 							animacionFuegos = Alloy.createController('animacionFuegos');
 					animacionGlobos = Alloy.createController('animacionGlobos');
 						}
+						
 					}
 					else{
 						intentos++;
@@ -380,6 +393,7 @@ win.add(image8);
 								animacionFuegos = Alloy.createController('animacionFuegos');
 							animacionGlobos = Alloy.createController('animacionGlobos');
 							}
+							
 						}
 						else{
 							intentos++;
@@ -429,6 +443,7 @@ win.add(image8);
 							animacionFuegos = Alloy.createController('animacionFuegos');
 					animacionGlobos = Alloy.createController('animacionGlobos');
 						}
+						
 					}
 					else{
 						intentos++;
@@ -467,6 +482,7 @@ win.add(image8);
 								animacionFuegos = Alloy.createController('animacionFuegos');
 							animacionGlobos = Alloy.createController('animacionGlobos');
 							}
+							
 						}
 						else{
 							intentos++;
@@ -515,6 +531,7 @@ win.add(image8);
 						if(logroOjos == 1 && logroBoca == 1){
 							animacionFuegos = Alloy.createController('animacionFuegos');
 							animacionGlobos = Alloy.createController('animacionGlobos');
+							
 						}
 					}
 					else{
@@ -553,6 +570,7 @@ win.add(image8);
 								animacionFuegos = Alloy.createController('animacionFuegos');
 							animacionGlobos = Alloy.createController('animacionGlobos');
 							}
+							
 						}
 						else{
 							intentos++;
@@ -602,6 +620,7 @@ win.add(image8);
 							animacionFuegos = Alloy.createController('animacionFuegos');
 					animacionGlobos = Alloy.createController('animacionGlobos');
 						}
+						
 					}
 					else{
 						intentos++;
@@ -639,6 +658,7 @@ win.add(image8);
 								animacionFuegos = Alloy.createController('animacionFuegos');
 							animacionGlobos = Alloy.createController('animacionGlobos');
 							}
+							
 						}
 						else{
 							intentos++;
@@ -688,6 +708,7 @@ win.add(image8);
 							animacionFuegos = Alloy.createController('animacionFuegos');
 					animacionGlobos = Alloy.createController('animacionGlobos');
 						}
+						
 					}
 					else{
 						intentos++;
@@ -725,6 +746,7 @@ win.add(image8);
 								animacionFuegos = Alloy.createController('animacionFuegos');
 							animacionGlobos = Alloy.createController('animacionGlobos');
 							}
+							
 						}
 						else{
 							intentos++;
@@ -774,6 +796,7 @@ win.add(image8);
 							animacionFuegos = Alloy.createController('animacionFuegos');
 					animacionGlobos = Alloy.createController('animacionGlobos');
 						}
+						
 					}
 					else{
 						intentos++;
@@ -811,6 +834,7 @@ win.add(image8);
 								animacionFuegos = Alloy.createController('animacionFuegos');
 							animacionGlobos = Alloy.createController('animacionGlobos');
 							}
+							
 						}
 						else{
 							intentos++;

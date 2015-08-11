@@ -1,4 +1,23 @@
+var sonido = Ti.Media.createSound({url:"/images/encabezados/diferencias_dibujos.m4a"});
 
+var encabezado = Ti.UI.createImageView({
+ 	image: '/images/encabezados/diferencias_dibujos.png',
+ 	top: '5%', 
+ 	left: '15%',
+	width: '70%',
+	height: '50%'
+});
+
+$.view_header.add(encabezado);
+
+var mensaje = 0;
+encabezado.addEventListener('click',function(e) 
+{
+	if(mensaje<2){
+		sonido.play();
+		mensaje=mensaje+1;
+	}
+});
 var aux_rueda_iz=false;
 var aux_rueda_dr=false;
 var aux_puerta_iz=false;
@@ -54,35 +73,16 @@ function estrella (punto) {
 		$.estrella_3.backgroundImage="/images/Diferencias/Estrella_amarilla.png";
 		$.estrella_4.backgroundImage="/images/Diferencias/Estrella_amarilla.png";
 		$.estrella_5.backgroundImage="/images/Diferencias/Estrella_amarilla.png";
-		var dialog = Ti.UI.createAlertDialog({
-			title: 'Felicitaciones',
-			message: '¡Bien! ¡Vamos a siguiente nivel!',
-			cancel: 1,
-    		buttonNames: ['Vamos', 'Cacelar']
-		});
-		dialog.show();
-		//Desbloquear siguiente nivel.
-		Ti.App.Properties.removeProperty("TF_diferencias7");
-		Ti.App.Properties.setBool("TF_diferencias7",true);
 		
-		dialog.addEventListener('click', function(e){
-			var aux_click=e.text;
-			Ti.API.info(aux_click);
-			if (e.index === e.source.cancel){
-				clearInterval(change_view);
-		      	Ti.API.info('The cancel button was clicked');
-		    }
-			else{
-				var diferencias_nivel_8=Alloy.createController('diferencias_nivel_8').getView();
-				diferencias_nivel_8.open();
-			}	
-		});
-		var change_view=setInterval(function(){
-			dialog.hide();
+		if(Ti.App.Properties.getBool("TF_diferencias7")==true){
 			var diferencias_nivel_8=Alloy.createController('diferencias_nivel_8').getView();
-			diferencias_nivel_8.open();
-			clearInterval(change_view);
-		},5000);
+				diferencias_nivel_8.open();
+		}
+		else{
+		 	var menu_nivel = Alloy.createController('menu_nivel').getView();
+			menu_nivel.open();
+		 }
+		 animacionGlobos = Alloy.createController('animacionGlobos');
 	}
 }
 $.rueda_iz.addEventListener('click',function(e){

@@ -1,11 +1,11 @@
-var data = [Ti.UI.createPickerRow({title:'Habilidades Sociales'}),Ti.UI.createPickerRow({title:'Tolerancia a la Frustración'})];
+var data = [Ti.UI.createPickerRow({title:'Categoría'}),Ti.UI.createPickerRow({title:'Habilidades Sociales'}),Ti.UI.createPickerRow({title:'Tolerancia a la Frustración'})];
 var data_HS =[Ti.UI.createPickerRow({title:'Colorea'}),Ti.UI.createPickerRow({title:'Selecciona'}),
 			  Ti.UI.createPickerRow({title:'Acciones'}),Ti.UI.createPickerRow({title:'Gestos'})];
 var data_TF =[Ti.UI.createPickerRow({title:'Siluetas'}),Ti.UI.createPickerRow({title:'Encúentralos'}),
 			  Ti.UI.createPickerRow({title:'Objetos'}),Ti.UI.createPickerRow({title:'Diferencias'}),
 			  Ti.UI.createPickerRow({title:'Memorice'})];
 var picker=Ti.UI.createPicker({
-	backgroundColor: 'red'
+	backgroundColor: '#FAAC58'
 });
 picker.add(data);
 var aux_cg="";

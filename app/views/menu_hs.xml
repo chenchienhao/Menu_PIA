@@ -1,8 +1,9 @@
 <Alloy>
 	<Window class="container">
+		
 		<View id="header_view">
-			<View id="home_view">
-				<ImageView id="home_icon"/>
+			<View id="back_view">
+				<ImageView id="back_icon"/>
 			</View>
 			<View id="title_view">
 				<Label id="title_label"/>
@@ -11,11 +12,15 @@
 				<ImageView id="sound_icon"/>
 			</View>
 		</View>
+		
 		<View id="view_body">
-			<Button id="Button_colorea" onClick="menu_colorea">Colorea</Button>
-			<Button id="Button_selecciona" onClick="menu_selecciona">Selecciona</Button>
-			<Button id="Button_acciones" onClick="menu_acciones">Acciones</Button>
-			<Button id="Button_gestos" onClick="menu_gestos">Gestos</Button>
+			<ScrollView id="scrollView">
+				<Button onClick="menu_colorea">Colorea las Emociones</Button>
+				<Button onClick="menu_selecciona">Selecciona la Emoción</Button>
+				<Button onClick="menu_acciones">Clasifica las Acciones</Button>
+				<Button onClick="menu_gestos">Gestos y Palabras</Button>
+			</ScrollView>
 		</View>
+		
     </Window>
 </Alloy>

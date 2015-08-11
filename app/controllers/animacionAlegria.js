@@ -24,7 +24,9 @@ win.add(gifView);
 
 win.addEventListener("open", function () {
     setTimeout(function(){
-    	colorea_nivel_1 = Alloy.createController('colorea_nivel_1');
+    	if(Ti.App.Properties.getBool("HS_colorea3") == true){
+    		colorea_nivel_1 = Alloy.createController('colorea_nivel_1');
+    	}
     	win.close();
     	}, 10000);
 });

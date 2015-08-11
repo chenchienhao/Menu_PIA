@@ -9,16 +9,26 @@ var win = Ti.UI.createWindow({
 	exitOnClose: true
 });
 
-titulo = Ti.UI.createLabel({
-		  color: 'black',
-		  font: { fontSize:20 },
-		  shadowColor: '#000099',
-		  text: 'Forma una cara de Miedo',
-		  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
-		  top: 0,
-		  width: Ti.UI.SIZE, height: Ti.UI.SIZE
-		});
-win.add(titulo);
+var sonido = Ti.Media.createSound({url:"/images/encabezados/cara_miedo.m4a"});
+
+var encabezado = Ti.UI.createImageView({
+ 	image: '/images/encabezados/cara_miedo.png',
+ 	top: '2%', 
+ 	left: '15%',
+	width: '70%',
+	height: '10%'
+});
+
+win.add(encabezado);
+
+var mensaje = 0;
+encabezado.addEventListener('click',function(e) 
+{
+	if(mensaje<2){
+		sonido.play();
+		mensaje=mensaje+1;
+	}
+});
 
 var rel = 0;
 var newLeft = 0;
@@ -167,13 +177,16 @@ win.add(image8);
 						image1.setTop('30%');
 						image1.setLeft('25%');
 						if(logroOjos == 1 && logroBoca == 1){
-							//Desbloquear siguiente nivel.
-							Ti.App.Properties.removeProperty("HS_colorea3");
-							Ti.App.Properties.setBool("HS_colorea3",true);
-							animacionAlegria = Alloy.createController('animacionAlegria');
 							animacionGlobos = Alloy.createController('animacionGlobos');
+if(Ti.App.Properties.getBool("HS_colorea3") == true){
+    animacionAlegria = Alloy.createController('animacionAlegria');
+ }
+  else{
+ 	var menu_nivel = Alloy.createController('menu_nivel').getView();
+menu_nivel.open();
+ }
 						}
-					}
+						}
 					else{
 						intentos++;
 						image1.setTop(image1.getTop());
@@ -207,12 +220,15 @@ win.add(image8);
 							image1.setTop('50%');
 							image1.setLeft('25%');
 							if(logroOjos == 1 && logroBoca == 1){
-								//Desbloquear siguiente nivel.
-							Ti.App.Properties.removeProperty("HS_colorea3");
-							Ti.App.Properties.setBool("HS_colorea3",true);
-							animacionAlegria = Alloy.createController('animacionAlegria');
-							animacionGlobos = Alloy.createController('animacionGlobos');
-							}
+								animacionGlobos = Alloy.createController('animacionGlobos');
+if(Ti.App.Properties.getBool("HS_colorea3") == true){
+    animacionAlegria = Alloy.createController('animacionAlegria');
+ }
+  else{
+ 	var menu_nivel = Alloy.createController('menu_nivel').getView();
+menu_nivel.open();
+ }
+						}
 					}
 					else{
 						intentos++;
@@ -259,13 +275,16 @@ win.add(image8);
 						image2.setTop('30%');
 						image2.setLeft('25%');
 						if(logroOjos == 1 && logroBoca == 1){
-							//Desbloquear siguiente nivel.
-							Ti.App.Properties.removeProperty("HS_colorea3");
-							Ti.App.Properties.setBool("HS_colorea3",true);
-							animacionAlegria = Alloy.createController('animacionAlegria');
 							animacionGlobos = Alloy.createController('animacionGlobos');
+if(Ti.App.Properties.getBool("HS_colorea3") == true){
+    animacionAlegria = Alloy.createController('animacionAlegria');
+ }
+  else{
+ 	var menu_nivel = Alloy.createController('menu_nivel').getView();
+menu_nivel.open();
+ }
 						}
-					}
+						}
 					else{
 						intentos++;
 						image2.setTop(image2.getTop());
@@ -299,12 +318,15 @@ win.add(image8);
 							image2.setTop('50%');
 							image2.setLeft('25%');
 							if(logroOjos == 1 && logroBoca == 1){
-								//Desbloquear siguiente nivel.
-							Ti.App.Properties.removeProperty("HS_colorea3");
-							Ti.App.Properties.setBool("HS_colorea3",true);
-							animacionAlegria = Alloy.createController('animacionAlegria');
-							animacionGlobos = Alloy.createController('animacionGlobos');
-							}
+								animacionGlobos = Alloy.createController('animacionGlobos');
+if(Ti.App.Properties.getBool("HS_colorea3") == true){
+    animacionAlegria = Alloy.createController('animacionAlegria');
+ }
+  else{
+ 	var menu_nivel = Alloy.createController('menu_nivel').getView();
+menu_nivel.open();
+ }
+						}
 						}
 						else{
 							intentos++;
@@ -352,13 +374,16 @@ win.add(image8);
 						image3.setTop('30%');
 						image3.setLeft('25%');
 						if(logroOjos == 1 && logroBoca == 1){
-							//Desbloquear siguiente nivel.
-							Ti.App.Properties.removeProperty("HS_colorea3");
-							Ti.App.Properties.setBool("HS_colorea3",true);
-							animacionAlegria = Alloy.createController('animacionAlegria');
 							animacionGlobos = Alloy.createController('animacionGlobos');
+if(Ti.App.Properties.getBool("HS_colorea3") == true){
+    animacionAlegria = Alloy.createController('animacionAlegria');
+ }
+  else{
+ 	var menu_nivel = Alloy.createController('menu_nivel').getView();
+menu_nivel.open();
+ }
 						}
-					}
+						}
 					else{
 						intentos++;
 						image3.setTop(image3.getTop());
@@ -392,12 +417,15 @@ win.add(image8);
 							image3.setTop('50%');
 							image3.setLeft('25%');
 							if(logroOjos == 1 && logroBoca == 1){
-								//Desbloquear siguiente nivel.
-							Ti.App.Properties.removeProperty("HS_colorea3");
-							Ti.App.Properties.setBool("HS_colorea3",true);
-							animacionAlegria = Alloy.createController('animacionAlegria');
-							animacionGlobos = Alloy.createController('animacionGlobos');
-							}
+								animacionGlobos = Alloy.createController('animacionGlobos');
+if(Ti.App.Properties.getBool("HS_colorea3") == true){
+    animacionAlegria = Alloy.createController('animacionAlegria');
+ }
+  else{
+ 	var menu_nivel = Alloy.createController('menu_nivel').getView();
+menu_nivel.open();
+ }
+						}
 						}
 						else{
 							intentos++;
@@ -444,13 +472,16 @@ win.add(image8);
 						image4.setTop('30%');
 						image4.setLeft('25%');
 						if(logroBoca==1 && logroOjos==1){
-							//Desbloquear siguiente nivel.
-							Ti.App.Properties.removeProperty("HS_colorea3");
-							Ti.App.Properties.setBool("HS_colorea3",true);
-							animacionAlegria = Alloy.createController('animacionAlegria');
 							animacionGlobos = Alloy.createController('animacionGlobos');
+if(Ti.App.Properties.getBool("HS_colorea3") == true){
+    animacionAlegria = Alloy.createController('animacionAlegria');
+ }
+  else{
+ 	var menu_nivel = Alloy.createController('menu_nivel').getView();
+menu_nivel.open();
+ }
 						}
-					}
+						}
 					else{
 						intentos++;
 							image4.setTop(image4.getTop());
@@ -484,12 +515,15 @@ win.add(image8);
 							image4.setTop('50%');
 							image4.setLeft('25%');
 							if(logroOjos == 1 && logroBoca == 1){
-								//Desbloquear siguiente nivel.
-							Ti.App.Properties.removeProperty("HS_colorea3");
-							Ti.App.Properties.setBool("HS_colorea3",true);
-							animacionAlegria = Alloy.createController('animacionAlegria');
-							animacionGlobos = Alloy.createController('animacionGlobos');
-							}
+								animacionGlobos = Alloy.createController('animacionGlobos');
+if(Ti.App.Properties.getBool("HS_colorea3") == true){
+    animacionAlegria = Alloy.createController('animacionAlegria');
+ }
+  else{
+ 	var menu_nivel = Alloy.createController('menu_nivel').getView();
+menu_nivel.open();
+ }
+						}
 						}
 						else{
 							intentos++;
@@ -536,13 +570,16 @@ win.add(image8);
 						image5.setTop('30%');
 						image5.setLeft('25%');
 						if(logroOjos == 1 && logroBoca == 1){
-							//Desbloquear siguiente nivel.
-							Ti.App.Properties.removeProperty("HS_colorea3");
-							Ti.App.Properties.setBool("HS_colorea3",true);
-							animacionAlegria = Alloy.createController('animacionAlegria');
 							animacionGlobos = Alloy.createController('animacionGlobos');
+if(Ti.App.Properties.getBool("HS_colorea3") == true){
+    animacionAlegria = Alloy.createController('animacionAlegria');
+ }
+  else{
+ 	var menu_nivel = Alloy.createController('menu_nivel').getView();
+menu_nivel.open();
+ }
 						}
-					}
+						}
 					else{
 						intentos++;
 						image5.setTop(image5.getTop());
@@ -576,12 +613,15 @@ win.add(image8);
 							image5.setTop('50%');
 							image5.setLeft('25%');
 							if(logroOjos == 1 && logroBoca == 1){
-								//Desbloquear siguiente nivel.
-							Ti.App.Properties.removeProperty("HS_colorea3");
-							Ti.App.Properties.setBool("HS_colorea3",true);
-							animacionAlegria = Alloy.createController('animacionAlegria');
-							animacionGlobos = Alloy.createController('animacionGlobos');
-							}
+								animacionGlobos = Alloy.createController('animacionGlobos');
+if(Ti.App.Properties.getBool("HS_colorea3") == true){
+    animacionAlegria = Alloy.createController('animacionAlegria');
+ }
+  else{
+ 	var menu_nivel = Alloy.createController('menu_nivel').getView();
+menu_nivel.open();
+ }
+						}
 						}
 						else{
 							intentos++;
@@ -628,13 +668,16 @@ win.add(image8);
 						image6.setTop('30%');
 						image6.setLeft('25%');
 						if(logroOjos == 1 && logroBoca == 1){
-							//Desbloquear siguiente nivel.
-							Ti.App.Properties.removeProperty("HS_colorea3");
-							Ti.App.Properties.setBool("HS_colorea3",true);
-							animacionAlegria = Alloy.createController('animacionAlegria');
 							animacionGlobos = Alloy.createController('animacionGlobos');
+if(Ti.App.Properties.getBool("HS_colorea3") == true){
+    animacionAlegria = Alloy.createController('animacionAlegria');
+ }
+  else{
+ 	var menu_nivel = Alloy.createController('menu_nivel').getView();
+menu_nivel.open();
+ }
 						}
-					}
+						}
 					else{
 						intentos++;
 						image6.setTop(image6.getTop());
@@ -668,12 +711,15 @@ win.add(image8);
 							image6.setTop('50%');
 							image6.setLeft('25%');
 							if(logroOjos == 1 && logroBoca == 1){
-								//Desbloquear siguiente nivel.
-							Ti.App.Properties.removeProperty("HS_colorea3");
-							Ti.App.Properties.setBool("HS_colorea3",true);
-							animacionAlegria = Alloy.createController('animacionAlegria');
-							animacionGlobos = Alloy.createController('animacionGlobos');
-							}
+								animacionGlobos = Alloy.createController('animacionGlobos');
+if(Ti.App.Properties.getBool("HS_colorea3") == true){
+    animacionAlegria = Alloy.createController('animacionAlegria');
+ }
+  else{
+ 	var menu_nivel = Alloy.createController('menu_nivel').getView();
+menu_nivel.open();
+ }
+						}
 						}
 						else{
 							intentos++;
@@ -720,13 +766,16 @@ win.add(image8);
 						image7.setTop('30%');
 						image7.setLeft('25%');
 						if(logroOjos == 1 && logroBoca == 1){
-							//Desbloquear siguiente nivel.
-							Ti.App.Properties.removeProperty("HS_colorea3");
-							Ti.App.Properties.setBool("HS_colorea3",true);
-							animacionAlegria = Alloy.createController('animacionAlegria');
 							animacionGlobos = Alloy.createController('animacionGlobos');
+if(Ti.App.Properties.getBool("HS_colorea3") == true){
+    animacionAlegria = Alloy.createController('animacionAlegria');
+ }
+  else{
+ 	var menu_nivel = Alloy.createController('menu_nivel').getView();
+menu_nivel.open();
+ }
 						}
-					}
+						}
 					else{
 						intentos++;
 						image7.setTop(image7.getTop());
@@ -760,12 +809,15 @@ win.add(image8);
 							image7.setTop('50%');
 							image7.setLeft('25%');
 							if(logroOjos == 1 && logroBoca == 1){
-								//Desbloquear siguiente nivel.
-							Ti.App.Properties.removeProperty("HS_colorea3");
-							Ti.App.Properties.setBool("HS_colorea3",true);
-							animacionAlegria = Alloy.createController('animacionAlegria');
-							animacionGlobos = Alloy.createController('animacionGlobos');
-							}
+								animacionGlobos = Alloy.createController('animacionGlobos');
+if(Ti.App.Properties.getBool("HS_colorea3") == true){
+    animacionAlegria = Alloy.createController('animacionAlegria');
+ }
+  else{
+ 	var menu_nivel = Alloy.createController('menu_nivel').getView();
+menu_nivel.open();
+ }
+						}
 						}
 						else{
 							intentos++;
@@ -812,13 +864,16 @@ win.add(image8);
 						image8.setTop('30%');
 						image8.setLeft('25%');
 						if(logroOjos == 1 && logroBoca == 1){
-							//Desbloquear siguiente nivel.
-							Ti.App.Properties.removeProperty("HS_colorea3");
-							Ti.App.Properties.setBool("HS_colorea3",true);
-							animacionAlegria = Alloy.createController('animacionAlegria');
 							animacionGlobos = Alloy.createController('animacionGlobos');
+if(Ti.App.Properties.getBool("HS_colorea3") == true){
+    animacionAlegria = Alloy.createController('animacionAlegria');
+ }
+  else{
+ 	var menu_nivel = Alloy.createController('menu_nivel').getView();
+menu_nivel.open();
+ }
 						}
-					}
+						}
 					else{
 						intentos++;
 						image8.setTop(image8.getTop());
@@ -852,12 +907,15 @@ win.add(image8);
 							image8.setTop('50%');
 							image8.setLeft('25%');
 							if(logroOjos == 1 && logroBoca == 1){
-								//Desbloquear siguiente nivel.
-							Ti.App.Properties.removeProperty("HS_colorea3");
-							Ti.App.Properties.setBool("HS_colorea3",true);
-							animacionAlegria = Alloy.createController('animacionAlegria');
-							animacionGlobos = Alloy.createController('animacionGlobos');
-							}
+								animacionGlobos = Alloy.createController('animacionGlobos');
+if(Ti.App.Properties.getBool("HS_colorea3") == true){
+    animacionAlegria = Alloy.createController('animacionAlegria');
+ }
+  else{
+ 	var menu_nivel = Alloy.createController('menu_nivel').getView();
+menu_nivel.open();
+ }
+						}
 						}
 						else{
 							intentos++;

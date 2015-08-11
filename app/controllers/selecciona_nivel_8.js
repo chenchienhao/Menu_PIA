@@ -4,34 +4,25 @@ var win1 = Titanium.UI.createWindow({
     width: '100%',
     height: '100%',
 });
+var sonido = Ti.Media.createSound({url:"/images/encabezados/emociones.m4a"});
 
-var titulo = Ti.UI.createLabel({
-  color:'blue',
-  font: { fontSize: '20%' },
-  text: 'Identifica y Selecciona la',
-  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
-  left: '0%', top: '1%', 
-  width: '40%',
-  height: '10%'
-});
-var titulo2 = Ti.UI.createLabel({
-  color:'RED',
-  font: { fontSize: '22%' },
-  text: 'EMOCIÓN',
-  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
-  left: '31%', top: '0%', 
-  width: '30%',
-  height: '12%'
+var encabezado = Ti.UI.createImageView({
+ 	image: '/images/encabezados/emociones.png',
+ 	top: '2%', 
+ 	left: '15%',
+	width: '70%',
+	height: '10%'
 });
 
-var titulo3 = Ti.UI.createLabel({
-  color:'blue',
-  font: { fontSize: '20%' },
-  text: 'que representa la animación.',
-  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
-  left: '45%', top: '1%', 
-  width: '60%',
-  height: '10%'
+win1.add(encabezado);
+
+var mensaje = 0;
+encabezado.addEventListener('click',function(e) 
+{
+	if(mensaje<2){
+		sonido.play();
+		mensaje=mensaje+1;
+	}
 });
 
 
@@ -99,12 +90,8 @@ var gifView = Titanium.UI.createWebView({
 win1.add(gifView);
 
 setTimeout(function(){
-    //Desbloquear siguiente nivel.
-	Ti.App.Properties.removeProperty("HS_selecciona8");
-	Ti.App.Properties.setBool("HS_selecciona8",true);	
-
-	selecciona_nivel_9=Alloy.createController('selecciona_nivel_9');
-	win1.close();
+    var menu_nivel = Alloy.createController('menu_nivel').getView();
+	menu_nivel.open();
     	}, 4000);
     	    	
 });
@@ -125,9 +112,6 @@ button4.addEventListener('click',function(e)
 }); 
 
 
-win1.add(titulo);
-win1.add(titulo2);
-win1.add(titulo3);
 win1.add(disp_rythm_imageView);
 win1.add(button1);
 win1.add(button2);

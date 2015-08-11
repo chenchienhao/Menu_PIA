@@ -13,18 +13,18 @@
 	layout:"horizontal",
 	//backgroundColor:"green"
 }
-"#home_view":{
+"#back_view":{
 	top: "0%",
 	left:"0%",
 	width: "20%",
 	height: "100%",
 	//backgroundColor:"red"
 }
-"#home_icon":{
-	image:"/images/icon/home.png",
+"#back_icon":{
+	image:"/images/icon/back.png",
 	top: "10%",
 	left: "10%",
-	height: "90%"
+	height: "80%"
 	//width:Ti.UI.SIZE,
 }
 
@@ -52,36 +52,36 @@
 	image:"/images/icon/sound.png",
 	top: "10%",
 	right: "10%",
-	height: "90%"
+	height: "80%"
 }
+
 //---------------------------------
 //-------------BODY----------------
 //---------------------------------
 "#view_body":{
-	layout:"vertical",
-	height: "85%"
+	layout:"vertical"
+	//height: "80%"
 }
-"#Button_colorea":{
-	backgroundColor: "#58ACFA"
+
+//---------ScrollView--------------
+"#scrollView":{
+	width: "100%",
+	layout: "vertical",
+	showVerticalScrollIndicator:"true"
 }
-"#Button_selecciona":{
-	backgroundColor: "#58ACFA"
-}
-"#Button_acciones":{
-	backgroundColor: "#58ACFA"
-}
-"#Button_gestos":{
-	backgroundColor: "#58ACFA"
-}
+
+//---------Buttons-----------------
 "Button": {
-	top:"6%",
-	height:"10%",
-	width: "30%",
+	top:"5dip",
+	height:"70dip",
+	width: "60%",
+	bottom:"5dip",
 	borderRadius: 30,
-	color:"white",
+	color:'white',
 	font: {
-		fontSize: 18,
+		fontSize: 40,
 		fontWeight: "bold",
 		textAlign:"center"
 	},
+	backgroundColor: "#2E9AFE"
 }

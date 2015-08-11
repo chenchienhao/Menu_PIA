@@ -1,3 +1,23 @@
+var sonido = Ti.Media.createSound({url:"/images/encabezados/objetos_ocultos.m4a"});
+
+var encabezado = Ti.UI.createImageView({
+ 	image: '/images/encabezados/objetos_ocultos.png',
+ 	top: '2%', 
+ 	left: '15%',
+	width: '70%',
+	height: '50%'
+});
+
+$.view_header.add(encabezado);
+
+var mensaje = 0;
+encabezado.addEventListener('click',function(e) 
+{
+	if(mensaje<2){
+		sonido.play();
+		mensaje=mensaje+1;
+	}
+});
 var aux_ropa=false;
 var aux_bigote=false;
 var aux_sol=false;
@@ -9,31 +29,7 @@ function estrella (punto) {
 	if(punto==6){
 		var diferencias_felicidad=Alloy.createController('diferencias_felicidad').getView();
 		diferencias_felicidad.open();
-		var dialog = Ti.UI.createAlertDialog({
-			title: 'Felicitaciones',
-			message: '¡Bien! ¡Ya terminó todos los niveles!',
-			cancel: 1,
-    		buttonNames: ['OK', 'Cacelar']
-		});
-		dialog.show();
-		dialog.addEventListener('click', function(e){
-			var aux_click=e.text;
-			Ti.API.info(aux_click);
-			if (e.index === e.source.cancel){
-				clearInterval(change_view);
-		      	Ti.API.info('The cancel button was clicked');
-		    }
-			else{
-				var index=Alloy.createController('index').getView();
-				index.open();
-			}	
-		});
-		var change_view=setInterval(function(){
-			dialog.hide();
-			var index=Alloy.createController('index').getView();
-			index.open();
-			clearInterval(change_view);
-		},5000);
+		fin = Alloy.createController('fin');
 	}
 }
 

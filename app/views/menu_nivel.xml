@@ -1,5 +1,22 @@
 <Alloy>
 	<Window id="win" class="container">
+		<View id="header_view">
+			<View id="back_view">
+				<ImageView id="back_icon" onClick="go_back"/>
+			</View>
+			<View id="title_view">
+				<Label id="title_label"/>
+			</View>
+			<View id="sound_view">
+				<ImageView id="sound_icon" onClick="go_sound"/>
+			</View>
+		</View>
+		<View id="main_body">
+			
+		</View>
+		
+		
+		
 		
 	</Window>
 </Alloy>

@@ -1,8 +1,9 @@
 <Alloy>
 	<Window class="container">
+		
 		<View id="header_view">
-			<View id="home_view">
-				<ImageView id="home_icon"/>
+			<View id="back_view">
+				<ImageView id="back_icon"/>
 			</View>
 			<View id="title_view">
 				<Label id="title_label"/>
@@ -11,12 +12,16 @@
 				<ImageView id="sound_icon"/>
 			</View>
 		</View>
+		
 		<View id="view_body">
-			<Button id="Button_siluetas" onClick="menu_siluetas">Siluetas</Button>
-			<Button id="Button_encuentralos" onClick="menu_encuentralos">Encuéntralos</Button>
-			<Button id="Button_objetos" onClick="menu_objetos">Objetos</Button>
-			<Button id="Button_diferencias" onClick="menu_diferencias">Diferencias</Button>
-			<Button id="Button_memorice" onClick="menu_memorice">Memorice</Button>
+			<ScrollView id="scrollView">
+				<Button onClick="menu_siluetas">Siluetas</Button>
+				<Button onClick="menu_encuentralos">Encuéntralos</Button>
+				<Button onClick="menu_objetos">Objetos</Button>
+				<Button onClick="menu_diferencias">Diferencias</Button>
+				<Button onClick="menu_memorice">Memorice</Button>
+			</ScrollView>
 		</View>
+		
     </Window>
 </Alloy>
